@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>盛香亭 2026年度工作汇报暨2027年数字化战略 | 天财商龙</title>
+<style>
+:root{
+  --bg:#0B0E13; --bg2:#11151C; --card:#151A23; --card2:#1A212C;
+  --line:#252C38; --line2:#313A48;
+  --txt:#E8ECF2; --txt2:#A8B3C4; --txt3:#6E7B8F;
+  --red:#D42A2A; --red2:#F04C4C; --redsoft:rgba(212,42,42,.14);
+  --gold:#D9A441; --goldsoft:rgba(217,164,65,.12);
+  --green:#3FB950; --blue:#4A9EFF; --purple:#A371F7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans CN",system-ui,sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+
+/* ============ NAV ============ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(11,14,19,.92); backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{max-width:1240px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:60px;gap:8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px;letter-spacing:.5px;margin-right:18px;white-space:nowrap}
+.brand .dot{width:26px;height:26px;border-radius:6px;background:linear-gradient(135deg,var(--red),#8B1A1A);display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;font-weight:800}
+.nav-links{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  color:var(--txt2);text-decoration:none;font-size:13px;padding:7px 12px;border-radius:6px;
+  white-space:nowrap;transition:.2s;
+}
+.nav-links a:hover{color:var(--txt);background:var(--card2)}
+.nav-links a.on{color:#fff;background:var(--redsoft);box-shadow:inset 0 0 0 1px rgba(212,42,42,.4)}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;padding-top:60px;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(900px 520px at 78% 22%, rgba(212,42,42,.20), transparent 62%),
+    radial-gradient(700px 460px at 12% 78%, rgba(217,164,65,.10), transparent 62%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:2}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  color:var(--gold);border:1px solid rgba(217,164,65,.35);background:var(--goldsoft);
+  padding:7px 16px;border-radius:100px;margin-bottom:30px;
+}
+.hero h1{font-size:60px;line-height:1.14;font-weight:800;letter-spacing:-1px;margin-bottom:8px}
+.hero h1 .hl{background:linear-gradient(120deg,var(--red2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:19px;color:var(--txt2);margin-bottom:12px;font-weight:400}
+.hero-meta{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero-chip{
+  background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 20px;
+  display:flex;flex-direction:column;gap:2px;
+}
+.hero-chip b{font-size:20px;color:#fff;font-weight:800}
+.hero-chip span{font-size:11.5px;color:var(--txt3);letter-spacing:.5px}
+.hero-foot{
+  position:absolute;bottom:36px;left:0;right:0;z-index:2;
+}
+.hero-foot .wrap{display:flex;justify-content:space-between;align-items:flex-end;color:var(--txt3);font-size:12.5px}
+.scroll-hint{display:flex;align-items:center;gap:8px}
+.scroll-hint i{display:block;width:1px;height:34px;background:linear-gradient(var(--red),transparent);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* ============ SECTION ============ */
+section{padding:96px 0;position:relative}
+.sec-head{margin-bottom:48px}
+.sec-num{
+  font-size:13px;letter-spacing:3px;color:var(--red2);font-weight:700;margin-bottom:12px;
+  display:flex;align-items:center;gap:12px;
+}
+.sec-num::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(212,42,42,.5),transparent);max-width:220px}
+.sec-head h2{font-size:38px;font-weight:800;letter-spacing:-.5px;margin-bottom:14px;line-height:1.25}
+.sec-head .desc{font-size:15.5px;color:var(--txt2);max-width:800px}
+.sec-head .desc b{color:var(--txt)}
+
+/* ============ CARD / GRID ============ */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;
+  transition:.25s;position:relative;overflow:hidden;
+}
+.card:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.4)}
+.card .ic{
+  width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+  font-size:17px;margin-bottom:14px;background:var(--redsoft);
+}
+.card h4{font-size:16px;font-weight:700;margin-bottom:8px;color:#fff}
+.card p{font-size:13.5px;color:var(--txt2);line-height:1.68}
+.card .big{font-size:34px;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1.1}
+.card .unit{font-size:13px;font-weight:600;color:var(--txt2);margin-left:3px}
+.card .lbl{font-size:12.5px;color:var(--txt3);margin-top:6px}
+
+/* KPI */
+.kpi{
+  background:linear-gradient(160deg,var(--card2),var(--card));
+  border:1px solid var(--line);border-radius:14px;padding:26px 22px;text-align:center;
+}
+.kpi .v{font-size:40px;font-weight:800;letter-spacing:-1.5px;line-height:1}
+.kpi .l{font-size:13px;color:var(--txt2);margin-top:10px}
+.kpi .s{font-size:11.5px;color:var(--txt3);margin-top:4px}
+.c-red{color:var(--red2)} .c-gold{color:var(--gold)} .c-green{color:var(--green)} .c-blue{color:var(--blue)}
+
+/* PANEL */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px}
+.panel h3{font-size:19px;font-weight:700;margin-bottom:6px;color:#fff}
+.panel .ph{font-size:13px;color:var(--txt3);margin-bottom:22px}
+
+/* TABLE */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{
+  text-align:left;padding:12px 14px;color:var(--txt3);font-weight:600;font-size:12px;
+  letter-spacing:.5px;border-bottom:1px solid var(--line2);white-space:nowrap;
+}
+td{padding:13px 14px;border-bottom:1px solid var(--line);color:var(--txt2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:rgba(255,255,255,.022);color:var(--txt)}
+td b{color:var(--txt);font-weight:600}
+
+/* TAG */
+.tag{
+  display:inline-block;font-size:11px;padding:3px 9px;border-radius:5px;font-weight:600;
+  background:var(--card2);color:var(--txt2);border:1px solid var(--line2);white-space:nowrap;
+}
+.t-red{background:rgba(212,42,42,.16);color:#FF7B7B;border-color:rgba(212,42,42,.3)}
+.t-gold{background:rgba(217,164,65,.14);color:var(--gold);border-color:rgba(217,164,65,.3)}
+.t-green{background:rgba(63,185,80,.14);color:#6FD97C;border-color:rgba(63,185,80,.3)}
+.t-blue{background:rgba(74,158,255,.14);color:#7DBBFF;border-color:rgba(74,158,255,.3)}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--red),var(--gold),var(--line2))}
+.tl-item{position:relative;padding-bottom:30px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--bg);border:2.5px solid var(--red);box-shadow:0 0 0 3px rgba(212,42,42,.15);
+}
+.tl-item.gold::before{border-color:var(--gold);box-shadow:0 0 0 3px rgba(217,164,65,.15)}
+.tl-item .y{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:5px}
+.tl-item h5{font-size:16px;font-weight:700;color:#fff;margin-bottom:6px}
+.tl-item p{font-size:13.5px;color:var(--txt2)}
+.tl-item .val{
+  margin-top:9px;font-size:12.5px;color:var(--txt);
+  background:var(--card2);border-left:2.5px solid var(--red);padding:8px 13px;border-radius:0 7px 7px 0;
+}
+.tl-item .val b{color:var(--gold)}
+
+/* MATCH MATRIX */
+.mrow{
+  display:grid;grid-template-columns:1fr 60px 1.15fr;gap:16px;align-items:stretch;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:12px;
+  transition:.22s;
+}
+.mrow:hover{border-color:rgba(212,42,42,.35);background:var(--card2)}
+.mrow .l{padding-right:8px}
+.mrow .l .t{font-size:13px;color:var(--txt3);margin-bottom:5px;letter-spacing:.5px}
+.mrow .l .d{font-size:15px;font-weight:700;color:#fff;line-height:1.5}
+.mrow .m{display:flex;align-items:center;justify-content:center}
+.mrow .m .arw{
+  width:38px;height:38px;border-radius:50%;background:var(--redsoft);border:1px solid rgba(212,42,42,.3);
+  display:flex;align-items:center;justify-content:center;color:var(--red2);font-size:15px;font-weight:700;
+}
+.mrow .r{background:rgba(63,185,80,.06);border-left:2px solid rgba(63,185,80,.4);padding:10px 14px;border-radius:0 8px 8px 0}
+.mrow .r .t{font-size:12px;color:#6FD97C;font-weight:600;margin-bottom:4px;letter-spacing:.5px}
+.mrow .r .d{font-size:13.5px;color:var(--txt2);line-height:1.6}
+.mrow .r .d b{color:#fff}
+
+/* BARS */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar-row{display:grid;grid-template-columns:96px 1fr 58px;gap:14px;align-items:center}
+.bar-row .n{font-size:12.5px;color:var(--txt2);text-align:right}
+.bar-row .track{height:22px;background:var(--bg2);border-radius:5px;overflow:hidden;position:relative}
+.bar-row .fill{height:100%;border-radius:5px;display:flex;align-items:center;padding-left:10px;font-size:11px;color:#fff;font-weight:700}
+.bar-row .v{font-size:13px;font-weight:700;color:#fff;text-align:right}
+
+/* CALLOUT */
+.callout{
+  background:linear-gradient(135deg,rgba(212,42,42,.09),rgba(217,164,65,.05));
+  border:1px solid rgba(212,42,42,.22);border-radius:14px;padding:24px 26px;margin-top:22px;
+}
+.callout h4{font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.callout h4::before{content:"";width:3px;height:16px;background:var(--red);border-radius:2px}
+.callout p{font-size:14px;color:var(--txt2)}
+.callout p b{color:var(--gold)}
+
+/* FORMULA */
+.formula{
+  display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
+  background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:24px;margin-top:20px;
+}
+.f-old,.f-new{text-align:center;padding:12px 22px;border-radius:9px}
+.f-old{background:rgba(110,123,143,.1);border:1px solid var(--line2)}
+.f-new{background:var(--redsoft);border:1px solid rgba(212,42,42,.35)}
+.f-old .t,.f-new .t{font-size:11px;letter-spacing:2px;margin-bottom:6px;color:var(--txt3)}
+.f-new .t{color:var(--red2)}
+.f-old .e,.f-new .e{font-size:19px;font-weight:800;color:var(--txt2)}
+.f-new .e{color:#fff}
+.f-arw{font-size:24px;color:var(--gold)}
+
+/* LIST */
+.ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.ul li{font-size:13.5px;color:var(--txt2);padding-left:20px;position:relative;line-height:1.65}
+.ul li::before{content:"";position:absolute;left:4px;top:9px;width:5px;height:5px;border-radius:50%;background:var(--red)}
+.ul li b{color:var(--txt)}
+
+/* ROADMAP */
+.rm{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+.rm-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;position:relative;overflow:hidden}
+.rm-col::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.rm-col.y1::before{background:linear-gradient(90deg,var(--red),var(--red2))}
+.rm-col.y2::before{background:linear-gradient(90deg,var(--gold),#E8C46E)}
+.rm-col.y3::before{background:linear-gradient(90deg,var(--blue),#7DBBFF)}
+.rm-col .yr{font-size:30px;font-weight:800;color:#fff;letter-spacing:-1px}
+.rm-col .tt{font-size:14px;font-weight:700;color:var(--gold);margin:4px 0 16px}
+.rm-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.rm-col li{font-size:13px;color:var(--txt2);padding-left:16px;position:relative;line-height:1.6}
+.rm-col li::before{content:"▸";position:absolute;left:0;color:var(--red2)}
+.rm-col li b{color:#fff}
+
+/* FOOTER */
+footer{padding:70px 0 50px;border-top:1px solid var(--line);text-align:center}
+footer .lg{font-size:26px;font-weight:800;letter-spacing:1px;margin-bottom:10px}
+footer .sm{font-size:13px;color:var(--txt3)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .48s cubic-bezier(.22,.61,.36,1),transform .48s cubic-bezier(.22,.61,.36,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:980px){
+  .g4,.g3,.g2{grid-template-columns:repeat(2,1fr)}
+  .rm{grid-template-columns:1fr}
+  .hero h1{font-size:40px}
+  .sec-head h2{font-size:28px}
+  .mrow{grid-template-columns:1fr;gap:10px}
+  .mrow .m{justify-content:flex-start}
+  .mrow .r{border-left:none;border-top:2px solid rgba(63,185,80,.4);border-radius:0 0 8px 8px}
+}
+@media(max-width:640px){
+  .g4,.g3,.g2{grid-template-columns:1fr}
+  .wrap{padding:0 18px}
+  .nav-in{padding:0 18px}
+  .hero h1{font-size:32px}
+}
+
+/* ============ PPT 翻页模式 ============ */
+html,body{height:100%}
+body.ppt{overflow:hidden;background:#06080B}
+body.ppt>*{display:none}
+body.ppt>#stage{display:block}
+body.ppt>#deck{display:flex}
+body.ppt>#prog{display:block}
+body.ppt>#hint{display:block}
+body.ppt>#ctrl{display:flex}
+body.ppt>#toc{display:none}
+body.ppt>#toc.on{display:block}
+
+#deck{position:fixed;inset:0;overflow:hidden;align-items:center;justify-content:center;background:#06080B}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center;padding:16px;
+  opacity:0;transition:opacity .22s cubic-bezier(.4,0,.2,1)}
+.slide.on{display:flex;opacity:1}
+.slide.out{display:flex;opacity:0;pointer-events:none}
+.slide.on .cv{animation:sin .3s cubic-bezier(.22,.61,.36,1)}
+@keyframes sin{
+  from{opacity:0;transform:translate3d(0,14px,0) scale(var(--sc,1))}
+  to{opacity:1;transform:translate3d(0,0,0) scale(var(--sc,1))}
+}
+#deck.measuring .slide{display:flex !important;visibility:hidden !important}
+
+.cv{
+  position:relative;width:1280px;min-height:720px;background:var(--bg);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  padding:52px 40px 58px;transform-origin:center center;
+  box-shadow:0 34px 100px rgba(0,0,0,.65);
+  display:flex;flex-direction:column;
+  transform:scale(var(--sc,1));will-change:transform,opacity;backface-visibility:hidden;
+}
+.cv::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(1000px 560px at 80% 14%,rgba(212,42,42,.10),transparent 62%);
+}
+.cv-body{position:relative;z-index:2;flex:1;min-height:0;display:flex;flex-direction:column}
+.cv-hd{
+  position:absolute;left:40px;top:17px;z-index:5;display:flex;align-items:center;gap:9px;
+  font-size:12px;color:var(--txt3);letter-spacing:.6px;
+}
+.cv-hd .dot{
+  width:20px;height:20px;border-radius:5px;background:linear-gradient(135deg,var(--red),#8B1A1A);
+  color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;
+}
+.cv-ft{
+  position:absolute;left:40px;right:40px;bottom:17px;z-index:5;display:flex;align-items:center;gap:14px;
+  font-size:12px;color:var(--txt3);
+}
+.cv-ft .ch{color:var(--gold);font-weight:700;letter-spacing:1px}
+.cv-ft .ln{flex:1;height:1px;background:var(--line)}
+.cv-ft .pg{font-variant-numeric:tabular-nums;color:var(--txt2)}
+.slide.k-cover .cv-body{justify-content:center}
+.cv-cont{
+  font-size:13px;color:var(--txt3);letter-spacing:1px;margin-bottom:14px;
+  display:flex;align-items:center;gap:8px;font-weight:600;
+}
+.cv-cont::before{content:"";width:16px;height:2px;background:var(--red);flex:none}
+
+/* ppt 模式下的原样式适配 */
+body.ppt nav{display:none !important}
+body.ppt section{padding:0 !important}
+body.ppt .sec-head{margin-bottom:0 !important}
+body.ppt .hero{min-height:0 !important;padding-top:0 !important;height:auto}
+body.ppt .hero-foot{position:static !important;margin-top:34px}
+body.ppt .hero-foot .wrap{padding:0 !important}
+body.ppt footer{border:0 !important;padding:0 !important}
+body.ppt .panel{margin-bottom:0 !important}
+body.ppt .grid{gap:16px}
+body.ppt .card{padding:20px}
+body.ppt .kpi{padding:20px 16px}
+body.ppt .kpi .v{font-size:34px}
+body.ppt .sec-head h2{font-size:34px}
+.cv.dense table{font-size:12.4px}
+.cv.dense table th,.cv.dense table td{padding:6px 11px;font-size:12.4px;line-height:1.55}
+.slide.k-thin .cv-body{justify-content:center}
+/* 极端紧凑档：个别内容过多页的最后兜底 */
+.cv.xtight .card{padding:12px 14px}
+.cv.xtight .card .ic{width:28px;height:28px;font-size:14px;margin-bottom:7px}
+.cv.xtight .card h4{font-size:14px;margin-bottom:5px}
+.cv.xtight .card p{font-size:12px;line-height:1.5}
+.cv.xtight .kpi{padding:12px 10px}
+.cv.xtight .kpi .v{font-size:26px}
+.cv.xtight .grid{gap:10px}
+.cv.xtight .panel{padding:16px}
+.cv.xtight table th,.cv.xtight table td{padding:4px 8px;font-size:11.2px;line-height:1.45}
+.cv.xtight h2,.cv.xtight h3{line-height:1.25}
+.cv.xtight .tl-item{padding-bottom:19px}
+.cv.xtight .tl-item h5{font-size:14.5px;margin-bottom:4px}
+.cv.xtight .tl-item p{font-size:12.4px;line-height:1.5}
+.cv.xtight .tl-item .val{font-size:12.2px;padding:7px 11px;margin-top:6px}
+.cv.xtight .mrow .l .d{font-size:14px;line-height:1.4}
+.cv.xtight .mrow .r{padding:8px 12px}
+.cv.xtight .mrow .r .d{font-size:12.6px;line-height:1.5}
+.cv.xtight ul li,.cv.xtight ol li{font-size:12.6px;line-height:1.55}
+.cv.xtight .cv-cont{margin-bottom:10px}
+/* 内容超高页的紧凑档 */
+.cv.tight .card{padding:15px 17px}
+.cv.tight .card .ic{width:30px;height:30px;font-size:15px;margin-bottom:10px}
+.cv.tight .card h4{font-size:15px;margin-bottom:6px}
+.cv.tight .card p{font-size:12.8px;line-height:1.6}
+.cv.tight .kpi{padding:15px 12px}
+.cv.tight .kpi .v{font-size:30px}
+.cv.tight .grid{gap:12px}
+.cv.tight .panel{padding:20px}
+.cv.tight table th,.cv.tight table td{padding:5px 10px;font-size:11.8px;line-height:1.5}
+
+/* 控件 */
+#prog{position:fixed;left:0;top:0;height:2px;background:linear-gradient(90deg,var(--red),var(--gold));z-index:210;transition:width .3s;width:0}
+#ctrl{
+  position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:200;
+  display:flex;align-items:center;gap:7px;padding:7px 9px;border-radius:100px;
+  background:rgba(17,21,28,.92);border:1px solid var(--line);backdrop-filter:blur(12px);
+  box-shadow:0 8px 30px rgba(0,0,0,.5);opacity:.3;transition:.25s;
+}
+#ctrl:hover{opacity:1}
+#ctrl button{
+  width:30px;height:30px;border-radius:50%;border:1px solid var(--line2);background:var(--card2);
+  color:var(--txt2);font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.18s;
+}
+#ctrl button:hover{color:#fff;background:var(--red);border-color:var(--red)}
+#ctrl .pg{min-width:66px;text-align:center;font-size:12.5px;color:var(--txt2);font-variant-numeric:tabular-nums}
+#ctrl .pg b{color:#fff}
+#hint{
+  position:fixed;right:16px;top:14px;z-index:200;font-size:11.5px;color:var(--txt3);
+  opacity:.45;transition:.25s;letter-spacing:.4px;
+}
+#hint:hover{opacity:1}
+#toc{position:fixed;inset:0;z-index:300;background:rgba(6,8,11,.975);overflow-y:auto;padding:24px 0 70px}
+#toc .th{max-width:1280px;margin:0 auto 16px;padding:0 30px;display:flex;align-items:baseline;gap:14px}
+#toc .th h3{font-size:15px;color:var(--txt);letter-spacing:1px}
+#toc .th span{font-size:12px;color:var(--txt3)}
+#toc .tg{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px;
+  max-width:1280px;margin:0 auto;padding:0 30px;
+}
+#toc .ti{
+  position:relative;height:134px;border:1px solid var(--line);border-radius:8px;overflow:hidden;
+  cursor:pointer;background:var(--card);transition:.2s;
+}
+#toc .ti:hover{border-color:var(--red);transform:translateY(-2px)}
+#toc .ti.cur{border-color:var(--gold);box-shadow:inset 0 0 0 1px rgba(217,164,65,.45)}
+#toc .ti .tw{position:absolute;top:0;left:0;width:1280px;transform-origin:top left}
+#toc .ti .nb{
+  position:absolute;left:0;bottom:0;right:0;background:rgba(6,8,11,.88);font-size:11px;
+  color:var(--txt3);padding:4px 8px;z-index:3;letter-spacing:.3px;
+}
+
+@media print{
+  body.ppt{overflow:visible;background:#0B0E13}
+  body.ppt>*{display:block}
+  #ctrl,#toc,#prog,#hint,#stage{display:none !important}
+  #deck{position:static;overflow:visible;display:block;background:#0B0E13}
+  .slide{position:relative !important;display:flex !important;visibility:visible !important;
+    inset:auto;width:1280px;height:720px;page-break-after:always;break-after:page;padding:0}
+  .slide .cv{transform:none !important;box-shadow:none}
+  .rv{opacity:1 !important;transform:none !important}
+  @page{size:1280px 720px;margin:0}
+}
+</style>
+</head>
+<body class="ppt">
+
+<nav>
+  <div class="nav-in">
+    <div class="brand"><span class="dot">龙</span>天财商龙 × 盛香亭</div>
+    <div class="nav-links">
+      <a href="#s1">01 看势</a>
+      <a href="#s2">02 火锅业态</a>
+      <a href="#s3">03 合作历程</a>
+      <a href="#s4">04 交付盘点</a>
+      <a href="#s5">05 能力演进</a>
+      <a href="#s6">06 直面不足</a>
+      <a href="#s7">07 2027战略</a>
+      <a href="#s8">08 服务承诺</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-tag">◆ 2026 年度工作汇报 · 暨 2027 年数字化战略</div>
+    <h1>存量时代，<br>把<span class="hl">每一家店</span>的利润守住</h1>
+    <div class="hero-sub">天财商龙 × 盛香亭集团 ｜ 年度汇报与共创会议</div>
+    <div class="hero-sub" style="font-size:15px;color:var(--txt3);margin-top:6px">
+      深耕餐饮 28 年 · 10 万+ 商户 · 367 座城市 · 7×24 小时本地化响应
+    </div>
+    <div class="hero-meta">
+      <div class="hero-chip"><b>351<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>需求池累计</span></div>
+      <div class="hero-chip"><b>68<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>2026 年新增需求</span></div>
+      <div class="hero-chip"><b>197<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>累计已交付</span></div>
+      <div class="hero-chip"><b>21<span style="font-size:13px;color:var(--txt2)"> 次</span></b><span>2026 年版本上线</span></div>
+      <div class="hero-chip"><b>64<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>商龙全年产品迭代</span></div>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="wrap">
+      <div>汇报方：天财商龙 &nbsp;·&nbsp; 汇报对象：盛香亭集团 &nbsp;·&nbsp; 2026.11</div>
+      <div class="scroll-hint"><i></i> 向下滚动</div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 看势 ============ -->
+<section id="s1">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">01 / 看势</div>
+      <h2>商龙眼中的 2026 中国餐饮</h2>
+      <p class="desc">
+        我们服务全国 <b>10 万余家餐饮商户</b>，横跨正餐、快餐、火锅、茶饮等全业态，每天处理海量真实经营数据。
+        下面这组数字不是行业报告里的二手结论，而是<b>商龙站在 28 年行业深耕的位置、从十万商户的真实经营盘面里看到的 2026</b>。
+      </p>
+    </div>
+
+    <!-- 商龙背书 -->
+    <div class="grid g4 rv" style="margin-bottom:22px">
+      <div class="card">
+        <div class="ic">🏛</div>
+        <h4>28 年行业深耕</h4>
+        <p>1998 年创立于天津，国家高新技术企业、双软认证企业。2015 年登陆新三板，是国内率先上市的餐饮信息化服务商。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🏪</div>
+        <h4>10 万+ 服务商户</h4>
+        <p>大董、新荣记、喜家德、呷哺呷哺、刘一手、小龙坎、陶陶居、Manner Coffee 等全业态头部品牌共同选择。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🌐</div>
+        <h4>367 座城市 · 91% 地级市</h4>
+        <p>500+ 本地服务商、22 家分子公司、4000+ 技术服务人员，构建覆盖全国的销售与服务网络，7×24 小时本地化响应。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🚀</div>
+        <h4>持续投入与升级</h4>
+        <p>2013 深创投 A 轮、2014 大众点评 B 轮、2025 拉卡拉 2.5 亿战略投资并启动国际化；2023 年荣膺中国餐饮 SaaS TOP10。</p>
+      </div>
+    </div>
+
+    <!-- 大盘 -->
+    <div class="panel rv" style="margin-bottom:22px">
+      <h3>一、大盘：收入在涨，门店在减，利润在薄</h3>
+      <div class="ph">数据来源：国家统计局、中国饭店协会、红餐产业研究院、中国连锁经营协会、极海品牌监测、中国烹饪协会（2026 年前三季度）</div>
+      <div class="grid g4">
+        <div class="kpi"><div class="v c-red">2.4<span style="font-size:18px">%</span></div><div class="l">前三季度餐饮收入增速</div><div class="s">41969 亿元，历史低位</div></div>
+        <div class="kpi"><div class="v c-red">-41<span style="font-size:18px">万</span></div><div class="l">半年全国门店净减少</div><div class="s">关 205.52 万 / 开 165 万</div></div>
+        <div class="kpi"><div class="v c-gold">16.9<span style="font-size:18px">个月</span></div><div class="l">新店平均存活周期</div><div class="s">行业整体存活率 79.53%</div></div>
+        <div class="kpi"><div class="v c-gold">25<span style="font-size:18px">%</span></div><div class="l">餐饮连锁化率</div><div class="s">连续六年提升</div></div>
+      </div>
+      <div class="grid g4" style="margin-top:18px">
+        <div class="kpi"><div class="v c-blue">32.6<span style="font-size:18px">元</span></div><div class="l">餐饮人均消费</div><div class="s">同比降幅由 -12.9% 收窄至 -2%</div></div>
+        <div class="kpi"><div class="v c-red">70<span style="font-size:18px">%+</span></div><div class="l">三项固定成本占营收</div><div class="s">食材 30-40% / 人工 20-30% / 房租 10-18%</div></div>
+        <div class="kpi"><div class="v c-gold">2-5<span style="font-size:18px">%</span></div><div class="l">中小餐饮平均净利率</div><div class="s">净利空间被极度压缩</div></div>
+        <div class="kpi"><div class="v c-red">89.3<span style="font-size:18px">%</span></div><div class="l">餐企未建数据中台</div><div class="s">数据资产的普遍空白</div></div>
+      </div>
+      <div class="callout">
+        <h4>商龙判断：增长的分母变了</h4>
+        <p>
+          2.4% 是<b>营收的增长</b>，不是利润的增长，更不是门店数的增长。门店总量半年净减 41 万家，而收入仍在涨 ——
+          这意味着增长已经完全来自<b>存量门店的客单价与效率提升</b>，而非新开门店的贡献。
+          规模不再自动带来利润，<b>效率才决定谁能在存量里分到更大的一块</b>。
+        </p>
+      </div>
+    </div>
+
+    <!-- 三个结构性判断 -->
+    <div class="grid g3 rv" style="margin-bottom:22px">
+      <div class="card">
+        <div class="ic">📉</div>
+        <h4>结构一：小店出清，中大型连锁扩张</h4>
+        <p>3–10 家门店的小连锁门店数同比 <b style="color:var(--red2)">-18.5%</b>；501–1000 家的中大型连锁逆势 <b style="color:var(--green)">+32.6%</b>。体量决定的议价空间和运营效率，在成本高压期被成倍放大。</p>
+      </div>
+      <div class="card">
+        <div class="ic">💰</div>
+        <h4>结构二：从价格战转向品质战</h4>
+        <p>人均消费降幅从 -12.9% 收窄至 -2%，低价补贴集体退潮。红餐判断：<b>具备体验溢价和品牌壁垒的赛道价格回暖最快</b>，同质化赛道仍要以价换量。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🤖</div>
+        <h4>结构三：数智化从工具变成基础设施</h4>
+        <p>AI 店长进入单店经营核心环节，炒菜机器人在中式快餐渗透率已达 <b>30%</b>。在净利率只有 2%–5% 的行业里，<b>任何一个百分点的效率改善都可能是生与死的差别</b>。</p>
+      </div>
+    </div>
+
+    <!-- 商龙监测数据 -->
+    <div class="panel rv">
+      <h3>二、商龙监测：经营公式正在被重写</h3>
+      <div class="ph">天财商龙全国商户经营数据监测（2026 年 4 月单店月均）</div>
+      <div class="grid g3">
+        <div class="kpi"><div class="v c-green">+4.46<span style="font-size:18px">%</span></div><div class="l">单店月均营收</div><div class="s">426,896 元 / 店 / 月</div></div>
+        <div class="kpi"><div class="v c-red">-2<span style="font-size:18px">%</span></div><div class="l">到客量</div><div class="s">客流仍在下行</div></div>
+        <div class="kpi"><div class="v c-gold">+6.6<span style="font-size:18px">%</span></div><div class="l">人均消费</div><div class="s">升至 91.42 元</div></div>
+      </div>
+      <div class="formula">
+        <div class="f-old"><div class="t">旧公式</div><div class="e">翻台率 × 桌数</div></div>
+        <div class="f-arw">→</div>
+        <div class="f-new"><div class="t">新公式</div><div class="e">客单价 × 复购率</div></div>
+      </div>
+      <div class="callout">
+        <h4>这组数据对盛香亭意味着什么</h4>
+        <p>
+          <b>客流在减少，单客价值在上升。</b>靠"等客上门、多翻几轮台"的增长方式已经失效，
+          接下来的增长必须来自两件事 —— <b>让每个客人多花一点（客单价）</b>，和 <b>让每个客人多来几次（复购率）</b>。
+          而这两件事，恰恰都是<b>数字化最擅长、也最该承担的责任</b>。这正是我们 2027 年战略的出发点。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 火锅业态 ============ -->
+<section id="s2">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">02 / 看势 · 业态专场</div>
+      <h2>把火锅单独拎出来看：<br>盛香亭正站在唯一正增长的赛道上</h2>
+      <p class="desc">
+        火锅是餐饮第一大业态，也是商龙服务门店最密集的业态之一（呷哺呷哺、刘一手、小龙坎、巴庄等）。
+        我们把火锅从大盘里单独拆出来，和盛香亭的发展轨迹做一次<b>逐条对位</b>。
+      </p>
+    </div>
+
+    <div class="panel rv" style="margin-bottom:22px">
+      <h3>火锅赛道：大盘在涨，门店在缩，价格在降</h3>
+      <div class="ph">数据来源：《2026 中国火锅消费市场大数据研究报告》（中国烹饪协会火锅专委会 × 辰智大数据）、红餐产业研究院《2026 火锅发展趋势报告》、美团餐饮大数据</div>
+      <div class="grid g4">
+        <div class="kpi"><div class="v c-green">6700<span style="font-size:18px">亿</span></div><div class="l">2026 火锅市场规模（预计）</div><div class="s">2025 年 6390 亿，+3.5%</div></div>
+        <div class="kpi"><div class="v c-red">45.6<span style="font-size:18px">万</span></div><div class="l">火锅门店总数</div><div class="s">创近七年新低，较峰值 -25.9%</div></div>
+        <div class="kpi"><div class="v c-red">19.0<span style="font-size:18px">%</span></div><div class="l">上半年关店率</div><div class="s">高于开店率 15.0% 共 4 个百分点</div></div>
+        <div class="kpi"><div class="v c-gold">54.7<span style="font-size:18px">元</span></div><div class="l">火锅人均消费</div><div class="s">较高点 68.7 元下滑 20.4%</div></div>
+      </div>
+      <div class="grid g4" style="margin-top:18px">
+        <div class="kpi"><div class="v c-blue">47.4<span style="font-size:18px">%</span></div><div class="l">人均 50 元以下门店占比</div><div class="s">80 元以上由 30.4% 收窄至 12.6%</div></div>
+        <div class="kpi"><div class="v c-gold">28.2<span style="font-size:18px">%</span></div><div class="l">火锅品类连锁率</div><div class="s">持续低于餐饮整体水平</div></div>
+        <div class="kpi"><div class="v c-red">7<span style="font-size:18px">成</span></div><div class="l">头部火锅品牌收缩或停滞</div><div class="s">规模不再天然构成优势</div></div>
+        <div class="kpi"><div class="v c-green">57.7<span style="font-size:18px">%</span></div><div class="l">下沉市场门店占比</div><div class="s">连续三年抬升，成为基本盘</div></div>
+      </div>
+    </div>
+
+    <!-- 唯一正增长 -->
+    <div class="callout rv" style="margin-bottom:24px;padding:28px 30px">
+      <h4 style="font-size:18px">◆ 关键发现：在所有细分品类集体收缩时，有一个品类在逆势爆发</h4>
+      <p style="font-size:15px">
+        <b style="color:var(--green);font-size:17px">涮涮锅门店增长 98.8%</b> —— 是火锅赛道<b>唯一正增长的细分品类</b>。
+        与之呼应：<b>小火锅消费场景中一人食占比达 44.2%</b>，<b>一人食火锅团购 GMV 同比暴涨 234%</b>，购买用户数增长 114%。
+        这不是偶然，是消费结构从"聚餐社交"向"日常简餐"迁移的直接结果。
+      </p>
+    </div>
+
+    <!-- 匹配矩阵 -->
+    <h3 style="font-size:22px;font-weight:800;margin:36px 0 8px" class="rv">行业结构性变化 × 盛香亭位置 逐条对位</h3>
+    <p style="font-size:14px;color:var(--txt2);margin-bottom:22px" class="rv">左侧为行业与赛道的结构性变化，右侧为盛香亭转转模式所处的位置及我们的判断</p>
+
+    <div class="rv">
+      <div class="mrow">
+        <div class="l"><div class="t">赛道结构</div><div class="d">涮涮锅是火锅唯一正增长细分品类，门店数 +98.8%</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">盛香亭<b>转转热卤 / 转转火锅</b>正是旋转小锅 + 碟型计价模型，<b>赛道选对了</b>。今年转转火锅门店由 167 家增至 261 家（在营口径），净增 94 家，增速 <b>+56%</b>，与赛道结构性红利高度同频。</div></div>
+      </div>
+      <div class="mrow">
+        <div class="l"><div class="t">消费场景</div><div class="d">一人食占小火锅 44.2%，一人食团购 GMV +234%</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">"一人一锅、回转自取、扫码零交流"完整承接 <b>i 人经济与单人用餐刚需</b>，是全行业吃这波红利最彻底的模型之一。这也意味着<b>点餐链路的顺畅度直接决定转化率</b>。</div></div>
+      </div>
+      <div class="mrow">
+        <div class="l"><div class="t">价格带</div><div class="d">火锅人均降至 54.7 元，50 元以下门店占 47.4%</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">盛香亭客单价落在 <b>33–45 元</b> 区间，稳居主流价格带且低于火锅人均水平，<b>质价比优势明确</b>。但价格带越薄，<b>损耗与成本管控的敏感度越高</b>。</div></div>
+      </div>
+      <div class="mrow">
+        <div class="l"><div class="t">人群与时段</div><div class="d">19–35 岁贡献 51.4% 火锅消费；暑期团购 +65%，21 点后 +72%</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">核心客群为<b>年轻、高频、重线上决策</b>的一代。他们从<b>刷内容 → 搜券 → 到店 → 扫码点餐 → 评价分享</b>全链路在线，<b>每一环都是数字化的战场</b>，也意味着<b>峰值流量的稳定性是生命线</b>。</div></div>
+      </div>
+      <div class="mrow">
+        <div class="l"><div class="t">消费决策</div><div class="d">63.5% 的消费者把"食材新鲜"作为品牌选择首要因素</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">盛香亭以 <b>明档化现做 + 打烊即废弃</b> 建立"新鲜"心智，这是<b>最值钱的信任资产</b>。但这个承诺目前<b>靠人工执行、缺可验证的过程数据</b>，一旦被个别门店击穿，反噬的是整个品牌。</div></div>
+      </div>
+      <div class="mrow">
+        <div class="l"><div class="t">政策与合规</div><div class="d">预制菜自主明示新规、重庆火锅条例推动数字化智能化建设</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">旋转业态的 <b>流转温控 + 防尘保洁</b> 是行业公认的食安难题。监管趋严 + 短视频放大，<b>食安已成为品牌信用的第一风险敞口</b>，也是数字化必须优先兜底的底线。</div></div>
+      </div>
+      <div class="mrow">
+        <div class="l"><div class="t">渠道结构</div><div class="d">外卖收入 +11.3% 远超堂食 2.4%，场景结构性迁移</div></div>
+        <div class="m"><div class="arw">⇄</div></div>
+        <div class="r"><div class="t">位置</div><div class="d">盛香亭堂食属性强、外卖占比低（2025 年基数约 10%），但 <b>外带、自提、商超渠道</b>已在今年启动。<b>多渠道订单的统一承接与库存同步</b>是明年必须补齐的能力。</div></div>
+      </div>
+    </div>
+
+    <div class="callout rv" style="margin-top:26px">
+      <h4>商龙的三点判断</h4>
+      <p>
+        第一，<b>赛道与模型的红利是真的</b>，盛香亭抓住了火锅行业唯一在增长的细分品类，这是最值得肯定的战略判断；<br>
+        第二，<b>增速带来了新的压力</b>——一年净增近百家门店，意味着运营一致性、食安一致性、人才复制的难度呈指数上升；<br>
+        第三，<b>数字化必须从"支撑开店"转向"支撑单店盈利"</b>。这也是我们为 2027 年设定的唯一主线。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 合作历程 ============ -->
+<section id="s3">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">03 / 并肩筑路</div>
+      <h2>合作历程与里程碑价值</h2>
+      <p class="desc">
+        本节面向盛香亭伙伴，系统梳理双方自 2023 年战略合作以来的完整历程。
+        我们不只列动作，更标注<b>每一个里程碑交付了什么、解决了什么、留下了什么可量化的价值</b>。
+      </p>
+    </div>
+
+    <div class="grid g2 rv">
+      <div class="panel">
+        <h3>合作全景</h3>
+        <div class="ph">「盛香亭集团」与商龙于 2023 年达成战略合作</div>
+        <p style="font-size:14px;color:var(--txt2);margin-bottom:18px">
+          先后完成「盛香亭热卤」「盛香亭转转火锅」两品牌的全面数字化升级，
+          覆盖 <b>餐饮中餐版、Windows 快餐版、移动 POS、龙管家、KDS、CRM8、外卖平台对接、团购平台对接、
+          平台会员对接、学生认证、商超对接、API 接口对接、电子发票</b> 等完整场景。
+        </p>
+        <ul class="ul">
+          <li><b>2023 / 6 / 26</b>　热卤项目签约，数字化合作正式启动</li>
+          <li><b>2023 / 9 / 6</b>　热卤品牌整体切换上线（餐饮、会员、外卖、团购）</li>
+          <li><b>2024 / 6 / 20</b>　转转火锅项目签约，第二品牌启动</li>
+          <li><b>2025 / 3 / 31</b>　转转火锅项目交付验收</li>
+          <li><b>2025 / 9 / 10</b>　分批切换上线转转火锅 61 家门店</li>
+          <li><b>2026</b>　进入运营深化期，需求池累计 351 项</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>验收里程碑的量化交付</h3>
+        <div class="ph">2025 年 3 月 31 日 · 转转火锅项目交付验收</div>
+        <div class="grid g2" style="gap:14px">
+          <div class="kpi" style="padding:20px"><div class="v c-red" style="font-size:34px">72</div><div class="l">P0 需求及问题</div></div>
+          <div class="kpi" style="padding:20px"><div class="v c-gold" style="font-size:34px">49</div><div class="l">P1 需求及问题</div></div>
+          <div class="kpi" style="padding:20px"><div class="v c-blue" style="font-size:34px">12</div><div class="l">P2 需求及问题</div></div>
+          <div class="kpi" style="padding:20px"><div class="v" style="font-size:34px;color:var(--txt2)">3</div><div class="l">P3 需求及问题</div></div>
+        </div>
+        <div style="text-align:center;margin-top:16px;padding:14px;background:var(--bg2);border-radius:10px;border:1px solid var(--line)">
+          <span style="font-size:13px;color:var(--txt3)">验收周期内累计闭环</span>
+          <span style="font-size:26px;font-weight:800;color:#fff;margin:0 8px">136</span>
+          <span style="font-size:13px;color:var(--txt3)">项需求与问题</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:22px;font-weight:800;margin:44px 0 22px" class="rv">完整历程时间轴</h3>
+    <div class="tl rv">
+      <div class="tl-item">
+        <div class="y">2023 年</div>
+        <h5>6 月 26 日 · 热卤项目签约</h5>
+        <p>盛香亭热卤与天财商龙达成数字化战略合作，正式启动热卤品牌系统切换工程。</p>
+        <div class="val">价值：从 0 到 1 建立<b>集团统一的数字化底座</b>，替代原有分散系统，为后续多品牌扩张奠定架构基础。</div>
+      </div>
+      <div class="tl-item">
+        <div class="y">2023 年</div>
+        <h5>6 月 27 日 – 9 月 6 日 · 并行切换期</h5>
+        <p>新开门店直接使用商龙系统，同时推进存量门店整体切换准备，双轨并行保障业务零中断。</p>
+        <div class="val">价值：<b>新开店即上商龙</b>，此后所有新增门店天然具备数字化能力，避免了"先开店、后补系统"的历史包袱。</div>
+      </div>
+      <div class="tl-item gold">
+        <div class="y">2023 年</div>
+        <h5>9 月 6 日 · 热卤整体切换上线</h5>
+        <p>餐饮、会员、外卖、团购四大板块一次性整体上线。</p>
+        <div class="val">价值：<b>一次性完成核心业务闭环</b>；9 月 12 日解决全部标签打印问题、9 月 19 日解决全部外卖问题，<b>两周内完成上线后收敛</b>。</div>
+      </div>
+      <div class="tl-item">
+        <div class="y">2024 年</div>
+        <h5>4–6 月 · 排队系统对接美团</h5>
+        <p>打通美团在线取号与排队进度查询，7 月完成 CRM 系统升级，8 月实现平台会员打通。</p>
+        <div class="val">价值：把<b>等位流量纳入可运营范围</b>；平台会员打通后，线上流量开始向品牌自有会员资产转化。</div>
+      </div>
+      <div class="tl-item">
+        <div class="y">2024 年</div>
+        <h5>6 月 20 日 · 转转火锅项目签约</h5>
+        <p>第二品牌启动数字化建设，适配旋转小锅、碟型计价、后支付等独有业务模型。</p>
+        <div class="val">价值：<b>多品牌架构复用</b>，验证商龙系统对"非标模型"的适配能力，为后续子品牌拓展提供样板。</div>
+      </div>
+      <div class="tl-item gold">
+        <div class="y">2025 年</div>
+        <h5>3 月 31 日 · 转转火锅项目交付验收</h5>
+        <p>转转火锅项目正式验收，期间需求及问题完成：P0 72 个、P1 49 个、P2 12 个、P3 3 个。</p>
+        <div class="val">价值：累计闭环 <b>136 项</b>需求与问题，转转火锅全业务链路（点餐、出品、收银、会员、报表）正式具备规模化复制条件。</div>
+      </div>
+      <div class="tl-item">
+        <div class="y">2025 年</div>
+        <h5>9 月 10 日 · 转转火锅 61 家门店分批切换上线</h5>
+        <p>采用分批切换策略完成 61 家门店上线；9 月完成淘宝闪购对接、糖水铺 KDS 叫号上线。</p>
+        <div class="val">价值：<b>规模化复制能力得到验证</b>——从单店到 61 店，系统承载与交付节奏经受住了扩张速度的考验。</div>
+      </div>
+      <div class="tl-item">
+        <div class="y">2025 年</div>
+        <h5>10–11 月 · 菜谱切换与商龙云 2.0 升级</h5>
+        <p>10 月完成门店菜谱切换，11 月完成商龙云 2.0 切换，集团化管理能力再上台阶。</p>
+        <div class="val">价值：总部对门店的<b>管控颗粒度与发布效率</b>显著提升，为 2026 年门店数量翻倍提供了总部侧支撑。</div>
+      </div>
+      <div class="tl-item">
+        <div class="y">2025 年 12 月</div>
+        <h5>预定里程碑：高德扫街 · 龙闪屏 · CRM8 MA 画布</h5>
+        <p>三项能力纳入年度规划，指向本地生活流量承接与自动化营销。</p>
+        <div class="val">价值：从"把业务搬上线"进入<b>"主动运营流量与会员"</b>阶段，合作重心开始从系统建设转向经营赋能。</div>
+      </div>
+      <div class="tl-item gold">
+        <div class="y">2026 年</div>
+        <h5>运营深化期 · 需求池累计 351 项</h5>
+        <p>合作进入深水区：效期管理、会员权益体系、KDS 智能出品、开放平台、多品牌中台、商超渠道等全面铺开。</p>
+        <div class="val">价值：合作形态由<b>"项目交付"转为"持续共创"</b>——盛香亭的个性化需求正在被商龙沉淀为产品能力，反哺全行业。</div>
+      </div>
+    </div>
+
+    <div class="callout rv" style="margin-top:30px">
+      <h4>致盛香亭伙伴：我们的合作已经走完了"建系统"阶段</h4>
+      <p>
+        过去三年半，双方完成了<b>两个品牌、全业务场景、数百家门店</b>的数字化建设，累计闭环需求与问题超过 <b>330 项</b>。
+        系统层面已经铺满。接下来的命题不再是"还有什么功能没上"，而是 ——
+        <b>已经建好的系统，有没有真正转化成单店的利润、品牌的一致性和可复制的增长</b>。
+        这正是我们为 2027 年准备的答案。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 交付盘点 ============ -->
+<section id="s4">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">04 / 2026 交付盘点</div>
+      <h2>这一年，我们一共做了什么</h2>
+      <p class="desc">
+        以下数据来自双方共同维护的<b>需求跟踪矩阵</b>与<b>功能上线时间表</b>，逐条可追溯。
+        我们不回避过程中的滞后与未闭环项，完整呈现全貌。
+      </p>
+    </div>
+
+    <div class="grid g4 rv" style="margin-bottom:22px">
+      <div class="kpi"><div class="v">351</div><div class="l">需求池累计需求</div><div class="s">2024/12 起全量登记</div></div>
+      <div class="kpi"><div class="v c-red">68</div><div class="l">2026 年新增需求</div><div class="s">1–10 月</div></div>
+      <div class="kpi"><div class="v c-green">197</div><div class="l">累计已交付</div><div class="s">已解决 162 + 商已完成 35</div></div>
+      <div class="kpi"><div class="v c-gold">21</div><div class="l">2026 年版本上线次数</div><div class="s">1 月 – 8 月</div></div>
+    </div>
+
+    <div class="grid g2 rv" style="margin-bottom:22px">
+      <div class="panel">
+        <h3>2026 年新增需求的月度分布</h3>
+        <div class="ph">按月统计新增需求提出量（1–10 月共 68 项）</div>
+        <div class="bars">
+          <div class="bar-row"><div class="n">1 月</div><div class="track"><div class="fill" style="width:66%;background:linear-gradient(90deg,#8B1A1A,var(--red))">10</div></div><div class="v">10</div></div>
+          <div class="bar-row"><div class="n">2 月</div><div class="track"><div class="fill" style="width:27%;background:linear-gradient(90deg,#8B1A1A,var(--red))">4</div></div><div class="v">4</div></div>
+          <div class="bar-row"><div class="n">3 月</div><div class="track"><div class="fill" style="width:100%;background:linear-gradient(90deg,#8B1A1A,var(--red2))">15</div></div><div class="v">15</div></div>
+          <div class="bar-row"><div class="n">4 月</div><div class="track"><div class="fill" style="width:73%;background:linear-gradient(90deg,#8B1A1A,var(--red))">11</div></div><div class="v">11</div></div>
+          <div class="bar-row"><div class="n">5 月</div><div class="track"><div class="fill" style="width:53%;background:linear-gradient(90deg,#8B1A1A,var(--red))">8</div></div><div class="v">8</div></div>
+          <div class="bar-row"><div class="n">6 月</div><div class="track"><div class="fill" style="width:33%;background:linear-gradient(90deg,#8B1A1A,var(--red))">5</div></div><div class="v">5</div></div>
+          <div class="bar-row"><div class="n">7 月</div><div class="track"><div class="fill" style="width:33%;background:linear-gradient(90deg,#8B1A1A,var(--red))">5</div></div><div class="v">5</div></div>
+          <div class="bar-row"><div class="n">8 月</div><div class="track"><div class="fill" style="width:27%;background:linear-gradient(90deg,#8B1A1A,var(--red))">4</div></div><div class="v">4</div></div>
+          <div class="bar-row"><div class="n">9 月</div><div class="track"><div class="fill" style="width:27%;background:linear-gradient(90deg,#8B1A1A,var(--red))">4</div></div><div class="v">4</div></div>
+          <div class="bar-row"><div class="n">10 月</div><div class="track"><div class="fill" style="width:13%;background:linear-gradient(90deg,#8B1A1A,var(--red))">2</div></div><div class="v">2</div></div>
+        </div>
+        <p style="font-size:12.5px;color:var(--txt3);margin-top:16px">
+          3–4 月为需求高峰（合计 26 项），主要集中于会员权益体系等基础能力的集中建设期；下半年需求结构趋于平稳，转向精细化打磨。
+        </p>
+      </div>
+      <div class="panel">
+        <h3>2026 年需求的系统分布</h3>
+        <div class="ph">按所属系统归类（54 项）</div>
+        <div class="bars">
+          <div class="bar-row"><div class="n">会员 / 积分</div><div class="track"><div class="fill" style="width:100%;background:linear-gradient(90deg,#7A5C14,var(--gold))">12</div></div><div class="v">12</div></div>
+          <div class="bar-row"><div class="n">CRM8</div><div class="track"><div class="fill" style="width:100%;background:linear-gradient(90deg,#7A5C14,var(--gold))">12</div></div><div class="v">12</div></div>
+                    <div class="bar-row"><div class="n">智慧餐厅</div><div class="track"><div class="fill" style="width:75%;background:linear-gradient(90deg,#1B4B7A,var(--blue))">9</div></div><div class="v">9</div></div>
+          <div class="bar-row"><div class="n">商龙云 2.0</div><div class="track"><div class="fill" style="width:58%;background:linear-gradient(90deg,#1B4B7A,var(--blue))">7</div></div><div class="v">7</div></div>
+          <div class="bar-row"><div class="n">餐饮前台</div><div class="track"><div class="fill" style="width:58%;background:linear-gradient(90deg,#1B4B7A,var(--blue))">7</div></div><div class="v">7</div></div>
+          <div class="bar-row"><div class="n">移动银台 pro</div><div class="track"><div class="fill" style="width:33%;background:linear-gradient(90deg,#5B2E7A,var(--purple))">4</div></div><div class="v">4</div></div>
+          <div class="bar-row"><div class="n">移动 POS</div><div class="track"><div class="fill" style="width:17%;background:linear-gradient(90deg,#5B2E7A,var(--purple))">2</div></div><div class="v">2</div></div>
+                    <div class="bar-row"><div class="n">开放平台</div><div class="track"><div class="fill" style="width:8%;background:linear-gradient(90deg,#5B2E7A,var(--purple))">1</div></div><div class="v">1</div></div>
+        </div>
+        <div class="callout" style="margin-top:18px">
+          <h4>需求结构透露的信号</h4>
+          <p><b>会员 / 积分 + CRM8 合计 24 项，占 44%</b>，是今年投入最集中的方向 —— 说明盛香亭的战略重心已经明确转向<b>会员资产运营</b>。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel rv" style="margin-bottom:22px">
+      <h3>2026 年功能上线时间表（21 次发版 · 逐条可追溯）</h3>
+      <table>
+        <thead><tr><th style="width:90px">上线时间</th><th style="width:110px">模块</th><th>更新内容</th></tr></thead>
+        <tbody>
+          <tr><td>2026/1/12</td><td><span class="tag">前台收银</span></td><td><b>自提单超时自动完成</b> — 提供新打印模板，水吧小票机自动出单，出品后扫小票二维码完成出品</td></tr>
+          <tr><td>2026/1/12</td><td><span class="tag">龙管家</span></td><td><b>翻台率支持按消费区域筛选</b>（此前仅统计堂食业务）</td></tr>
+          <tr><td>2026/2/6</td><td><span class="tag">前台收银</span></td><td><b>线上线下沽清同步</b> — 解决线上线下品相数据不一致问题</td></tr>
+          <tr><td>2026/2/6</td><td><span class="tag">前台收银</span></td><td><b>KDS 可查看未下单订单</b></td></tr>
+          <tr><td>2026/2/28</td><td><span class="tag">移动银台</span></td><td><b>免开台核销优惠券</b> — 顾客出示券码，收银员无需开台直接核销，适配节气活动场景</td></tr>
+          <tr><td>2026/3/30</td><td><span class="tag">前台收银</span></td><td><b>KDS 低概率无法消单</b> 修复</td></tr>
+          <tr><td>2026/3/30</td><td><span class="tag">龙管家</span></td><td><b>门店排行增加目标达成率</b></td></tr>
+          <tr><td>2026/3/30</td><td><span class="tag">扫码点餐</span></td><td><b>积分商城券兑换支持门店搜索</b></td></tr>
+          <tr><td>2026/3/30</td><td><span class="tag">报表中心</span></td><td><b>增加用餐时间指标及环比</b> — 时段开台率、时段用餐时间报表</td></tr>
+          <tr><td>2026/4/30</td><td><span class="tag">移动银台</span></td><td><b>已结账单按金额 / 时间段 / 桌号检索</b></td></tr>
+          <tr><td>2026/4/30</td><td><span class="tag">龙管家</span></td><td><b>券使用记录</b></td></tr>
+          <tr><td>2026/4/30</td><td><span class="tag">前台收银</span></td><td><b>已结账单可查会员手机号</b></td></tr>
+          <tr><td>2026/5/8</td><td><span class="tag">龙管家</span></td><td><b>门店复购统计表</b> — 复购会员数、消费大于 1 次的会员数等</td></tr>
+          <tr><td>2026/5/8</td><td><span class="tag">龙管家</span></td><td><b>单品销售排行</b></td></tr>
+          <tr><td>2026/5/8</td><td><span class="tag">报表中心</span></td><td><b>门店沽清信息表、限量信息表</b></td></tr>
+          <tr><td>2026/6/16</td><td><span class="tag">移动银台</span></td><td><b>已结账单支持按桌号检索</b></td></tr>
+          <tr><td>2026/6/16</td><td><span class="tag">龙管家</span></td><td><b>查看优惠明细（券）</b></td></tr>
+          <tr><td>2026/6/16</td><td><span class="tag">龙管家</span></td><td><b>一元券包订单统计</b> — 购买与退款订单的数量和金额</td></tr>
+          <tr><td>2026/8/4</td><td><span class="tag">龙管家</span></td><td><b>已结账单明细可查看卡券明细</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid g2 rv">
+      <div class="panel">
+        <h3>需求闭环状态全景（351 项）</h3>
+        <div class="ph">全量需求当前状态分布</div>
+        <div class="bars">
+          <div class="bar-row"><div class="n">已解决</div><div class="track"><div class="fill" style="width:100%;background:linear-gradient(90deg,#1E6B2B,var(--green))">162</div></div><div class="v">162</div></div>
+          <div class="bar-row"><div class="n">商：已完成</div><div class="track"><div class="fill" style="width:22%;background:linear-gradient(90deg,#1E6B2B,#5FC96C)">35</div></div><div class="v">35</div></div>
+          <div class="bar-row"><div class="n">跟进中</div><div class="track"><div class="fill" style="width:34%;background:linear-gradient(90deg,#7A5C14,var(--gold))">55</div></div><div class="v">55</div></div>
+          <div class="bar-row"><div class="n">终止</div><div class="track"><div class="fill" style="width:37%;background:linear-gradient(90deg,#3A4150,#5A6474)">60</div></div><div class="v">60</div></div>
+          <div class="bar-row"><div class="n">待验证</div><div class="track"><div class="fill" style="width:6%;background:linear-gradient(90deg,#1B4B7A,var(--blue))">10</div></div><div class="v">10</div></div>
+          <div class="bar-row"><div class="n">降级</div><div class="track"><div class="fill" style="width:10%;background:linear-gradient(90deg,#3A4150,#5A6474)">17</div></div><div class="v">17</div></div>
+          <div class="bar-row"><div class="n">商：已沟通</div><div class="track"><div class="fill" style="width:3%;background:linear-gradient(90deg,#1B4B7A,var(--blue))">5</div></div><div class="v">5</div></div>
+          <div class="bar-row"><div class="n">待上线</div><div class="track"><div class="fill" style="width:2.5%;background:linear-gradient(90deg,#1B4B7A,var(--blue))">4</div></div><div class="v">4</div></div>
+          <div class="bar-row"><div class="n">暂停 / 已确认</div><div class="track"><div class="fill" style="width:2%;background:linear-gradient(90deg,#3A4150,#5A6474)">3</div></div><div class="v">3</div></div>
+        </div>
+        <p style="font-size:12.5px;color:var(--txt3);margin-top:16px">
+          终止 60 项与降级 17 项，多为双方在沟通后达成"现有方案已覆盖"或"优先级后置"共识后共同关闭，非弃置。
+        </p>
+      </div>
+      <div class="panel">
+        <h3>2026 年优先级响应</h3>
+        <div class="ph">新增 68 项需求的优先级构成</div>
+        <div class="grid g3" style="gap:14px;margin-bottom:20px">
+          <div class="kpi" style="padding:20px"><div class="v c-red" style="font-size:32px">54</div><div class="l">P0 紧急</div><div class="s">占比 79%</div></div>
+          <div class="kpi" style="padding:20px"><div class="v c-gold" style="font-size:32px">13</div><div class="l">P1 重要</div><div class="s">占比 19%</div></div>
+          <div class="kpi" style="padding:20px"><div class="v c-blue" style="font-size:32px">1</div><div class="l">P2 一般</div><div class="s">占比 2%</div></div>
+        </div>
+        <h4 style="font-size:15px;color:#fff;margin-bottom:12px">五条交付主线</h4>
+        <ul class="ul">
+          <li><b>会员权益体系</b> — 学生卡认证、生日权益门槛、权益卡与积分商城关联、券包退款流程</li>
+          <li><b>CRM8 与小程序体验</b> — 菜品置顶、外带打包袋、促销价/会员价标签、开发票门店方案</li>
+          <li><b>KDS 智能出品优化</b> — 未下单订单可见、低概率无法消单修复、出餐延迟治理</li>
+          <li><b>数据决策能力</b> — 复购统计表、单品销售排行、沽清/限量信息表、用餐时间指标</li>
+          <li><b>开放能力建设</b> — 开放平台数据抓取、沽清记录表接口，为集团自有系统对接铺路</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 能力演进 ============ -->
+<section id="s5">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">05 / 能力演进</div>
+      <h2>商龙 2026：会员端规划与全年产品迭代</h2>
+      <p class="desc">
+        盛香亭提出的每一个个性化需求，我们都不只是"改一次"。
+        商龙的做法是把它<b>沉淀为产品能力，再反哺给全行业 10 万商户</b> —— 这也是选择头部服务商的真正价值：
+        <b>你不是在为一次定制付费，而是在为一个持续进化的产品体系投票</b>。
+      </p>
+    </div>
+
+    <div class="grid g4 rv" style="margin-bottom:22px">
+      <div class="kpi"><div class="v c-red">64</div><div class="l">2026 全年产品亮点功能</div><div class="s">吾享产品 1–12 月迭代</div></div>
+      <div class="kpi"><div class="v c-gold">12</div><div class="l">秋季发布会会员端新能力</div><div class="s">CRM 营销 + 点餐体验</div></div>
+      <div class="kpi"><div class="v c-green">6</div><div class="l">战略事业部</div><div class="s">客成/数据/快餐/厨房/龙决策/海外</div></div>
+      <div class="kpi"><div class="v c-blue">2.5<span style="font-size:18px">亿</span></div><div class="l">2025 拉卡拉战略投资</div><div class="s">研发与国际化投入保障</div></div>
+    </div>
+
+    <div class="panel rv" style="margin-bottom:22px">
+      <h3>2026 秋季发布会 · 会员端规划能力清单</h3>
+      <div class="ph">以下能力可直接应用于盛香亭会员运营体系，建议纳入 2027 年落地排期</div>
+      <div class="grid g3">
+        <div class="card">
+          <div class="ic">👨‍👩‍👧</div>
+          <h4>小程序亲子报名活动</h4>
+          <p>亲子客群消费占比持续上涨，支持顾客在小程序完成亲子活动报名，提前锁定家庭客群到店；持续沉淀家庭类会员资产，拉动会员留存与营收。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🎯</div>
+          <h4>小程序答题有礼活动</h4>
+          <p>以问答闯关形式传递品牌理念与新品信息，激发用户挑战意愿，搭配答题奖励拉动复购，解决"单纯推送信息易被忽略"的问题。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🎁</div>
+          <h4>优惠券自选礼包</h4>
+          <p>会员可自主从多张券中挑选心仪券品，把选择权交给用户；券品更贴合真实消费偏好，显著提高领券意愿与核销率。</p>
+        </div>
+        <div class="card">
+          <div class="ic">📞</div>
+          <h4>智能语音外呼</h4>
+          <p>解决短信打开率 &lt;5%、公众号推送被淹没、人工外呼成本高的痛点。支持标签化筛选、自动化批量外呼、7×24 触达，效率提升 10 倍以上。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🖼</div>
+          <h4>贴图号</h4>
+          <p>打通微信图文，将微信贴图同步至小程序页面展示宣传，食客可跳转宣发图文进行评价与分享，零成本扩大门店曝光。</p>
+        </div>
+        <div class="card">
+          <div class="ic">⭐</div>
+          <h4>常点菜品 / 收藏菜品</h4>
+          <p>系统自动汇总过往下单菜品，同时支持用户主动收藏；降低点餐决策成本，并为"用户菜品偏好画像"提供数据基础。</p>
+        </div>
+        <div class="card">
+          <div class="ic">💳</div>
+          <h4>点餐页会员组件</h4>
+          <p>针对点餐页会员组件做多元素展示，每项数据可穿透查看详情规则，帮助食客了解自身权益价值，驱动主动升级。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🏷</div>
+          <h4>菜品标签自定义样式</h4>
+          <p>例如"非预制"标签用红底白字突出，常规标签统一白底黑字。差异化视觉降低信息读取成本，兼顾突出与美观。</p>
+        </div>
+        <div class="card">
+          <div class="ic">💰</div>
+          <h4>不同区域不同价格 / 会员价</h4>
+          <p>支持同一菜品在不同消费区域设置不同销售价与会员价，适配包厢/散台、区域差异化定价等经营场景。</p>
+        </div>
+        <div class="card">
+          <div class="ic">📢</div>
+          <h4>点餐页全屏广告可挂菜品</h4>
+          <p>抢占扫码后第一眼的高流量曝光位，广告内直接加菜入购物车，缩短点餐路径，拉动主推菜品下单转化率。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🌏</div>
+          <h4>菜品名称中英双语</h4>
+          <p>点餐页同时展示中英文名，适配外籍食客与国际化商圈门店需求，为未来出海或高端商圈拓店预留能力。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🧩</div>
+          <h4>2026 全年 64 项产品迭代</h4>
+          <p>覆盖点餐、出品、收银、会员、报表、供应链、外卖全链路，包含 M 选 N 领券、券有效期按小时失效、消费返现周期限制、出餐宝等经营向能力。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel rv">
+      <h3>盛香亭的需求 → 商龙的产品：共创正在发生</h3>
+      <div class="ph">这一年里，盛香亭提出的问题，有多少已经变成商龙服务全行业的通用能力</div>
+      <table>
+        <thead><tr><th style="width:210px">盛香亭提出的需求</th><th style="width:80px">时间</th><th>商龙沉淀为产品能力</th><th style="width:80px">状态</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>小程序不同品项显示"促销价""会员价"</b></td>
+            <td>2026/5</td>
+            <td>秋季发布会 <b>不同区域不同菜品销售价格、会员价</b>；9 月 <b>扫码点餐支持不同区域不同价格</b></td>
+            <td><span class="tag t-green">已产品化</span></td>
+          </tr>
+          <tr>
+            <td><b>【智慧餐厅】菜品标签颜色字体需求</b></td>
+            <td>2026/3</td>
+            <td>2 月 <b>不同菜品标签显示不同颜色</b>；秋季发布会 <b>菜品标签支持自定义样式</b></td>
+            <td><span class="tag t-green">已交付</span></td>
+          </tr>
+          <tr>
+            <td><b>生日权益需设置消费/积分门槛</b>（防薅羊毛）</td>
+            <td>2026/7</td>
+            <td>8 月 <b>消费返现金额新增按周期限制</b>、<b>券有效期支持按小时失效</b>、<b>M 选 N 领券</b></td>
+            <td><span class="tag t-gold">能力已备</span></td>
+          </tr>
+          <tr>
+            <td><b>积分商城自提点需与门店关联隔离</b></td>
+            <td>2026/2</td>
+            <td>1 月 <b>聚合积分商城支持不同等级会员购买不同商品</b>；积分商城商品可购买卡型配置</td>
+            <td><span class="tag t-gold">能力已备</span></td>
+          </tr>
+          <tr>
+            <td><b>【扫码点餐】常点/收藏类体验诉求</b></td>
+            <td>2026</td>
+            <td>8 月 <b>菜品收藏</b>；秋季发布会 <b>常点菜品</b>、<b>收藏菜品</b></td>
+            <td><span class="tag t-green">已产品化</span></td>
+          </tr>
+          <tr>
+            <td><b>小程序开发票需对应门店发票方案</b></td>
+            <td>2026/6</td>
+            <td>7 月 <b>开发票会员卡导入开票增加备注</b>；电子发票多场景支持</td>
+            <td><span class="tag t-gold">能力已备</span></td>
+          </tr>
+          <tr>
+            <td><b>【餐饮前台】恶意下单防范</b></td>
+            <td>2026/4</td>
+            <td>1 月 <b>桌边付同桌分多笔支付时会员资产使用限制</b>（防黄牛换会员薅羊毛）</td>
+            <td><span class="tag t-gold">部分覆盖</span></td>
+          </tr>
+          <tr>
+            <td><b>【开放平台】申请数据抓取 / 沽清记录表接口</b></td>
+            <td>2026/3</td>
+            <td><b>沽清记录表接口已交付</b>（5/11）；开放平台能力持续开放</td>
+            <td><span class="tag t-green">已交付</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <h4>这就是选择与头部服务商合作的意义</h4>
+        <p>
+          盛香亭的每一个需求，都会进入商龙的产品评审体系。<b>被验证有价值的需求会被产品化</b>，
+          随着 10 万商户的使用不断迭代成熟，再回流给盛香亭。
+          这意味着 —— <b>你们提的需求不会随着项目结束而失效，而是会随着整个行业的使用持续变强</b>。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 直面不足 ============ -->
+<section id="s6">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">06 / 直面不足</div>
+      <h2>这一年我们做得不好的地方</h2>
+      <p class="desc">
+        年度汇报如果只讲成绩，就失去了复盘的意义。
+        这一节<b>只讲问题和我们的责任</b> —— 发生了什么、为什么发生、我们改了什么、以及如何保证不再发生。
+      </p>
+    </div>
+
+    <div class="panel rv" style="margin-bottom:22px;border-color:rgba(212,42,42,.28)">
+      <h3 style="display:flex;align-items:center;gap:10px">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--red);display:inline-block"></span>
+        2026 年重大事故复盘
+      </h3>
+      <div class="ph">以下依据我司 2026 年 9 月 16 日出具的《关于盛香亭美团点评团购券积分虚增事宜的情况说明》</div>
+
+      <div class="grid g4" style="margin-bottom:20px">
+        <div class="kpi"><div class="v c-red">140<span style="font-size:18px">万</span></div><div class="l">虚增会员积分</div><div class="s">统计区间内累计</div></div>
+        <div class="kpi"><div class="v c-gold"><span style="font-size:26px">2026.1.1 – 9.10</span></div><div class="l">统一统计区间</div><div class="s">实际自 2025 年 10 月起陆续产生</div></div>
+        <div class="kpi"><div class="v c-red">2025<span style="font-size:18px">/10 底</span></div><div class="l">问题引入时点</div><div class="s">新版本发布触发</div></div>
+        <div class="kpi"><div class="v c-green">10<span style="font-size:18px">家门店</span></div><div class="l">补偿方案</div><div class="s">赠送 1 年期续费</div></div>
+      </div>
+
+      <table style="margin-bottom:6px">
+        <thead><tr><th style="width:130px">六要素</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>事故定性</b></td>
+            <td><span class="tag t-red">业务规则类缺陷</span> 非系统宕机类故障，由积分计算口径变更引发，具<b>隐蔽性</b>——系统运行正常、账单正常，但会员权益被超额发放</td>
+          </tr>
+          <tr>
+            <td><b>触发时间</b></td>
+            <td><b>2025 年 10 月底</b>新版本发布，积分计算口径由「按券购买金额」调整为「按券面值」。因各门店系统升级时间不同（部分 2025/10、部分 2025/11、部分 2026/1 完成），虚增影响<b>自 2025 年 10 月起陆续产生</b></td>
+          </tr>
+          <tr>
+            <td><b>影响范围</b></td>
+            <td>以 <b>2026 年 1 月 1 日 – 9 月 10 日</b> 为统一统计区间，对该区间内使用美团点评团购券且已向会员发放积分的<b>全部账单</b>进行查询统计，累计虚增会员积分 <b>140 万分</b></td>
+          </tr>
+          <tr>
+            <td><b>根因分析</b></td>
+            <td>三层次递进：<b>① 历史规则差异</b>（美团券按购买金额 / 抖音券按面值，两套逻辑长期并存）→ <b>② 统一优化调整</b>（2025 年 9 月改为用户可自定义）→ <b>③ 默认逻辑变更</b>（新版发布后未设定的门店默认按券面值积分）。详见下方根因链</td>
+          </tr>
+          <tr>
+            <td><b>处理方案</b></td>
+            <td>因虚增积分<b>无法进行扣减</b>，且部分会员已使用、部分尚未使用，经协商：由我司<b>赠送 10 个门店 1 年期续费</b>，在第四季度续费中进行续费门店数量扣减</td>
+          </tr>
+          <tr>
+            <td><b>改进承诺</b></td>
+            <td>加强系统需求<b>上线前的评审与测试验证</b>，避免同类问题再次发生（详见下方「从这一个案，到一套机制」）</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 style="margin:26px 0 14px;font-size:16px;color:var(--gold)">◆ 根因链：一个默认值，为什么会影响近一年</h4>
+      <div class="grid g3" style="margin-bottom:22px">
+        <div class="card" style="border-color:rgba(212,42,42,.22)">
+          <div class="ic">①</div>
+          <h4>历史规则差异</h4>
+          <p>美团点评团购券开发较早，既定积分逻辑为<b>按券购买金额</b>积分；抖音券开发较晚，既定逻辑为<b>按券面值</b>积分。两套积分规则长期并存，埋下不一致的隐患。</p>
+        </div>
+        <div class="card" style="border-color:rgba(212,42,42,.22)">
+          <div class="ic">②</div>
+          <h4>规则统一优化</h4>
+          <p>2025 年 9 月，我司发现美团券与抖音券积分逻辑不一致，遂优化调整，将积分方式改为<b>用户可自定义</b>——可自行设定按券面值或按购买金额积分。</p>
+        </div>
+        <div class="card" style="border-color:rgba(212,42,42,.22)">
+          <div class="ic">③</div>
+          <h4>默认逻辑变更</h4>
+          <p>2025 年 10 月底新版本发布后，美团券与抖音券<b>如未设定自定义方式，则默认按券面值积分</b>。默认值的变化直接导致美团点评团购券会员积分虚增。</p>
+        </div>
+      </div>
+
+      <div class="callout" style="border-color:rgba(212,42,42,.3);background:linear-gradient(135deg,rgba(212,42,42,.08),rgba(212,42,42,.02))">
+        <h4 style="color:var(--red)">我们要正视的两个问题</h4>
+        <p>
+          <b>第一，这是我们的责任，不是客户的使用问题。</b>
+          在统一积分规则时，我们没有为存量客户做好<b>默认值的兼容性保护</b>——新默认值不应在客户未感知的情况下覆盖其历史经营行为。<br><br>
+          <b>第二，比缺陷本身更严重的是：它潜伏了近 11 个月才被收口。</b>
+          从 2025 年 10 月版本发布，到 2026 年 9 月完成全量核查，期间缺少对<b>权益类数据异常的主动监测</b>。
+          系统没报警、业务没察觉，问题靠累积才暴露——<b>这才是我们最该补的短板。</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="panel rv" style="margin-bottom:22px;border-color:rgba(63,185,80,.25)">
+      <h3 style="display:flex;align-items:center;gap:10px">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block"></span>
+        从这一个案，到一套机制 · 四条改进措施
+      </h3>
+      <div class="ph">个案会修复，机制才会长存。以下四条已纳入 2027 年服务承诺与 Q1 落地计划</div>
+      <div class="grid g2">
+        <div class="card">
+          <div class="ic">📐</div>
+          <h4>一、规则变更影响评估清单</h4>
+          <p>凡涉及<b>积分、券核销、价格、折扣、储值</b>等经营规则的产品变更，上线前必须输出《存量客户影响评估报告》，明确默认值口径、兼容策略、受影响门店数量与告知方案，评审通过方可发布。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🛡</div>
+          <h4>二、默认值兼容性保护</h4>
+          <p>存量客户版本升级时，<b>默认沿用原有业务逻辑</b>，不以新默认值覆盖历史行为。确需变更的，走<b>客户确认 + 灰度公告 + 分批验证</b>流程，杜绝"悄悄改变"。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🔔</div>
+          <h4>三、权益类数据月度核对与告警</h4>
+          <p>对积分发放、券核销、储值变动等<b>权益/资金类数据建立月度例行核对</b>，并设置异常波动阈值告警（环比突变自动触发）。不让问题靠累积近一年才被发现。</p>
+        </div>
+        <div class="card">
+          <div class="ic">🧪</div>
+          <h4>四、上线前专项评审与测试验证</h4>
+          <p>权益类规则变更纳入<b>专项测试用例库</b>，覆盖「多券种 × 多门店 × 多版本」组合场景；发布前双人评审 + 发版后 72 小时重点监测。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel rv" style="margin-bottom:22px">
+      <h3>2025 年故障复盘及改善：承诺是否兑现</h3>
+      <div class="ph">对照上一年度汇报中承诺的改善措施，逐条回看实际效果 —— 这是我们对待故障的一贯方式</div>
+      <table>
+        <thead><tr><th style="width:110px">时间</th><th style="width:120px">故障类型</th><th>根因</th><th style="width:290px">改善措施与验证</th><th style="width:70px">等级</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>2025/3/8</b></td>
+            <td>线上业务故障</td>
+            <td>扫码点餐请求接近历史最高峰时，<b>未提前触发弹性扩容</b>，造成两个服务节点异常、请求响应变慢</td>
+            <td>故障后立即对菜品服务完成扩容；复盘线上部署环境，从网关入口到菜品服务完成<b>服务拆分</b>，减少核心业务线互相依赖，完善业务线隔离</td>
+            <td><span class="tag t-red">P0</span></td>
+          </tr>
+          <tr>
+            <td><b>2025/6/26</b></td>
+            <td>外卖业务故障</td>
+            <td>京东外卖业务存在<b>服务循环调用</b>，大量请求涌入时该服务压力过大，导致外卖入口拥堵堆积，影响其他平台接单</td>
+            <td>解决循环调用问题并优化接单流程；开展真实场景压测。<b>11 月 7 日京东秒送活动系统全程无异常</b>，圆满完成支撑任务</td>
+            <td><span class="tag t-gold">P2</span></td>
+          </tr>
+          <tr>
+            <td><b>2025/8/29</b></td>
+            <td>扫码点餐异常</td>
+            <td>七夕晚高峰<b>流量增长速度超出服务扩容速度</b>，引起查询菜品接口超时、点餐页面加载缓慢</td>
+            <td>完成核心业务服务扩容并做足冗余；调整底层核心参数与配置，完善<b>限流熔断</b>；专项压测实测可稳定支撑<b>七夕峰值三倍流量</b>。国庆中秋双节系统全程平稳</td>
+            <td><span class="tag t-gold">P2</span></td>
+          </tr>
+          <tr>
+            <td><b>周期性</b></td>
+            <td>报表查询异常</td>
+            <td>月初 / 月末周期性查询超时，数据仓库部署在自有 IDC，<b>服务器与带宽资源存在瓶颈</b></td>
+            <td>2024 年 6 月完成<b>数仓上云</b>，资源与带宽大幅扩充，各产品线针对云上环境调整优化，云端环境对未来扩容提供更好支撑</td>
+            <td><span class="tag">—</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout" style="border-color:rgba(63,185,80,.25);background:linear-gradient(135deg,rgba(63,185,80,.07),rgba(63,185,80,.02))">
+        <h4 style="color:var(--green)">我们的态度</h4>
+        <p>
+          故障不会因为写在复盘表里就不再发生，但<b>每一次故障都必须换来一次系统性的加固</b>。
+          过去一年我们完成了服务拆分、弹性扩容、限流熔断、数仓上云四项底层改造，
+          并在京东秒送、七夕、国庆中秋等多个真实峰值场景中完成验证。<b>2027 年，我们会把这套机制做得更前置。</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid g4 rv">
+      <div class="card">
+        <div class="ic">⏱</div>
+        <h4>待改进一：部分需求响应周期偏长</h4>
+        <p>需求矩阵中部分 P0 需求从提出到实际交付跨度较长（如菜品标签需求 3 月提出、9 月交付）。我们需要在<b>排期透明度与预期同步</b>上做得更好。</p>
+      </div>
+      <div class="card">
+        <div class="ic">📊</div>
+        <h4>待改进二：需求状态同步不够及时</h4>
+        <p>矩阵中存在状态未更新的条目，导致双方对进度认知不一致。2027 年将建立<b>双周需求同步机制</b>，状态由专人维护。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🔧</div>
+        <h4>待改进三：部分体验细节打磨不足</h4>
+        <p>KDS 出餐操作延迟、效期打印距离远等一线体验问题，反映出我们对<b>门店真实作业场景</b>的理解还有提升空间。</p>
+      </div>
+      <div class="card" style="border-color:rgba(212,42,42,.22)">
+        <div class="ic">⚠</div>
+        <h4>待改进四：规则类变更的影响评估不足</h4>
+        <p>本年度美团点评团购券积分虚增事件，根因是<b>默认值变更未做存量客户兼容性评估</b>，且缺少权益类数据的主动监测。四条机制化改进见上。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 2027 战略 ============ -->
+<section id="s7">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">07 / 2027 数字化战略</div>
+      <h2>从"支撑开店"<br>到"支撑单店盈利"</h2>
+      <p class="desc">
+        行业已进入存量深度竞争，火锅门店数创七年新低、人均消费跌至 54.7 元、
+        净利率压缩至 2%–5%。在这个背景下，<b>数字化不能再以"上了多少功能"论英雄，而要以"帮每家店多赚了多少钱"来交卷</b>。
+      </p>
+    </div>
+
+    <div class="callout rv" style="margin-bottom:30px;padding:30px 32px">
+      <h4 style="font-size:19px">◆ 2027 战略主线</h4>
+      <p style="font-size:16.5px;line-height:1.85">
+        <b style="color:var(--gold);font-size:18px">把数字化从"系统供应商"，做成盛香亭的"经营基础设施"。</b><br>
+        围绕 2026 年商龙监测揭示的新经营公式 —— <b>客单价 × 复购率</b>，
+        我们为 2027 年设定四条战线：<b>守住底线、看清盈利、做厚会员、撑住规模</b>。
+      </p>
+    </div>
+
+    <div class="grid g2 rv" style="margin-bottom:24px">
+      <div class="panel">
+        <h3 style="color:var(--red2)">战役一 · 守底线｜食安与运营一致性工程</h3>
+        <div class="ph">风险等级最高，优先级第一</div>
+        <ul class="ul">
+          <li><b>效期管理全量落地</b> — 从"已上线"推进到"全门店真实使用"，把 4 月迁移的能力转化为每家店的日常动作</li>
+          <li><b>开封 / 补码 / 用完 / 丢弃四态闭环</b> — 每一次操作留痕可追溯，形成完整的物料生命周期台账</li>
+          <li><b>KDS / 企微打印效期标签</b> — 解决水吧与配菜房距离远、打印不及时的一线痛点</li>
+          <li><b>效期即将过期强提醒</b> — 从"事后发现"转为"事前拦截"</li>
+          <li><b>QSC 巡检数字化</b> — 已上线的 QSC 加减分项表与智能巡检打通，门店自检、督导巡检、整改追踪形成闭环</li>
+          <li><b>食安可信数据资产</b> — 沉淀可对外输出的食安过程数据，向商场、加盟商、监管方提供可信证明</li>
+        </ul>
+        <div style="margin-top:16px;padding:13px 16px;background:var(--redsoft);border-radius:8px;font-size:13px;color:var(--txt2)">
+          <b style="color:#fff">为什么排第一：</b>旋转业态的流转温控与防尘保洁是行业公认难题，而盛香亭"明档现做 + 打烊即废弃"的品牌承诺
+          目前<b style="color:var(--gold)">依赖人工执行、缺少可验证的过程数据</b>。一条短视频的代价，远超一年数字化的投入。
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="color:var(--gold)">战役二 · 看清楚｜单店盈利模型工程</h3>
+        <div class="ph">回应"增收不增利"的行业主旋律</div>
+        <ul class="ul">
+          <li><b>碟型盈利看板</b> — 按 2/4/6 元（广深 3/5/7 元）价格带拆解销量 × 毛利 × 周转 × 损耗，看清每档碟型到底赚不赚钱</li>
+          <li><b>新品存活率追踪</b> — 建立 30 / 60 / 90 天新品存活率指标，让"每月上新 + 末位淘汰"的机制有数据依据</li>
+          <li><b>单店成本结构看板</b> — 食材、人工、房租三项占营收 70%+，逐店监控异常波动</li>
+          <li><b>复购与客单监测体系</b> — 已上线的门店复购统计表、单品销售排行、用餐时间指标整合为店长日报</li>
+          <li><b>加盟商单店模型表</b> — 为招商尽调提供可信的盈利测算依据，支撑规模化扩张</li>
+          <li><b>龙决策定制化报表</b> — 报表组件高度自定义，支撑集团自由筛选拉取</li>
+        </ul>
+        <div style="margin-top:16px;padding:13px 16px;background:var(--goldsoft);border-radius:8px;font-size:13px;color:var(--txt2)">
+          <b style="color:#fff">目标：</b>让总部和店长都能回答一个问题 ——
+          <b style="color:var(--gold)">这家店今天赚的钱，是从哪一碟、哪一时段、哪一类客人身上赚来的</b>。
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="color:var(--green)">战役三 · 做厚会员｜流量资产化工程</h3>
+        <div class="ph">对标行业：会员消费占比仍有大幅提升空间</div>
+        <ul class="ul">
+          <li><b>等位流量即会员</b> — 美团排队叫号与入会链路打通，把排队等待的两小时转化为会员注册窗口</li>
+          <li><b>CRM8 MA 智能画布</b> — 接入 2025 年 12 月规划的 MA 画布，基于会员行为与事件自动触发触达</li>
+          <li><b>会员权益体系完善</b> — 学生卡认证、生日权益门槛、权益卡与积分商城关联，让权益有吸引力且有成本控制</li>
+          <li><b>积分商城体验闭环</b> — 自提点与门店关联隔离、积分 + 钱退款流程、过期自动退</li>
+          <li><b>秋季新能力引入</b> — 答题有礼、优惠券自选礼包、智能语音外呼，丰富触达与互动手段</li>
+          <li><b>点餐页全屏广告挂菜品</b> — 抢占扫码第一眼曝光位，直接拉动主推菜品转化</li>
+        </ul>
+        <div style="margin-top:16px;padding:13px 16px;background:rgba(63,185,80,.09);border-radius:8px;font-size:13px;color:var(--txt2)">
+          <b style="color:#fff">基线数据：</b>2025 年度汇报中会员消费占比为 <b style="color:var(--green)">28.33%</b>，
+          会员体系对营收贡献显著但仍有较大挖掘空间。<b style="color:var(--green)">2027 年设定明确提升目标，逐月跟踪。</b>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="color:var(--blue)">战役四 · 撑住规模｜扩张与稳定性底座</h3>
+        <div class="ph">支撑一年近百家门店的净增速度</div>
+        <ul class="ul">
+          <li><b>开店数字化标准包</b> — 新店开业的系统配置、菜品档案、设备调试、员工培训标准化，缩短开业准备周期</li>
+          <li><b>多品牌统一中台</b> — 热卤、转转火锅、糖水铺等品牌统一会员、统一报表、统一管控</li>
+          <li><b>峰值保障机制前置</b> — 在扩容、限流熔断、服务拆分基础上，增加节假日前的<b>主动容量评估与压测</b></li>
+          <li><b>稳定性专项</b> — 收银服务启动时间、KDS 消单延迟等一线体验问题的专项治理</li>
+          <li><b>开放平台能力</b> — 支撑盛香亭自有系统与集团数据中台的对接诉求</li>
+          <li><b>商超 / 外带 / 自提多渠道承接</b> — 统一库存与订单，避免多渠道带来的运营割裂</li>
+        </ul>
+        <div style="margin-top:16px;padding:13px 16px;background:rgba(74,158,255,.09);border-radius:8px;font-size:13px;color:var(--txt2)">
+          <b style="color:#fff">服务承诺：</b>依托 <b style="color:var(--blue)">500+ 本地服务商、4000+ 技术服务人员、7×24 小时响应</b>，
+          盛香亭门店开到哪里，商龙的服务就覆盖到哪里。
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:22px;font-weight:800;margin:44px 0 20px" class="rv">三年推进路径</h3>
+    <div class="rm rv">
+      <div class="rm-col y1">
+        <div class="yr">2027</div>
+        <div class="tt">打底 · 把体系收口</div>
+        <ul>
+          <li><b>食安一致性</b>：效期管理全量落地 + 四态闭环 + QSC 巡检数字化，形成可对外出具的食安过程数据</li>
+          <li><b>盈利可见</b>：碟型盈利看板、新品存活率、单店成本看板上线，店长日报覆盖全门店</li>
+          <li><b>会员起量</b>：等位即入会 + MA 画布落地，会员消费占比设定并跟踪提升目标</li>
+          <li><b>稳定性</b>：建立节假日前主动容量评估机制，一线体验问题专项清零</li>
+        </ul>
+      </div>
+      <div class="rm-col y2">
+        <div class="yr">2028</div>
+        <div class="tt">复制 · 让能力可复制</div>
+        <ul>
+          <li><b>开店标准包成熟</b>：新店数字化上线周期压缩，支撑高速扩张</li>
+          <li><b>加盟商数字看板</b>：为品招模式提供可信的单店模型与经营透明化</li>
+          <li><b>会员资产跨品牌统一</b>：热卤、转转、子品牌会员权益互通</li>
+          <li><b>数据驱动上新</b>：以存活率数据反哺菜品研发与末位淘汰决策</li>
+        </ul>
+      </div>
+      <div class="rm-col y3">
+        <div class="yr">2029</div>
+        <div class="tt">资产化 · 让数据成为资产</div>
+        <ul>
+          <li><b>经营决策智能化</b>：从"看报表"到"系统给建议"，AI 辅助店长与总部决策</li>
+          <li><b>供应链协同</b>：门店损耗与订货数据反哺供应链，降低食材成本</li>
+          <li><b>品牌信用资产</b>：食安与运营一致性数据成为品牌对外输出的信任凭证</li>
+          <li><b>出海能力预留</b>：依托商龙多语言系统与海外部署能力，为未来海外开店留好接口</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 服务承诺 ============ -->
+<section id="s8">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-num">08 / 服务承诺</div>
+      <h2>2027 年，我们这样服务盛香亭</h2>
+      <p class="desc">
+        战略落不了地就是空话。以下是商龙对盛香亭 2027 年的<b>具体服务承诺</b>，可量化、可考核。
+      </p>
+    </div>
+
+    <div class="grid g3 rv" style="margin-bottom:22px">
+      <div class="card">
+        <div class="ic">👥</div>
+        <h4>专属服务团队</h4>
+        <p>配置固定的项目经理 + 实施顾问 + 技术支持团队，人员稳定、熟悉盛香亭业务，避免"每次都是新人"。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🕐</div>
+        <h4>7×24 小时响应</h4>
+        <p>依托 367 座城市、500+ 本地服务商、4000+ 服务人员的网络，实现本地化快速响应与到场支持。</p>
+      </div>
+      <div class="card">
+        <div class="ic">🔄</div>
+        <h4>双周需求同步</h4>
+        <p>每两周一次需求状态同步会，进度、排期、风险全部透明，解决"状态不清楚、进度不确定"的问题。</p>
+      </div>
+      <div class="card">
+        <div class="ic">📈</div>
+        <h4>季度经营复盘</h4>
+        <p>每季度输出一份经营数据复盘报告，不只讲系统用了多少，更讲经营指标发生了什么变化。</p>
+      </div>
+      <div class="card" style="border-color:rgba(212,42,42,.22)">
+        <div class="ic">🔐</div>
+        <h4>规则变更保障</h4>
+        <p>经营规则类变更上线前出具影响评估报告、默认沿用原逻辑；权益类数据月度核对 + 异常告警。<b>不以新默认值覆盖客户的存量业务。</b></p>
+      </div>
+      <div class="card">
+        <div class="ic">🚀</div>
+        <h4>重大节点峰值保障</h4>
+        <p>春节、七夕、国庆等峰值节点提前完成容量评估与压测，输出应急预案并演练 —— 延续 2025 年服务拆分、弹性扩容、限流熔断后的验证标准。</p>
+      </div>
+    </div>
+
+    <div class="panel rv">
+      <h3>2027 年 Q1 落地计划</h3>
+      <div class="ph">战略从第一天就开始推进，不留缓冲期</div>
+      <table>
+        <thead><tr><th style="width:80px">时间</th><th style="width:150px">动作</th><th>内容</th><th style="width:100px">交付物</th></tr></thead>
+        <tbody>
+          <tr><td><b>11 月</b></td><td>年度规划共创会</td><td>与盛香亭 CIO 及管理团队对齐 2027 年四大战役的优先级、排期与责任人</td><td><span class="tag t-red">规划确认稿</span></td></tr>
+          <tr><td><b>11–12 月</b></td><td>需求矩阵清理</td><td>对 351 项需求池逐条梳理状态，关闭已失效项，明确 2027 年首批交付清单</td><td><span class="tag t-gold">需求清单</span></td></tr>
+          <tr><td><b>12 月</b></td><td>规则变更防护机制上线</td><td>落地《存量客户影响评估报告》模板与默认值兼容性保护策略；建立权益类数据（积分/券/储值）月度核对与异常波动告警</td><td><span class="tag t-red">机制文件 + 告警看板</span></td></tr>
+          <tr><td><b>1 月</b></td><td>效期管理全量推广</td><td>制定分批次推广计划，覆盖全部在营门店，配套培训与督导机制</td><td><span class="tag t-red">推广方案</span></td></tr>
+          <tr><td><b>1–2 月</b></td><td>春节峰值保障</td><td>提前完成容量评估与压测，制定春节高峰期应急预案并演练</td><td><span class="tag t-red">保障报告</span></td></tr>
+          <tr><td><b>2 月</b></td><td>会员运营方案</td><td>等位即入会链路方案 + MA 画布场景设计，明确会员消费占比提升目标</td><td><span class="tag t-green">运营方案</span></td></tr>
+          <tr><td><b>3 月</b></td><td>单店盈利看板一期</td><td>碟型盈利看板原型与数据口径确认，选取样板门店试点</td><td><span class="tag t-gold">看板原型</span></td></tr>
+          <tr><td><b>持续</b></td><td>双周同步机制</td><td>需求状态、版本排期、风险预警的例行同步</td><td><span class="tag t-blue">例会机制</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="lg">全力以赴 · 共创未来</div>
+    <div class="sm" style="margin-bottom:6px">助力餐饮企业发展 · 推动餐饮行业进步</div>
+    <div class="sm">天财商龙 &nbsp;|&nbsp; 深耕餐饮 28 年 &nbsp;|&nbsp; 10 万+ 商户共同选择</div>
+  </div>
+</footer>
+
+<script>
+/* ============ PPT 翻页引擎 ============ */
+(function(){
+var CW=1280, PADT=52, PADB=58, MAXH=610, GAP=18, BODYW=1136;
+
+/* --- 离屏测量台 --- */
+var stage=document.createElement('div');
+stage.id='stage';
+stage.style.cssText='position:absolute;left:-30000px;top:0;width:'+BODYW+'px;';
+document.body.appendChild(stage);
+var SAFE=1.01;   // 测量余量（缩放变量已清除，误差很小）
+function measure(el){
+  var c=el.cloneNode(true);
+  c.classList.add('in');
+  c.style.removeProperty('--sc');   // 离屏测量台必须无缩放，否则读到的是缩放后尺寸
+  stage.innerHTML='';
+  stage.appendChild(c);
+  return stage.firstChild.getBoundingClientRect().height * SAFE;
+}
+
+/* --- 网格按整行拆分，避免一行只放半个 --- */
+function gridCls(src){
+  return src.className.replace(/\brv\b/g,'').replace(/\bin\b/g,'').trim();
+}
+function packGrid(cls, cards, klone){
+  var d=document.createElement('div');
+  d.className=cls;
+  cards.forEach(function(c){ d.appendChild(klone ? c.cloneNode(true) : c); });
+  return d;
+}
+
+/* --- 超长表格按行拆分，每段保留表头 --- */
+function splitTable(tb, avail){
+  var room = avail && avail>120 ? avail : MAXH;
+  var rows=[].slice.call(tb.querySelectorAll('tbody tr'));
+  if(rows.length<3) return [tb];
+  var head=tb.querySelector('thead');
+  var per=0;
+  for(var n=rows.length; n>=1; n--){
+    var probe=document.createElement('div');
+    var t=tb.cloneNode(true);
+    [].slice.call(t.querySelectorAll('tbody tr')).slice(n).forEach(function(r){ r.remove(); });
+    probe.appendChild(t);
+    if(measure(probe)<=room){ per=n; break; }
+  }
+  if(!per) return [tb];
+  if(per>=rows.length) return [tb];
+  var out=[], k=0;
+  for(var i=0;i<rows.length;i+=per){
+    var nt=tb.cloneNode(false);
+    nt.className=tb.className;
+    if(head) nt.appendChild(k===0 ? head : head.cloneNode(true));
+    var nb=document.createElement('tbody');
+    rows.slice(i, i+per).forEach(function(r){ nb.appendChild(r); });
+    nt.appendChild(nb);
+    out.push(nt); k++;
+  }
+  if(tb.parentNode) tb.parentNode.removeChild(tb);
+  return out;
+}
+
+/* --- 递归拆分为可装页单元（表格交给装页阶段按剩余空间拆） --- */
+function units(el){
+  if(el.tagName==='TABLE') return [el];
+  if(el.classList && el.classList.contains('grid')){
+    if(measure(el)<=MAXH) return [el];
+    var cols = el.classList.contains('g4')?4 : el.classList.contains('g3')?3 : el.classList.contains('g2')?2 : 1;
+    var cards=[].slice.call(el.children);
+    if(cards.length<=cols) return [el];
+    var cls=gridCls(el), per=0;
+    for(var r=Math.ceil(cards.length/cols); r>=1; r--){
+      var n=Math.min(r*cols, cards.length);
+      if(measure(packGrid(cls, cards.slice(0,n), true))<=MAXH){ per=n; break; }
+    }
+    if(!per) per=cols;
+    var out=[];
+    for(var i=0;i<cards.length;i+=per) out.push(packGrid(cls, cards.slice(i,i+per), false));
+    return out;
+  }
+  if(measure(el)<=MAXH) return [el];
+  var kids=[].slice.call(el.children).filter(function(k){ return k.nodeType===1; });
+  var parts=[];
+  kids.forEach(function(k){ units(k).forEach(function(u){ parts.push(u); }); });
+  return parts.length>=2 ? parts : [el];
+}
+
+/* --- 块 → 单元列表（带续页标题） --- */
+function blockItems(el){
+  if(measure(el)<=MAXH) return [{node:el, h:measure(el), head:''}];
+  var h3=null;
+  for(var i=0;i<el.children.length;i++){
+    if(el.children[i].tagName==='H3'){ h3=el.children[i]; break; }
+  }
+  var head = h3 ? h3.textContent.trim() : '';
+  return units(el).map(function(u, i){ return {node:u, h:measure(u), head: i>0 ? head : ''}; });
+}
+
+/* --- deck --- */
+var deck=document.createElement('div'); deck.id='deck';
+document.body.appendChild(deck);
+var slides=[];
+function mkSlide(chapter, cover){
+  var s=document.createElement('div');
+  s.className='slide'+(cover?' k-cover':'');
+  var cv=document.createElement('div'); cv.className='cv';
+  var hd=document.createElement('div'); hd.className='cv-hd';
+  hd.innerHTML='<span class="dot">龙</span> 天财商龙 × 盛香亭';
+  var body=document.createElement('div'); body.className='cv-body';
+  var ftr=document.createElement('div'); ftr.className='cv-ft';
+  ftr.innerHTML='<span class="ch">'+(chapter||'')+'</span><span class="ln"></span><span class="pg"></span>';
+  if(cover){ hd.style.display='none'; ftr.style.display='none'; }
+  cv.appendChild(hd); cv.appendChild(body); cv.appendChild(ftr);
+  s.appendChild(cv); deck.appendChild(s);
+  var rec={el:s, cv:cv, body:body, ft:ftr, chapter:chapter||'', h:0, isCover:!!cover};
+  slides.push(rec);
+  return rec;
+}
+function flow(items, chapter){
+  var cur=null, queue=items.slice(), guard=0;
+  while(queue.length && guard++ < 4000){
+    var it=queue.shift();
+    var extra = it.head ? 30 : 0;
+    var avail = cur ? (MAXH - cur.h - GAP - extra) : MAXH;
+    // 表格：按本页剩余空间现场拆分，避免"标题独占一页、表格独占一页"
+    if(it.h > avail && it.node.tagName==='TABLE'){
+      var parts=splitTable(it.node, avail);
+      if(parts.length>1){
+        var rest=parts.slice(1).map(function(p){ return {node:p, h:measure(p), head:it.head}; });
+        queue = rest.concat(queue);
+        it = {node:parts[0], h:measure(parts[0]), head:it.head};
+      }
+    }
+    if(!cur || (cur.h>0 && cur.h+GAP+it.h+extra > MAXH)){
+      cur = mkSlide(chapter, false);
+      if(it.head){
+        var hc=document.createElement('div');
+        hc.className='cv-cont'; hc.textContent=it.head;
+        cur.body.appendChild(hc); cur.h=extra;
+      }
+    }
+    it.node.style.marginBottom='0';
+    cur.body.appendChild(it.node);
+    cur.h += (cur.h? GAP:0) + it.h;
+  }
+}
+
+/* --- 组装 --- */
+var links=[].slice.call(document.querySelectorAll('.nav-links a'));
+var hero=document.querySelector('header.hero');
+if(hero){
+  var hint=hero.querySelector('.scroll-hint');
+  if(hint) hint.innerHTML='按 <b style="color:var(--gold)">→</b> 开始';
+  mkSlide('封面', true).body.appendChild(hero);
+}
+[].slice.call(document.querySelectorAll('section[id]')).forEach(function(sec, i){
+  var chapter = links[i] ? links[i].textContent.trim() : '';
+  var wrap = sec.querySelector('.wrap') || sec;
+  var kids = [].slice.call(wrap.children);
+  var head = kids.filter(function(k){ return k.classList && k.classList.contains('sec-head'); })[0];
+  var rest = kids.filter(function(k){ return k !== head; });
+  if(head){
+    head.style.marginBottom='0';
+    mkSlide(chapter, true).body.appendChild(head);
+  }
+  var items=[];
+  rest.forEach(function(b){ blockItems(b).forEach(function(x){ items.push(x); }); });
+  flow(items, chapter);
+});
+var ftEl=document.querySelector('footer');
+if(ftEl) mkSlide('结尾', true).body.appendChild(ftEl);
+
+/* --- 后处理：标题孤行（页尾挂着 H3/副标题，内容却在下一页） --- */
+function fixOrphanHeads(){
+  for(var i=0;i<slides.length-1;i++){
+    var s=slides[i], t=slides[i+1];
+    if(s.isCover || t.isCover || s.chapter!==t.chapter) continue;
+    var kids=[].slice.call(s.body.children);
+    if(!kids.length) continue;
+    var heads=[];
+    for(var k=kids.length-1;k>=0;k--){
+      var c=kids[k];
+      if(c.tagName==='H3' || (c.classList && c.classList.contains('ph'))) heads.unshift(c);
+      else break;
+    }
+    if(!heads.length || heads.length===kids.length) continue;   // 整页都是标题的不动
+    var txt=heads[0].textContent.trim();
+    var cont=t.body.querySelector('.cv-cont');
+    if(cont && cont.textContent.trim()===txt){
+      heads.forEach(function(h){ h.remove(); });                // 下一页已有续标题，孤行直接删
+    } else {
+      heads.forEach(function(h){ t.body.insertBefore(h, t.body.firstChild); });  // 标题跟内容走
+    }
+  }
+}
+
+/* --- 真实内容高（逐子节点求和，容器有 min-height 时 scrollHeight 不可信） --- */
+function contentH(body){
+  var t=0;
+  [].slice.call(body.children).forEach(function(c){
+    var st=getComputedStyle(c);
+    t += c.getBoundingClientRect().height + (parseFloat(st.marginBottom)||0);
+  });
+  return t;
+}
+
+/* --- 打印纸张：@page 必须是真实规则，CSS 变量在 @page 内不生效 --- */
+var dynPage=document.createElement('style'); dynPage.id='dynPage';
+document.head.appendChild(dynPage);
+var lastPageH=0;
+function setPageSize(hh){
+  hh=Math.round(hh);
+  if(hh===lastPageH) return;
+  lastPageH=hh;
+  dynPage.textContent='@page{size:1280px '+hh+'px;margin:0}';
+}
+
+/* --- 高度与缩放 ---
+   关键：整副 deck 使用【同一个画布高度】和【同一个缩放比】。
+   若每页各自算缩放，翻页时画布大小不一致，肉眼就会出现「先缩小再放大」的跳动。 */
+function fitAll(){
+  var vw=window.innerWidth, vh=window.innerHeight;
+  deck.classList.add('measuring');
+
+  // 第一轮：释放高度与缩放，拿到无缩放的真实内容高，并逐级启用紧凑档
+  var needs=[];
+  slides.forEach(function(s){
+    s.cv.style.height='';
+    s.cv.style.removeProperty('--sc');
+    s.cv.classList.remove('dense'); s.cv.classList.remove('tight');
+    s.cv.classList.remove('xtight'); s.el.classList.remove('k-thin');
+    var real=contentH(s.body);
+    if(real > MAXH+2){ s.cv.classList.add('dense');  real=contentH(s.body); }
+    if(real > MAXH+2){ s.cv.classList.add('tight');  real=contentH(s.body); }
+    if(real > MAXH+2){ s.cv.classList.add('xtight'); real=contentH(s.body); }
+    if(real < 250) s.el.classList.add('k-thin');   // 内容少的页垂直居中，视觉上像小结页
+    needs.push(PADT+real+PADB);
+  });
+
+  // 第二轮：取全局最大需求作为统一直尺，任何一页都不会被裁切
+  var GH=Math.max(720, Math.max.apply(null, needs));
+  var sc=Math.min((vw-32)/CW, (vh-32)/GH);
+  sc=Math.round(sc*10000)/10000;
+  slides.forEach(function(s, i){
+    s.cv.style.setProperty('--sc', sc);
+    s.cv.style.height=GH+'px';
+    s.ft.querySelector('.pg').textContent=(i+1)+' / '+slides.length;
+  });
+  setPageSize(GH);   // 打印纸张尺寸跟随实际画布高度
+  deck.classList.remove('measuring');
+}
+
+/* --- 控件 --- */
+var prog=document.createElement('div'); prog.id='prog'; document.body.appendChild(prog);
+var ctrl=document.createElement('div'); ctrl.id='ctrl';
+ctrl.innerHTML='<button id="bPrev" title="上一页">‹</button>'+
+  '<div class="pg"><b id="pNum">1</b> / '+slides.length+'</div>'+
+  '<button id="bNext" title="下一页">›</button>'+
+  '<button id="bToc" title="目录 (O)">▦</button>'+
+  '<button id="bFull" title="全屏 (F)">⛶</button>';
+document.body.appendChild(ctrl);
+var hintEl=document.createElement('div'); hintEl.id='hint';
+hintEl.innerHTML='← → 翻页 · O 目录 · F 全屏 · 1–8 跳章节';
+document.body.appendChild(hintEl);
+
+var toc=document.createElement('div'); toc.id='toc';
+toc.innerHTML='<div class="th"><h3>全部页面</h3><span>点击任意页跳转</span></div><div class="tg"></div>';
+document.body.appendChild(toc);
+var tocBuilt=false;
+function buildToc(){
+  if(tocBuilt) return; tocBuilt=true;
+  var tg=toc.querySelector('.tg');
+  slides.forEach(function(s, i){
+    var ti=document.createElement('div'); ti.className='ti';
+    var cvH=parseFloat(s.cv.style.height)||720;
+    var sc=232/CW;
+    var tw=document.createElement('div'); tw.className='tw';
+    tw.style.transform='scale('+(Math.round(sc*10000)/10000)+')';
+    tw.style.height=cvH+'px';
+    var cl=s.cv.cloneNode(true);
+    cl.style.removeProperty('--sc');
+    cl.style.transform='none'; cl.style.height=cvH+'px';
+    [].slice.call(cl.querySelectorAll('.rv')).forEach(function(e){ e.classList.add('in'); });
+    tw.appendChild(cl); ti.appendChild(tw);
+    var nb=document.createElement('div'); nb.className='nb';
+    nb.textContent=(i+1)+' · '+(s.chapter||'');
+    ti.appendChild(nb);
+    ti.onclick=function(){ closeToc(); show(i); };
+    tg.appendChild(ti);
+  });
+}
+function openToc(){
+  buildToc();
+  [].slice.call(toc.querySelectorAll('.ti')).forEach(function(t,i){ t.classList.toggle('cur', i===idx); });
+  toc.classList.add('on');
+}
+function closeToc(){ toc.classList.remove('on'); }
+
+/* --- KPI 数字滚动 --- */
+function runCount(el){
+  if(el.dataset.done) return; el.dataset.done='1';
+  var node=el.firstChild;
+  if(!node || node.nodeType!==3) return;
+  var m=node.textContent.trim().match(/^([+-]?[\d.]+)/);
+  if(!m) return;
+  var isFloat=m[1].indexOf('.')>=0;
+  var sign=m[1][0]==='-'?'-':(m[1][0]==='+'?'+':'');
+  var abs=Math.abs(parseFloat(m[1]));
+  var t0=null, dur=1100;
+  function step(ts){
+    if(!t0) t0=ts;
+    var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+    var v=isFloat?(abs*e).toFixed(2):Math.round(abs*e);
+    node.textContent=sign+(p<1?v:(isFloat?abs.toFixed(2).replace(/\.?0+$/,''):abs));
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+/* --- 翻页 --- */
+var idx=0;
+function anim(i){
+  var s=slides[i];
+  var rvs=[].slice.call(s.el.querySelectorAll('.rv'));
+  rvs.forEach(function(el,k){ el.classList.remove('in'); el.style.transitionDelay=Math.min(k*30, 240)+'ms'; });
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    rvs.forEach(function(el){ el.classList.add('in'); });
+  });});
+  [].slice.call(s.el.querySelectorAll('.kpi .v')).forEach(runCount);
+}
+var outTimer=null;
+function show(i){
+  i=Math.max(0, Math.min(slides.length-1, i));
+  var old=slides[idx];
+  idx=i;
+  // 旧页延后淡出，与新页淡入交叉，避免瞬间黑一下
+  slides.forEach(function(s){ s.el.classList.remove('on'); s.el.classList.remove('out'); });
+  if(old && old!==slides[i]){
+    old.el.classList.add('out');
+    if(outTimer) clearTimeout(outTimer);
+    outTimer=setTimeout(function(){ slides.forEach(function(s){ s.el.classList.remove('out'); }); }, 260);
+  }
+  slides[i].el.classList.add('on');
+  prog.style.width=((idx+1)/slides.length*100)+'%';
+  var pn=ctrl.querySelector('#pNum'); if(pn) pn.textContent=(idx+1);
+  anim(idx);
+}
+function next(){ show(idx+1); }
+function prev(){ show(idx-1); }
+function jumpChapter(n){
+  var key=(n<10?'0':'')+n;
+  for(var i=0;i<slides.length;i++){
+    if(slides[i].chapter && slides[i].chapter.indexOf(key)===0){ show(i); return; }
+  }
+}
+function toggleFull(){
+  var d=document.documentElement;
+  if(!document.fullscreenElement){
+    if(d.requestFullscreen) d.requestFullscreen();
+  } else if(document.exitFullscreen){ document.exitFullscreen(); }
+}
+
+var bp=ctrl.querySelector('#bPrev'), bn=ctrl.querySelector('#bNext'),
+    bt=ctrl.querySelector('#bToc'), bf=ctrl.querySelector('#bFull');
+if(bp) bp.onclick=prev;
+if(bn) bn.onclick=next;
+if(bt) bt.onclick=function(){ toc.classList.contains('on')?closeToc():openToc(); };
+if(bf) bf.onclick=toggleFull;
+
+document.addEventListener('keydown', function(e){
+  if(e.metaKey||e.ctrlKey||e.altKey) return;
+  var k=e.key;
+  if(toc.classList.contains('on')){
+    if(k==='Escape'||k==='o'||k==='O') closeToc();
+    return;
+  }
+  if(k==='ArrowRight'||k==='ArrowDown'||k===' '||k==='PageDown'||k==='Enter'){ e.preventDefault(); next(); }
+  else if(k==='ArrowLeft'||k==='ArrowUp'||k==='PageUp'||k==='Backspace'){ e.preventDefault(); prev(); }
+  else if(k==='Home'){ show(0); }
+  else if(k==='End'){ show(slides.length-1); }
+  else if(k==='f'||k==='F'){ toggleFull(); }
+  else if(k==='o'||k==='O'){ openToc(); }
+  else if(k>='1'&&k<='9'){ jumpChapter(parseInt(k,10)); }
+});
+
+var lock=0;
+window.addEventListener('wheel', function(e){
+  if(toc.classList.contains('on')) return;
+  var t=Date.now();
+  if(t-lock<340) return;
+  if(Math.abs(e.deltaY)<8) return;
+  lock=t;
+  if(e.deltaY>0) next(); else prev();
+}, {passive:true});
+
+deck.addEventListener('click', function(e){
+  if(toc.classList.contains('on')) return;
+  if(window.getSelection && String(window.getSelection())) return;
+  var t=e.target;
+  if(t.closest && t.closest('a,button,table,.card,.kpi,.tl-item,.mrow,.panel')) return;
+  var r=deck.getBoundingClientRect();
+  if(e.clientX-r.left < r.width*0.3) prev(); else next();
+});
+
+var tx=0, ty=0;
+window.addEventListener('touchstart', function(e){ tx=e.changedTouches[0].clientX; ty=e.changedTouches[0].clientY; }, {passive:true});
+window.addEventListener('touchend', function(e){
+  if(toc.classList.contains('on')) return;
+  var dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty;
+  if(Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)){ if(dx<0) next(); else prev(); }
+  else if(Math.abs(dy)>60){ if(dy<0) next(); else prev(); }
+}, {passive:true});
+
+/* --- 启动 --- */
+fixOrphanHeads();
+fitAll();
+var start=0, mh=location.hash.match(/^#p(\d+)$/);
+if(mh) start=Math.max(0, Math.min(slides.length-1, parseInt(mh[1],10)-1));
+show(start);
+var rt=null;
+window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(fitAll, 180); });
+window.addEventListener('beforeprint', function(){
+  slides.forEach(function(s){ [].slice.call(s.el.querySelectorAll('.rv')).forEach(function(e){ e.classList.add('in'); }); });
+});
+})();
+</script>
+</body>
+</html>

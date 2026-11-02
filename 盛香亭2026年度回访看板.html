@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>盛香亭集团 2026年度工作汇报 · 天财商龙</title>
+<style>
+:root{
+  --red:#B01F24; --red-d:#7E1216; --red-l:#C94147;
+  --gold:#C99B4A; --gold-l:#E8C77A;
+  --ink:#2B2B2B; --sub:#666; --gray:#999;
+  --bg:#FBF7F6; --card:#FFFFFF; --line:#EDE3E2;
+  --green:#2E7D32; --blue:#2C5F8A;
+  --shadow:0 2px 16px rgba(176,31,36,.07);
+  --shadow-h:0 8px 28px rgba(176,31,36,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background:var(--bg); color:var(--ink); line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* ---------- 顶部导航 ---------- */
+.nav{
+  position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 28px;display:flex;align-items:center;height:60px;gap:26px}
+.logo{font-size:15px;font-weight:700;color:var(--red);letter-spacing:1px;white-space:nowrap}
+.logo small{display:block;font-size:10px;color:var(--gray);font-weight:400;letter-spacing:0}
+.nav a{
+  font-size:13.5px;color:var(--sub);text-decoration:none;padding:6px 2px;position:relative;transition:.25s;white-space:nowrap
+}
+.nav a:hover{color:var(--red)}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:.25s}
+.nav a:hover::after{width:100%}
+.nav-right{margin-left:auto;font-size:12.5px;color:var(--gray)}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(135deg,#7E1216 0%,#B01F24 55%,#C0453A 100%);
+  color:#fff;padding:78px 0 96px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  background:rgba(255,255,255,.055);right:-140px;top:-190px;
+}
+.hero::after{
+  content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+  background:rgba(255,255,255,.045);right:120px;bottom:-180px;
+}
+.hero-tag{
+  display:inline-block;border:1px solid rgba(255,255,255,.45);border-radius:20px;
+  padding:5px 16px;font-size:12.5px;letter-spacing:2px;margin-bottom:22px;
+}
+.hero h1{font-size:44px;font-weight:800;letter-spacing:1px;line-height:1.25}
+.hero h1 span{color:var(--gold-l)}
+.hero-sub{margin-top:16px;font-size:16px;color:rgba(255,255,255,.85);letter-spacing:.5px}
+.hero-meta{margin-top:34px;display:flex;gap:34px;flex-wrap:wrap;font-size:13.5px;color:rgba(255,255,255,.9)}
+.hero-meta b{font-weight:600;color:#fff}
+.hero-meta i{font-style:normal;color:var(--gold-l);margin-right:6px}
+
+/* KPI 条 */
+.kpi-bar{margin-top:-56px;position:relative;z-index:5}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.kpi{
+  background:var(--card);border-radius:14px;padding:22px 20px;box-shadow:var(--shadow);
+  border-top:3px solid var(--red);transition:.3s;
+}
+.kpi:hover{transform:translateY(-5px);box-shadow:var(--shadow-h)}
+.kpi .num{font-size:38px;font-weight:800;color:var(--red);line-height:1.1}
+.kpi .num em{font-style:normal;font-size:16px;margin-left:3px}
+.kpi .lb{font-size:13px;color:var(--ink);font-weight:600;margin-top:6px}
+.kpi .nt{font-size:12px;color:var(--gray);margin-top:4px}
+.kpi .delta{font-size:12.5px;font-weight:700;margin-top:6px}
+.up{color:var(--red)} .down{color:var(--green)} .flat{color:var(--blue)}
+
+/* ---------- 章节 ---------- */
+section{padding:64px 0 20px}
+.sec-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:30px}
+.sec-no{
+  font-size:56px;font-weight:800;color:rgba(176,31,36,.13);line-height:.85;
+}
+.sec-title h2{font-size:28px;font-weight:800;color:var(--ink);letter-spacing:.5px}
+.sec-title h2 b{color:var(--red)}
+.sec-title p{font-size:13.5px;color:var(--gray);margin-top:4px;letter-spacing:.5px}
+.sec-line{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-bottom:12px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;box-shadow:var(--shadow)}
+.card h3{font-size:17px;color:var(--red);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.card h3::before{content:"";width:4px;height:16px;background:var(--red);border-radius:2px}
+.card p{font-size:14px;color:var(--sub);line-height:1.85}
+.tag-inline{background:#FBEDED;color:var(--red);padding:2px 8px;border-radius:4px;font-size:12.5px;font-weight:600}
+
+/* 场景标签 */
+.scenes{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.scene{
+  background:#FBEDED;border:1px solid #F2D9D9;color:#8E3B3E;border-radius:6px;
+  padding:5px 11px;font-size:12.5px;transition:.2s
+}
+.scene.new{background:#FFF6E6;border-color:#F0DFB8;color:#8A6A22;font-weight:600}
+.scene:hover{background:var(--red);color:#fff;border-color:var(--red)}
+
+/* ---------- 时间线 ---------- */
+.timeline{position:relative;padding-left:30px;margin-top:8px}
+.timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--red),#F0D8D8)}
+.tl-item{position:relative;padding:12px 0 12px 4px}
+.tl-item::before{
+  content:"";position:absolute;left:-27px;top:19px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--red);box-shadow:0 0 0 3px #FBEDED
+}
+.tl-item.past::before{border-color:#D8BFA0;box-shadow:0 0 0 3px #F7F0E4}
+.tl-year{font-size:13px;font-weight:800;color:var(--red);letter-spacing:1px}
+.tl-item.past .tl-year{color:#B08C4A}
+.tl-body{font-size:13.5px;color:var(--sub);margin-top:3px}
+.tl-body b{color:var(--ink);font-weight:600}
+
+/* 月度时间轴 */
+.months{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:6px}
+.mon{
+  background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 14px 16px;
+  transition:.25s;cursor:default;position:relative;overflow:hidden
+}
+.mon:hover{transform:translateY(-4px);box-shadow:var(--shadow-h);border-color:#F0C9C9}
+.mon .m-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.mon .m-n{font-size:16px;font-weight:800;color:var(--red)}
+.mon .m-d{font-size:11px;color:var(--gray)}
+.mon .m-t{font-size:12.5px;color:var(--ink);font-weight:600;line-height:1.5;margin-bottom:5px}
+.mon .m-x{font-size:11.5px;color:var(--gray);line-height:1.6}
+.mon::after{content:"";position:absolute;left:0;top:0;width:0;height:3px;background:var(--red);transition:.3s}
+.mon:hover::after{width:100%}
+
+/* ---------- 图表 ---------- */
+.chart-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:18px;margin-bottom:18px}
+svg{display:block;max-width:100%}
+.legend{display:flex;gap:18px;font-size:12.5px;color:var(--sub);margin-bottom:10px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.bar-g:hover rect{opacity:.85}
+
+/* 覆盖率 */
+.cov{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:6px}
+.cov-item{text-align:center}
+.cov-item .nm{font-size:13px;color:var(--ink);font-weight:600;margin-top:6px}
+.cov-item .vl{font-size:12px;color:var(--gray)}
+.donut{position:relative;width:104px;height:104px;margin:0 auto}
+.donut span{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:19px;font-weight:800;color:var(--red)
+}
+
+/* 价值案例 */
+.cases{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.case{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;
+  transition:.28s;cursor:pointer;position:relative
+}
+.case:hover{transform:translateY(-5px);box-shadow:var(--shadow-h);border-color:#F0C9C9}
+.case .idx{font-size:11px;color:var(--gold);font-weight:800;letter-spacing:1px}
+.case h4{font-size:15px;color:var(--ink);font-weight:700;margin:6px 0 8px}
+.case p{font-size:12.5px;color:var(--sub);line-height:1.7}
+.case .status{
+  display:inline-block;margin-top:10px;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700
+}
+.s-done{background:#E8F5E9;color:var(--green)}
+.s-doing{background:#FFF6E6;color:#A97A1E}
+.s-plan{background:#F1F3F5;color:#6B7280}
+
+/* 表格 */
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{
+  background:#FBEDED;color:#8E3B3E;font-weight:700;text-align:left;padding:11px 12px;
+  border-bottom:2px solid #F0D8D8;white-space:nowrap
+}
+.tbl td{padding:11px 12px;border-bottom:1px solid var(--line);color:var(--sub);vertical-align:top;line-height:1.7}
+.tbl tr:hover td{background:#FDFAF9}
+.tbl td b{color:var(--ink)}
+.badge{font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700;white-space:nowrap}
+.b-ok{background:#E8F5E9;color:var(--green)}
+.b-ing{background:#FFF6E6;color:#A97A1E}
+.b-wait{background:#F1F3F5;color:#6B7280}
+.lvl{font-size:11px;font-weight:800;padding:2px 7px;border-radius:4px}
+.p0{background:#FBEDED;color:var(--red)}
+.p2{background:#FFF6E6;color:#A97A1E}
+
+/* 规划表 */
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.plan{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;transition:.28s;
+  border-top:3px solid var(--gold)
+}
+.plan:hover{transform:translateY(-5px);box-shadow:var(--shadow-h)}
+.plan .cat{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:1px}
+.plan h4{font-size:15.5px;color:var(--ink);margin:7px 0 10px;font-weight:700}
+.plan ul{list-style:none;font-size:12.5px;color:var(--sub)}
+.plan ul li{padding-left:14px;position:relative;margin-bottom:5px;line-height:1.65}
+.plan ul li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--red)}
+.plan .val{
+  margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);
+  font-size:12px;color:var(--red);font-weight:600
+}
+
+/* 能力地图 */
+.ability{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ab{
+  background:linear-gradient(140deg,#FFFFFF,#FDF7F6);border:1px solid var(--line);
+  border-radius:12px;padding:18px;transition:.28s;text-align:center
+}
+.ab:hover{transform:translateY(-5px);box-shadow:var(--shadow-h);border-color:#F0C9C9}
+.ab .ic{font-size:22px;font-weight:800;color:var(--red);letter-spacing:-1px}
+.ab .nm{font-size:14.5px;font-weight:700;color:var(--ink);margin:6px 0 6px}
+.ab .ds{font-size:12px;color:var(--gray);line-height:1.65}
+.ab.new{background:linear-gradient(140deg,#FFFCF4,#FFF7E6);border-color:#F0DFB8}
+
+/* 结语 */
+.ending{
+  margin-top:60px;background:linear-gradient(135deg,#7E1216,#B01F24 60%,#C0453A);
+  color:#fff;padding:56px 0;text-align:center
+}
+.ending h2{font-size:30px;font-weight:800;letter-spacing:2px}
+.ending p{margin-top:12px;font-size:14px;color:rgba(255,255,255,.8)}
+.ending .ln{width:60px;height:2px;background:var(--gold-l);margin:22px auto}
+
+/* 动画 */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:900px){
+  .kpis,.cases,.cov,.months{grid-template-columns:repeat(2,1fr)}
+  .chart-grid,.plan-grid,.ability{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+  .nav-in{gap:14px;overflow-x:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- 导航 -->
+<div class="nav">
+  <div class="nav-in">
+    <div class="logo">TCSL 天财商龙<small>盛香亭集团 · 数字化升级项目</small></div>
+    <a href="#s1">并肩筑路</a>
+    <a href="#s2">价值呈现</a>
+    <a href="#s3">问题复盘</a>
+    <a href="#s4">共创未来</a>
+    <div class="nav-right">汇报人：陈海涛 · 2026.11</div>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-tag">ANNUAL REVIEW 2026</div>
+    <h1>盛香亭集团 <span>2026 年度工作汇报</span></h1>
+    <div class="hero-sub">并肩筑路 · 价值呈现 · 共创未来 —— 与盛香亭共赴数字化第四个年头</div>
+    <div class="hero-meta">
+      <div><i>◆</i>天财商龙科技有限公司　<b>项目经理 陈海涛</b></div>
+      <div><i>◆</i>统计周期　<b>2026年1月 - 2026年10月</b></div>
+      <div><i>◆</i>双品牌　<b>热卤 / 转转火锅</b></div>
+    </div>
+  </div>
+</div>
+
+<!-- KPI -->
+<div class="kpi-bar">
+  <div class="wrap">
+    <div class="kpis">
+      <div class="kpi reveal">
+        <div class="num" data-to="261">0<em>家</em></div>
+        <div class="lb">转转火锅在营门店</div>
+        <div class="delta up">▲ 1月167 → 10月261，净增 94 家（+56%）</div>
+        <div class="nt">集团增长引擎，全年持续扩张</div>
+      </div>
+      <div class="kpi reveal">
+        <div class="num" data-to="132">0<em>家</em></div>
+        <div class="lb">热卤在营门店</div>
+        <div class="delta down">▼ 1月163 → 10月132，业态结构调整</div>
+        <div class="nt">存量门店月增长保持 2.4%</div>
+      </div>
+      <div class="kpi reveal">
+        <div class="num" data-to="50">0<em>%</em></div>
+        <div class="lb">26 年年度工作规划完成度</div>
+        <div class="delta flat">● 12 项规划事项：完成 6 / 进行 4 / 待启 2</div>
+        <div class="nt">11月3日年度规划沟通会推进</div>
+      </div>
+      <div class="kpi reveal">
+        <div class="num" data-to="10">0<em>期</em></div>
+        <div class="lb">月度简报持续交付</div>
+        <div class="delta flat">● 1-10 月从未中断</div>
+        <div class="nt">双周沟通会 + 专属PM服务机制</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 1 并肩筑路 ============ -->
+<section id="s1">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-no">01</div>
+      <div class="sec-title">
+        <h2>并肩<b>筑路</b></h2>
+        <p>Partnership · 从战略签约到深度运营，走过的每一步都算数</p>
+      </div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="card reveal">
+      <h3>合作概述</h3>
+      <p>
+        「盛香亭集团」与商龙自 <b>2023 年</b>实现战略合作，先后完成「盛香亭热卤」「盛香亭转转火锅」双品牌的数字化升级。
+        2026 年项目全面进入<b>运营深化期</b>，在既有能力之上，重点推进效期管理、KDS 智能出品 2.0、开放平台/API、
+        会员积分体系、移动银台 pro、商超渠道对接六大主线，全年以「月度简报 + 双周需求沟通会」机制保障持续交付。
+        截至 10 月，转转火锅在营门店已达 <b>261 家</b>，数字化支撑的重心正从单店运营转向<b>规模化扩张</b>。
+      </p>
+      <div class="scenes">
+        <span class="scene">餐饮中餐版本</span><span class="scene">Windows 快餐</span>
+        <span class="scene">移动 POS</span><span class="scene">龙管家</span>
+        <span class="scene">KDS</span><span class="scene">CRM8</span>
+        <span class="scene">外卖平台对接</span><span class="scene">团购平台对接</span>
+        <span class="scene">平台会员打通</span><span class="scene">学生认证</span>
+        <span class="scene">商超对接</span><span class="scene">API 接口对接</span>
+        <span class="scene">电子发票</span>
+        <span class="scene new">效期管理</span><span class="scene new">智能出品2.0</span>
+        <span class="scene new">开放平台</span><span class="scene new">移动银台pro</span>
+        <span class="scene new">MA&ICC 私域</span><span class="scene new">直通车3.0</span>
+      </div>
+      <p style="margin-top:12px;font-size:12.5px;color:var(--gray)">※ 橙色标签为 2026 年新增/重点推进场景</p>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px">
+      <h3>合作里程碑</h3>
+      <div class="timeline">
+        <div class="tl-item past">
+          <div class="tl-year">2023 年</div>
+          <div class="tl-body">
+            <b>6/26</b> 热卤项目签约 → <b>6/27-9/6</b> 新开门店直接使用商龙并完成切换准备 →
+            <b>9/6 整体切换上线</b>（餐饮、会员、外卖、团购）→ <b>9/12</b> 解决所有标签打印问题 → <b>9/19</b> 解决所有外卖问题
+          </div>
+        </div>
+        <div class="tl-item past">
+          <div class="tl-year">2024 年</div>
+          <div class="tl-body"><b>6/20</b> 转转火锅项目签约，双品牌建设启动</div>
+        </div>
+        <div class="tl-item past">
+          <div class="tl-year">2025 年</div>
+          <div class="tl-body">
+            <b>3/31</b> 转转火锅项目交付验收（P0: 72 个 / P1: 49 个 / P2: 12 个 / P3: 3 个）→
+            <b>9/10</b> 分批切换转转火锅 61 家门店 → <b>9月</b> 淘宝闪购对接、糖水铺 KDS 叫号上线 →
+            <b>10月</b> 门店菜谱切换 → <b>11月</b> 商龙云 2.0 切换 → <b>12月</b> 高德扫街、龙闪屏、CRM8 MA 画布
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2026 年 · 运营深化期（1-10月）</div>
+          <div class="tl-body">
+            全年稳定运营，围绕<b>效期管理、KDS 智能出品 2.0、开放平台、会员积分、移动银台 pro、商超对接</b>六大主线推进；
+            双品牌门店结构显著变化：转转火锅 <b>+94 家</b>，热卤主动调整 <b>-31 家</b>；年度规划完成度 <b>50%</b>。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px">
+      <h3>2026 全年关键节点（1-10月）</h3>
+      <div class="months">
+        <div class="mon"><div class="m-h"><span class="m-n">1月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">基础能力上线</div>
+          <div class="m-x">互斥需求、叫号屏、积分商城定位、会员营销报告上线；效期管理进入测试；AI 助手测试中</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">2月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">KDS 升级筹备</div>
+          <div class="m-x">智能出品 2.0 数字化升级筹备；317 大会新功能整合；京东外卖半固定半任选</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">3月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">开放平台审核</div>
+          <div class="m-x">扫码点餐下单 API 提交开放平台注册审核；效期系统定档 4 月发布</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">4月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">效期系统发布</div>
+          <div class="m-x">效期管理系统正式发布（因十周年活动暂缓全量上线）；十周年储值活动数据支持</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">5月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">平台打通</div>
+          <div class="m-x">开放平台审核开通并接口联调；直通车 3.0、移动银台 pro 检索推进；智慧店长试用</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">6月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">会员能力迭代</div>
+          <div class="m-x">积分到期提醒上线；学生认证定档 7/7；MA 画布营销 & ICC 企微社群启动沟通</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">7月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">多品牌 POS 对接</div>
+          <div class="m-x">「韩水水」POS 点餐对接交付；转转火锅 POS 点单数据（金额/积分/桌号/单号检索）交付；学霸认证上线</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">8月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">商超渠道启动</div>
+          <div class="m-x">积分消费向下取整交付；移动银台 pro 升级 + 快速检索账单；商超定开券包/权益卡/积分兑换</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">9月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">商超对接交付</div>
+          <div class="m-x">商超对接软件交付；积分度墙事故查明解决；积分商城定制开发；小程序菜品背景图完成</div></div>
+        <div class="mon"><div class="m-h"><span class="m-n">10月</span><span class="m-d">运营期</span></div>
+          <div class="m-t">年度规划筹备</div>
+          <div class="m-x">积分储值多功能开发；小程序菜品框架改版；多项门店问题闭环；11/3 年度规划沟通会排期</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 价值呈现 ============ -->
+<section id="s2">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-no">02</div>
+      <div class="sec-title">
+        <h2>价值<b>呈现</b></h2>
+        <p>Value Delivery · 2026 年为盛香亭交付的每一项能力</p>
+      </div>
+      <div class="sec-line"></div>
+    </div>
+
+    <!-- 图表 -->
+    <div class="chart-grid">
+      <div class="card reveal">
+        <h3>门店规模变化趋势（在营门店数）</h3>
+        <div class="legend">
+          <span><i style="background:var(--gold)"></i>热卤</span>
+          <span><i style="background:var(--red)"></i>转转火锅</span>
+        </div>
+        <svg viewBox="0 0 620 300" id="chart">
+          <!-- 网格 -->
+          <g stroke="#EFE6E5" stroke-width="1">
+            <line x1="52" y1="250" x2="600" y2="250"/>
+            <line x1="52" y1="200" x2="600" y2="200"/>
+            <line x1="52" y1="150" x2="600" y2="150"/>
+            <line x1="52" y1="100" x2="600" y2="100"/>
+            <line x1="52" y1="50"  x2="600" y2="50"/>
+          </g>
+          <g font-size="11" fill="#999" text-anchor="end">
+            <text x="44" y="254">0</text><text x="44" y="204">75</text>
+            <text x="44" y="154">150</text><text x="44" y="104">225</text><text x="44" y="54">300</text>
+          </g>
+          <g font-size="12" fill="#666" text-anchor="middle">
+            <text x="100" y="272">1月</text><text x="225" y="272">7月</text>
+            <text x="350" y="272">8月</text><text x="475" y="272">9月</text><text x="568" y="272">10月</text>
+          </g>
+          <!-- 热卤 -->
+          <g class="bar-g">
+            <rect x="78"  y="141" width="22" height="109" rx="3" fill="#C99B4A"><title>1月 热卤 163</title></rect>
+            <rect x="203" y="153" width="22" height="97"  rx="3" fill="#C99B4A"><title>7月 热卤 146</title></rect>
+            <rect x="328" y="159" width="22" height="91"  rx="3" fill="#C99B4A"><title>8月 热卤 136</title></rect>
+            <rect x="453" y="161" width="22" height="89"  rx="3" fill="#C99B4A"><title>9月 热卤 133</title></rect>
+            <rect x="546" y="162" width="22" height="88"  rx="3" fill="#C99B4A"><title>10月 热卤 132</title></rect>
+          </g>
+          <!-- 转转 -->
+          <g class="bar-g">
+            <rect x="102" y="139" width="22" height="111" rx="3" fill="#B01F24"><title>1月 转转火锅 167</title></rect>
+            <rect x="227" y="102" width="22" height="148" rx="3" fill="#B01F24"><title>7月 转转火锅 222</title></rect>
+            <rect x="352" y="89"  width="22" height="161" rx="3" fill="#B01F24"><title>8月 转转火锅 241</title></rect>
+            <rect x="477" y="81"  width="22" height="169" rx="3" fill="#B01F24"><title>9月 转转火锅 253</title></rect>
+            <rect x="570" y="76"  width="22" height="174" rx="3" fill="#B01F24"><title>10月 转转火锅 261</title></rect>
+          </g>
+          <g font-size="11" font-weight="700" text-anchor="middle">
+            <text x="89"  y="134" fill="#C99B4A">163</text>
+            <text x="113" y="132" fill="#B01F24">167</text>
+            <text x="214" y="146" fill="#C99B4A">146</text>
+            <text x="238" y="95"  fill="#B01F24">222</text>
+            <text x="339" y="152" fill="#C99B4A">136</text>
+            <text x="363" y="82"  fill="#B01F24">241</text>
+            <text x="464" y="154" fill="#C99B4A">133</text>
+            <text x="488" y="74"  fill="#B01F24">253</text>
+            <text x="557" y="155" fill="#C99B4A">132</text>
+            <text x="581" y="69"  fill="#B01F24">261</text>
+          </g>
+        </svg>
+        <p style="font-size:12.5px;margin-top:8px">
+          <span class="tag-inline">趋势</span>　转转火锅 10 个月净增 <b>94 家（+56%）</b>；热卤主动调整 <b>-31 家</b>，
+          <b>存量门店保持 2.4% 月增长</b>。2027 年数字化第一任务是支撑规模化开店与多业态统一运营。
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>数字化覆盖率</h3>
+        <div class="cov">
+          <div class="cov-item">
+            <div class="donut"><svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#F2E6E5" stroke-width="11"/>
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#B01F24" stroke-width="11" stroke-linecap="round"
+                stroke-dasharray="264" stroke-dashoffset="145" transform="rotate(-90 50 50)"/>
+            </svg><span>45%</span></div>
+            <div class="nm">菜品营销</div><div class="vl">急推菜 / 毛利显示</div>
+          </div>
+          <div class="cov-item">
+            <div class="donut"><svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#F2E6E5" stroke-width="11"/>
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#B01F24" stroke-width="11" stroke-linecap="round"
+                stroke-dasharray="264" stroke-dashoffset="66" transform="rotate(-90 50 50)"/>
+            </svg><span>75%</span></div>
+            <div class="nm">出品管理</div><div class="vl">KDS / 智能出品 / 效期</div>
+          </div>
+          <div class="cov-item">
+            <div class="donut"><svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#F2E6E5" stroke-width="11"/>
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#B01F24" stroke-width="11" stroke-linecap="round"
+                stroke-dasharray="264" stroke-dashoffset="92" transform="rotate(-90 50 50)"/>
+            </svg><span>65%</span></div>
+            <div class="nm">会员营销</div><div class="vl">积分 / 储值 / 权益卡</div>
+          </div>
+          <div class="cov-item">
+            <div class="donut"><svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#F2E6E5" stroke-width="11"/>
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#B01F24" stroke-width="11" stroke-linecap="round"
+                stroke-dasharray="264" stroke-dashoffset="106" transform="rotate(-90 50 50)"/>
+            </svg><span>60%</span></div>
+            <div class="nm">管理决策</div><div class="vl">报表 / 数据中台 / 店长</div>
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--gray);margin-top:10px">※ 口径沿用 2025 年度汇报，数值为当前评估值，年度沟通会与业务方最终确认</p>
+      </div>
+    </div>
+
+    <!-- 价值案例 -->
+    <div class="card reveal">
+      <h3>2026 年度价值赋能清单</h3>
+      <div class="cases">
+        <div class="case">
+          <div class="idx">VALUE 01</div>
+          <h4>效期管理系统</h4>
+          <p>1月测试 → 4月正式发布 → 全门店推进 → 9月优化版交付。解决物料过期风险、临期浪费与人工盘点低效，总部可统一管控。</p>
+          <span class="status s-done">已交付</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 02</div>
+          <h4>KDS 智能出品 2.0</h4>
+          <p>后厨从"有纸化"到"无纸化"再升级，全年多轮需求开发、测试与运营适配优化，持续打磨出品效率。</p>
+          <span class="status s-doing">持续优化</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 03</div>
+          <h4>开放平台 & API</h4>
+          <p>扫码点餐下单 API 审核开通并完成接口联调；配合数据中台灵活取数，新增接口字段支持，打通系统间数据链路。</p>
+          <span class="status s-done">已交付</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 04</div>
+          <h4>移动银台 pro</h4>
+          <p>已结账单按金额/时间段/桌号快速检索；pos 补开票；版本升级与快速检索账单交付；数据不齐门店推动上银台 pro。</p>
+          <span class="status s-done">已交付</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 05</div>
+          <h4>多品牌 POS 对接</h4>
+          <p>「韩水水」POS 点餐对接交付；转转火锅 POS 点单数据（金额/积分/桌号/单号检索）交付，支撑多业态统一运营。</p>
+          <span class="status s-done">已交付</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 06</div>
+          <h4>会员积分体系深化</h4>
+          <p>积分到期提醒、学生认证、积分消费向下取整、互斥增值逻辑、积分商城定制开发，全年持续打磨会员体验。</p>
+          <span class="status s-doing">部分在途</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 07</div>
+          <h4>商超渠道对接</h4>
+          <p>商超对接软件交付；商超定开券包 + 权益卡积分兑换等场景开发全面推进，打开新的增量渠道。</p>
+          <span class="status s-doing">推进中</span>
+        </div>
+        <div class="case">
+          <div class="idx">VALUE 08</div>
+          <h4>外卖 & 小程序</h4>
+          <p>京东外卖半固定半任选、估清补偿机制、学霸认证、小程序菜品背景图/框架改版、联系客服白名单配置。</p>
+          <span class="status s-done">已交付</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 交付价值矩阵 -->
+    <div class="card reveal" style="margin-top:18px">
+      <h3>项目交付价值全景</h3>
+      <table class="tbl">
+        <tr><th style="width:14%">板块</th><th>2026 年已交付 / 在途能力</th></tr>
+        <tr><td><b>前厅 · 销售点单</b></td><td>多终端点单 · 扫码点餐 · 移动 POS · 扫码点餐 API 对接 · 小程序菜品改版 · 学生认证</td></tr>
+        <tr><td><b>前厅 · 收银结算</b></td><td>多终端结算 · 聚合支付 · <b>聚合验券</b> · 移动银台 pro 检索 · <b>pos 补开票（在途）</b> · 全电电子发票二维码</td></tr>
+        <tr><td><b>前厅 · 会员营销</b></td><td>储值管理 · 客户 RFM 分析 · 公域平台会员打通 · <b>积分到期提醒</b> · <b>积分消费取整</b> · <b>互斥增值逻辑（在途）</b> · <span style="color:#A97A1E">企微 ICC（方案沟通中）</span> · <span style="color:#A97A1E">MA 画布营销（方案沟通中）</span></td></tr>
+        <tr><td><b>厨房 KDS</b></td><td>标准传菜 · 档口日报 · 超时提醒 · 状态预警 · <b>智能出品 2.0（持续优化）</b> · <b>效期管理系统</b></td></tr>
+        <tr><td><b>后厨</b></td><td>一签一盒 · 新模型门店打印样式 · 套餐名称+做法 · 外卖单双向同步</td></tr>
+        <tr><td><b>集团 / 龙决策</b></td><td>经营分析 · 动态大屏 · 数仓私有化 · 龙巡店 · 会员运营分析 · <b>数据中台灵活取数（开放平台）</b></td></tr>
+        <tr><td><b>渠道拓展</b></td><td>外卖平台对接 · 团购平台对接 · <b>商超对接（软件已交付）</b> · <b>「韩水水」多品牌 POS 对接</b></td></tr>
+      </table>
+      <p style="font-size:12px;color:var(--gray);margin-top:10px">※ 加粗为 2026 年推进内容；橙色为方案沟通/在途</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 问题复盘 ============ -->
+<section id="s3">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-no">03</div>
+      <div class="sec-title">
+        <h2>问题<b>复盘</b>与改善</h2>
+        <p>Review · 直面问题，让系统更稳、门店更省心</p>
+      </div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="card reveal">
+      <table class="tbl">
+        <tr><th style="width:11%">月份</th><th style="width:14%">问题类型</th><th>问题描述</th><th style="width:30%">处理与结果</th></tr>
+        <tr><td><b>2026年9月</b></td><td>积分业务异常</td>
+          <td>积分度墙（对账/到账）异常，影响会员积分使用体验</td>
+          <td>已完成问题查明并解决，同步优化积分消费相关规则</td></tr>
+        <tr><td><b>2026年9月</b></td><td>门店网络/支付</td>
+          <td>门店网络卡顿导致支付不成功，影响高峰期收银</td>
+          <td>协助排查网络环境，定位并推动解决，恢复门店正常收银</td></tr>
+        <tr><td><b>2026年9月</b></td><td>系统稳定性</td>
+          <td>营业途中重启电脑后服务启动慢，影响门店出单</td>
+          <td>已定位并优化，缩短服务启动时间</td></tr>
+        <tr><td><b>2026年9月</b></td><td>功能缺陷</td>
+          <td>主营移动 POS 无法补开发票</td>
+          <td>需求沟通中，排期 <b>11/20</b> 前推进</td></tr>
+        <tr><td><b>2026年10月</b></td><td>数据质量</td>
+          <td>部分门店数据不齐，影响经营数据完整性</td>
+          <td>已整理问题清单，推动门店使用移动银台 pro（10/15）</td></tr>
+        <tr><td><b>2026年10月</b></td><td>功能缺陷</td>
+          <td>复合 sortBy 渲染异常</td>
+          <td>已回滚并修复复版（10/15）</td></tr>
+        <tr><td><b>2026年10月</b></td><td>业务支持</td>
+          <td>KA 魔店门店 pes 问题</td>
+          <td>已解决（10/15）</td></tr>
+        <tr><td><b>2026年10月</b></td><td>服务保障</td>
+          <td>服务商启动服务问题</td>
+          <td>已完成问题定位，等待批量执行更换（10/13）</td></tr>
+      </table>
+      <p style="font-size:12.5px;margin-top:12px">
+        <span class="tag-inline">改善机制</span>　延续 2025 年故障复盘机制：问题定位 → 影响面评估 → 方案输出 →
+        复盘沉淀 → 大促/高峰前专项压测与扩容预案。
+      </p>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px">
+      <h3>在途事项清单（截至 10 月底）</h3>
+      <table class="tbl">
+        <tr><th style="width:34%">事项</th><th style="width:20%">状态</th><th style="width:14%">节点</th><th>说明</th></tr>
+        <tr><td><b>主营移动 pos 无法补开发票</b></td><td><span class="badge b-ing">进行中</span></td><td>11/20</td><td>需求沟通中，待排期交付</td></tr>
+        <tr><td><b>管理直通车复合算工作台迭代</b></td><td><span class="badge b-ing">进行中</span></td><td>10/29</td><td>工作台能力迭代推进</td></tr>
+        <tr><td><b>商超新版迭代</b></td><td><span class="badge b-ing">进行中</span></td><td>10/29</td><td>商超渠道配套版本迭代</td></tr>
+        <tr><td><b>消费者展示改版与商家优化</b></td><td><span class="badge b-ing">进行中</span></td><td>11/03</td><td>展示层改版后做商家侧优化</td></tr>
+        <tr><td><b>小程序菜品背景图改版</b></td><td><span class="badge b-ok">开发完成</span></td><td>待上线</td><td>待版本上线（10/28 交付测试）</td></tr>
+        <tr><td><b>互斥增值功能：积分消费互斥逻辑</b></td><td><span class="badge b-ing">开发中</span></td><td>11月</td><td>8月启动开发，持续推进</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 共创未来 ============ -->
+<section id="s4">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-no">04</div>
+      <div class="sec-title">
+        <h2>共创<b>未来</b></h2>
+        <p>2027 Planning · 让数字化跟上业务扩张的速度</p>
+      </div>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="card reveal">
+      <h3>规划主线</h3>
+      <p>
+        2026 年转转火锅净增 <b>94 家</b>——2027 年数字化的第一任务是<b>支撑规模化开店与多业态统一运营</b>。
+        围绕"效率、体验、成本、增长"四个关键词，规划四大方向：
+        <b>伴随扩张（规模支撑）· 深耕会员（私域运营）· 渠道融合（全场景）· 数据驱动（决策提效）</b>。
+      </p>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px">
+      <h3>能力地图 · 商龙新能力</h3>
+      <div class="ability">
+        <div class="ab"><div class="ic">01</div><div class="nm">餐中桌访</div>
+          <div class="ds">主动关怀并真实记录，数据反哺业务；客诉方案：赠送/打折/退菜/发券</div></div>
+        <div class="ab new"><div class="ic">02</div><div class="nm">效期管理</div>
+          <div class="ds">2026 已发布落地，2027 全面推广至所有门店，减少浪费与食安风险</div></div>
+        <div class="ab"><div class="ic">03</div><div class="nm">急推菜 / 毛利显示</div>
+          <div class="ds">最优品质在最佳时间呈现，成本管控发生在每时每刻</div></div>
+        <div class="ab"><div class="ic">04</div><div class="nm">智能巡检</div>
+          <div class="ds">13 种 AI 算法全场景监管；预警直接转整改单，形成自动化闭环</div></div>
+        <div class="ab"><div class="ic">05</div><div class="nm">智慧店长</div>
+          <div class="ds">店长任务清单 + AI 分析日报，数据转化为决策力与执行力</div></div>
+        <div class="ab new"><div class="ic">06</div><div class="nm">MA & ICC 私域</div>
+          <div class="ds">MA 画布营销 + 企微社群运营，2027 从方案沟通走向落地试点</div></div>
+        <div class="ab new"><div class="ic">07</div><div class="nm">商超渠道</div>
+          <div class="ds">商超对接已交付，2027 门店批量推广，打开增量渠道</div></div>
+        <div class="ab new"><div class="ic">08</div><div class="nm">规模开店支撑</div>
+          <div class="ds">新店开业数字化标准包：收银/点餐/外卖/会员一站式快速交付</div></div>
+        <div class="ab new"><div class="ic">09</div><div class="nm">数据中台</div>
+          <div class="ds">开放平台 + 数据中台灵活取数，支撑菜品、营销、营业额分析</div></div>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px">
+      <h3>2027 年度规划表（草案）</h3>
+      <div class="plan-grid">
+        <div class="plan">
+          <div class="cat">规模支撑 · 新增重点</div>
+          <h4>新店开业数字化标准包</h4>
+          <ul><li>新店开业数字化交付 SOP（收银/点餐/外卖/会员一站式）</li>
+            <li>多品牌多业态统一运营支撑</li>
+            <li>缩短新店开业上线周期</li></ul>
+          <div class="val">价值点：让开店速度不再受限于系统交付速度</div>
+        </div>
+        <div class="plan">
+          <div class="cat">门店运营类</div>
+          <h4>效期管理 · 餐中桌访 · 急推菜</h4>
+          <ul><li>效期管理全面推广至所有门店</li><li>餐中桌访落地，主动关怀+真实记录</li>
+            <li>急推菜/毛利显示，成本管控前置</li></ul>
+          <div class="val">价值点：高效管理效期、避免食安问题；服务与体验至上</div>
+        </div>
+        <div class="plan">
+          <div class="cat">营销与私域</div>
+          <h4>MA 智能画布 · ICC 企微 · 会员运营</h4>
+          <ul><li>MA 画布营销从方案走向试点落地</li><li>ICC 企微社群运营试点</li>
+            <li>会员全生命周期体验与复购提升</li><li>积分商城/权益卡/储值联动</li></ul>
+          <div class="val">价值点：从客户动作、事件判断来筛选触达，提升复购</div>
+        </div>
+        <div class="plan">
+          <div class="cat">渠道融合</div>
+          <h4>商超 · 外卖 · 小程序 · 门店商城</h4>
+          <ul><li>商超渠道门店批量推广</li><li>外卖平台深化与稳定性保障</li>
+            <li>小程序与门店商城融合</li></ul>
+          <div class="val">价值点：统一订单与会员触点，打开增量渠道</div>
+        </div>
+        <div class="plan">
+          <div class="cat">龙决策 · 数据驱动</div>
+          <h4>数据分析报告 · 定制化报表</h4>
+          <ul><li>菜品分析、营销分析、营业额分析报告</li><li>个性化定制报表，组件高度自定义</li>
+            <li>数据中台取数常态化</li></ul>
+          <div class="val">价值点：个性化报表自由筛选拉取，支撑经营决策</div>
+        </div>
+        <div class="plan">
+          <div class="cat">智慧店长 · 智能巡检</div>
+          <h4>任务清单 · AI 日报 · SOP 巡检</h4>
+          <ul><li>店长任务清单 + AI 分析日报</li><li>门店各岗位 SOP 自检与巡检</li>
+            <li>人才培养与线上考核</li></ul>
+          <div class="val">价值点：模糊变精准决策；线下表格变规范数字化工具</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal" style="margin-top:18px">
+      <h3>2027 年 Q1 落地计划（草案）</h3>
+      <table class="tbl">
+        <tr><th style="width:10%">月份</th><th style="width:52%">重点动作</th><th>输出物</th></tr>
+        <tr><td><b>1 月</b></td>
+          <td>年度规划启动会；新店开业数字化标准包 V1 落地；在途需求收口（补开票 / 直通车迭代 / 商超新版）</td>
+          <td>年度规划书 · 标准包 SOP</td></tr>
+        <tr><td><b>2 月</b></td>
+          <td>商超渠道门店批量推广；积分商城券包 + 权益卡能力上线；转转火锅新店快速交付试点</td>
+          <td>推广清单 · 试点报告</td></tr>
+        <tr><td><b>3 月</b></td>
+          <td>MA 画布营销 + ICC 企微社群试点上线；移动银台 pro 全面推广；Q1 复盘与 Q2 计划输出</td>
+          <td>试点总结 · Q2 计划</td></tr>
+      </table>
+      <p style="font-size:12.5px;margin-top:12px">
+        <span class="tag-inline">服务承诺</span>　① 双周需求沟通会　② 月度项目简报　③ 专属 PM（陈海涛）全程跟进
+        ④ 季度规划回顾，完成度透明可查。
+      </p>
+      <p style="font-size:12.5px;margin-top:8px">
+        <span class="tag-inline" style="background:#FFF6E6;color:#A97A1E">关键节点</span>　
+        <b>11 月 3 日上午</b> 年度规划沟通会（陈海涛、刘智娥、张金利）——本材料即为该会议准备。
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="ending">
+  <div class="wrap">
+    <h2>全力以赴　共创未来</h2>
+    <div class="ln"></div>
+    <p>助力餐饮企业发展 · 推动餐饮行业进步</p>
+    <p style="margin-top:16px;font-size:13px">天财商龙科技有限公司　|　项目经理 陈海涛　|　2026 年 11 月</p>
+  </div>
+</div>
+
+<script>
+// 数字滚动
+function animateCount(el){
+  const target = +el.dataset.to;
+  const em = el.querySelector('em');
+  const suffix = em ? em.outerHTML : '';
+  const dur = 1100, start = performance.now();
+  function tick(now){
+    const p = Math.min((now-start)/dur,1);
+    const v = Math.floor(target*(1-Math.pow(1-p,3)));
+    el.innerHTML = v + suffix;
+    if(p<1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+// 滚动入场
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.num[data-to]').forEach(n=>{
+        if(!n.dataset.done){n.dataset.done=1;animateCount(n)}
+      });
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// 导航高亮
+const secs=[...document.querySelectorAll('section')];
+const links=[...document.querySelectorAll('.nav a')];
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY+120;
+  let cur=secs[0].id;
+  secs.forEach(s=>{if(s.offsetTop<=y) cur=s.id});
+  links.forEach(a=>a.style.color = (a.getAttribute('href')==='#'+cur)?'var(--red)':'');
+},{passive:true});
+</script>
+</body>
+</html>

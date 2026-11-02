@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>盛香亭集团 2026年度回访暨2027战略规划 · 天财商龙</title>
+<style>
+:root{
+  --red:#B01F24; --red-d:#6E0F13; --gold:#C99B4A; --gold-l:#E8C77A;
+  --ink:#232323; --sub:#5E5E5E; --gray:#949494;
+  --bg:#FAF7F5; --card:#fff; --line:#EBE1DF;
+  --green:#2E7D32; --blue:#26557A; --amber:#A97A1E;
+  --shadow:0 2px 18px rgba(176,31,36,.06);
+  --shadow-h:0 10px 32px rgba(176,31,36,.14);
+  --serif:"Songti SC","STSong","SimSun",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;align-items:center;height:58px;gap:8px}
+.logo{font-size:14px;font-weight:800;color:var(--red);letter-spacing:1px;margin-right:18px;white-space:nowrap}
+.logo small{display:block;font-size:9.5px;color:var(--gray);font-weight:400;letter-spacing:.5px}
+.nav a{font-size:13px;color:var(--sub);text-decoration:none;padding:5px 9px;border-radius:5px;transition:.2s;white-space:nowrap}
+.nav a:hover{background:#FBEDED;color:var(--red)}
+.nav-right{margin-left:auto;font-size:12px;color:var(--gray);white-space:nowrap}
+
+/* hero */
+.hero{background:linear-gradient(150deg,#6E0F13 0%,#A01B20 48%,#C04A38 100%);color:#fff;padding:82px 0 108px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:rgba(255,255,255,.05);right:-160px;top:-220px}
+.hero::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:1px solid rgba(255,255,255,.12);right:60px;bottom:-140px}
+.hero .kick{display:inline-block;font-size:11.5px;letter-spacing:3px;border:1px solid rgba(255,255,255,.4);padding:5px 16px;border-radius:20px;margin-bottom:20px}
+.hero h1{font-size:42px;font-weight:800;line-height:1.28;letter-spacing:.5px}
+.hero h1 em{font-style:normal;color:var(--gold-l)}
+.hero .lead{margin-top:18px;font-size:15.5px;color:rgba(255,255,255,.86);max-width:760px;line-height:1.9}
+.hero .meta{margin-top:30px;display:flex;gap:30px;flex-wrap:wrap;font-size:12.8px;color:rgba(255,255,255,.82)}
+.hero .meta b{color:#fff;font-weight:600}
+
+/* KPI strip */
+.kpi-wrap{margin-top:-58px;position:relative;z-index:6}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.kpi{background:var(--card);border-radius:13px;padding:20px;box-shadow:var(--shadow);border-top:3px solid var(--red);transition:.3s}
+.kpi:hover{transform:translateY(-5px);box-shadow:var(--shadow-h)}
+.kpi .n{font-size:34px;font-weight:800;color:var(--red);line-height:1.1}
+.kpi .n em{font-style:normal;font-size:14px;margin-left:2px}
+.kpi .l{font-size:12.5px;font-weight:600;margin-top:5px}
+.kpi .t{font-size:11.5px;color:var(--gray);margin-top:3px}
+
+/* section */
+section{padding:70px 0 10px}
+.head{display:flex;align-items:flex-end;gap:18px;margin-bottom:32px}
+.h-no{font-family:var(--serif);font-size:60px;font-weight:700;color:rgba(176,31,36,.12);line-height:.8}
+.h-tx h2{font-size:27px;font-weight:800;letter-spacing:1px}
+.h-tx h2 b{color:var(--red)}
+.h-tx p{font-size:13px;color:var(--gray);margin-top:5px;letter-spacing:.5px}
+.h-ln{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-bottom:12px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 28px;box-shadow:var(--shadow)}
+.card+.card{margin-top:16px}
+.card h3{font-size:16.5px;color:var(--red);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.card h3::before{content:"";width:4px;height:15px;background:var(--red);border-radius:2px}
+.card p{font-size:13.8px;color:var(--sub);line-height:1.9}
+.card p b{color:var(--ink);font-weight:600}
+.hl{background:linear-gradient(transparent 62%,#FBE3C8 62%);font-weight:700;color:var(--ink)}
+
+/* 数据砖 */
+.bricks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.brick{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;position:relative;overflow:hidden}
+.brick::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:linear-gradient(90deg,var(--red),var(--gold))}
+.brick .v{font-size:27px;font-weight:800;color:var(--red);line-height:1.15}
+.brick .v span{font-size:13px;font-weight:600}
+.brick .k{font-size:12.5px;font-weight:600;margin-top:6px}
+.brick .s{font-size:11.5px;color:var(--gray);margin-top:3px;line-height:1.6}
+
+/* 品牌曲线 */
+.curve{display:flex;gap:0;align-items:stretch;overflow-x:auto;padding:6px 0 2px}
+.curve .pt{flex:1;min-width:150px;position:relative;padding:0 10px}
+.curve .pt::before{content:"";position:absolute;top:14px;left:0;right:0;height:2px;background:var(--line)}
+.curve .pt:first-child::before{left:50%}
+.curve .pt:last-child::before{right:50%}
+.curve .dot{width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--red);position:relative;z-index:2;margin:8px auto 0}
+.curve .pt.old .dot{border-color:#CBB48C}
+.curve .yr{text-align:center;font-size:12.5px;font-weight:800;color:var(--red);margin-top:9px}
+.curve .pt.old .yr{color:#A9884F}
+.curve .tx{font-size:11.5px;color:var(--sub);margin-top:5px;text-align:center;line-height:1.65}
+
+/* 洞察 */
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ins{
+  background:linear-gradient(160deg,#fff,#FDF6F4);border:1px solid var(--line);border-left:4px solid var(--red);
+  border-radius:12px;padding:22px;transition:.3s
+}
+.ins:hover{transform:translateY(-6px);box-shadow:var(--shadow-h)}
+.ins .no{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:800}
+.ins h4{font-size:16.5px;font-weight:800;margin:8px 0 10px;color:var(--ink);line-height:1.45}
+.ins p{font-size:12.8px;color:var(--sub);line-height:1.85}
+.ins .q{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:12px;color:var(--red);font-weight:600}
+
+/* 图表 */
+.chart-box{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+.legend{display:flex;gap:16px;font-size:12px;color:var(--sub);margin-bottom:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+svg{display:block;max-width:100%}
+
+/* 矩阵 */
+.mtx{width:100%;border-collapse:collapse;font-size:13px}
+.mtx th{background:#FBEDED;color:#8E3B3E;font-weight:700;text-align:left;padding:10px 12px;border-bottom:2px solid #F0D8D8;white-space:nowrap;font-size:12.5px}
+.mtx td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--sub);vertical-align:top;line-height:1.7}
+.mtx tr:hover td{background:#FDFAF9}
+.mtx td b{color:var(--ink)}
+.bd{font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700;white-space:nowrap}
+.ok{background:#E8F5E9;color:var(--green)} .ing{background:#FFF4E0;color:var(--amber)}
+.wait{background:#F1F3F5;color:#6B7280} .warn{background:#FBEDED;color:var(--red)}
+
+/* 风险 */
+.risk{border:1px solid #F0CFCF;background:linear-gradient(160deg,#FFF9F8,#FDF1F0);border-radius:14px;padding:26px 28px}
+.risk .rt{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;font-size:11.5px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:14px}
+.risk h4{font-size:17px;font-weight:800;margin-bottom:10px}
+.risk p{font-size:13.5px;color:#5A3C3C;line-height:1.9}
+.risk .quote{margin-top:14px;padding:14px 16px;background:#fff;border-left:3px solid var(--red);border-radius:0 8px 8px 0;font-size:12.8px;color:var(--sub)}
+
+/* 战略 */
+.theme{
+  background:linear-gradient(140deg,#6E0F13,#A01B20 60%,#C04A38);color:#fff;
+  border-radius:16px;padding:40px 42px;position:relative;overflow:hidden
+}
+.theme::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.06);right:-90px;top:-120px}
+.theme .tg{font-size:11.5px;letter-spacing:3px;color:var(--gold-l);font-weight:700}
+.theme h3{font-size:30px;font-weight:800;margin:12px 0 14px;line-height:1.4}
+.theme h3 em{font-style:normal;color:var(--gold-l)}
+.theme p{font-size:13.8px;color:rgba(255,255,255,.85);max-width:880px;line-height:1.95}
+
+/* 战役 */
+.wars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.war{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.war:hover{transform:translateY(-6px);box-shadow:var(--shadow-h)}
+.war .wh{padding:18px 20px 16px;background:#FBEDED;border-bottom:1px solid #F2DCDC}
+.war.b .wh{background:#FFF6E6;border-color:#F3E2C2}
+.war.c .wh{background:#EFF4F8;border-color:#DAE5EE}
+.war .wh .lb{font-size:10.5px;letter-spacing:2px;font-weight:800;color:var(--red)}
+.war.b .wh .lb{color:var(--amber)} .war.c .wh .lb{color:var(--blue)}
+.war .wh h4{font-size:17px;font-weight:800;margin-top:5px;line-height:1.45}
+.war .wb{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.war ul{list-style:none;font-size:12.7px;color:var(--sub)}
+.war ul li{position:relative;padding-left:15px;margin-bottom:8px;line-height:1.7}
+.war ul li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--red)}
+.war.b ul li::before{background:var(--amber)} .war.c ul li::before{background:var(--blue)}
+.war .kpi-s{margin-top:auto;padding-top:13px;border-top:1px dashed var(--line);font-size:11.8px;color:var(--red);font-weight:700;line-height:1.8}
+.war.b .kpi-s{color:var(--amber)} .war.c .kpi-s{color:var(--blue)}
+
+/* 底座 */
+.base{margin-top:16px;border:1px dashed #D9C6A0;background:linear-gradient(160deg,#FFFDF8,#FFF8EC);border-radius:14px;padding:22px 26px}
+.base h4{font-size:15.5px;font-weight:800;color:#8A6A22;display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.base h4 span{font-size:11px;background:#C99B4A;color:#fff;padding:2px 8px;border-radius:10px;letter-spacing:1px}
+.base .row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.base .it{font-size:12.6px;color:#6B5636;line-height:1.8}
+.base .it b{color:#4A3A1E;display:block;font-size:13.3px;margin-bottom:3px}
+
+/* 三层价值 */
+.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.layer{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;position:relative}
+.layer .lv{font-size:10.5px;font-weight:800;letter-spacing:2px;color:var(--gold)}
+.layer h4{font-size:15.5px;font-weight:800;margin:7px 0 8px}
+.layer p{font-size:12.5px;color:var(--sub);line-height:1.8}
+
+/* 路线图 */
+.road{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:8px;position:relative}
+.road::before{content:"";position:absolute;top:26px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--red),var(--gold),#E8D5B0)}
+.rd{position:relative;padding:0 14px;text-align:center}
+.rd .pt{width:15px;height:15px;border-radius:50%;background:#fff;border:3px solid var(--red);margin:19px auto 0;position:relative;z-index:2}
+.rd:nth-child(2) .pt{border-color:var(--gold)} .rd:nth-child(3) .pt{border-color:#D9C6A0}
+.rd .yr{font-size:17px;font-weight:800;color:var(--red);margin-top:10px}
+.rd:nth-child(2) .yr{color:var(--gold)} .rd:nth-child(3) .yr{color:#A9884F}
+.rd .ttl{font-size:13.5px;font-weight:700;margin-top:4px}
+.rd .ds{font-size:12px;color:var(--sub);margin-top:7px;line-height:1.75;text-align:left}
+.rd .tag{display:inline-block;margin-top:9px;font-size:11px;background:#FBEDED;color:var(--red);padding:2px 9px;border-radius:10px;font-weight:700}
+
+/* 结语 */
+.end{margin-top:70px;background:linear-gradient(150deg,#6E0F13,#A01B20 62%,#C04A38);color:#fff;padding:58px 0;text-align:center}
+.end h2{font-size:29px;font-weight:800;letter-spacing:3px}
+.end .ln{width:56px;height:2px;background:var(--gold-l);margin:20px auto}
+.end p{font-size:13.5px;color:rgba(255,255,255,.8)}
+
+/* 注释 */
+.fn{font-size:11.5px;color:var(--gray);margin-top:9px;line-height:1.7}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .kpis,.bricks,.insights,.wars,.layers,.base .row{grid-template-columns:repeat(2,1fr)}
+  .chart-box,.road{grid-template-columns:1fr}
+  .hero h1{font-size:30px}
+  .road::before{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-in">
+    <div class="logo">TCSL 天财商龙<small>盛香亭集团 · 数字化升级项目</small></div>
+    <a href="#s1">看势</a>
+    <a href="#s2">回顾</a>
+    <a href="#s3">体检</a>
+    <a href="#s4">谋远</a>
+    <div class="nav-right">汇报人 陈海涛 · 2026.11</div>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="wrap">
+    <div class="kick">ANNUAL REVIEW &amp; STRATEGY 2026-2027</div>
+    <h1>盛香亭集团 2026 年度回访<br><em>暨 2027 数字化战略规划</em></h1>
+    <p class="lead">
+      2026 年，盛香亭用"转转热卤"完成了单店模型的重构——门店一年翻倍，全网排队刷屏。
+      但赛道已从增量转向存量：火锅门店从 53.9 万家收缩至 45.6 万家，人均消费进入 50 元时代。
+      <b style="color:#fff">规模红利之后，考的是效率、一致性与复购</b>。这份材料想回答的问题是：
+      数字化如何从"支撑开店"升级为<b style="color:#fff">"守住品牌、算清单店、留住顾客"</b>。
+    </p>
+    <div class="meta">
+      <div>汇报人　<b>陈海涛 · 项目经理</b></div>
+      <div>周期　<b>2026.01 - 2026.10</b></div>
+      <div>双品牌　<b>热卤 / 转转热卤</b></div>
+      <div>参照　<b>2025 年度汇报 · 行业公开信息</b></div>
+    </div>
+  </div>
+</div>
+
+<div class="kpi-wrap">
+  <div class="wrap">
+    <div class="kpis">
+      <div class="kpi reveal">
+        <div class="n" data-to="261">0<em>家</em></div>
+        <div class="l">转转火锅在营门店</div>
+        <div class="t">1月 167 → 10月 261，净增 94 家（+56%）</div>
+      </div>
+      <div class="kpi reveal">
+        <div class="n" data-to="200">0<em>+ 家</em></div>
+        <div class="l">转转热卤公开门店规模</div>
+        <div class="t">5月 112 → 9月 151 → 10月 200+，一年翻倍</div>
+      </div>
+      <div class="kpi reveal">
+        <div class="n" data-to="50">0<em>%</em></div>
+        <div class="l">26 年年度规划完成度</div>
+        <div class="t">12 项调研：完成 6 / 进行 4 / 待启 2</div>
+      </div>
+      <div class="kpi reveal">
+        <div class="n" data-to="10">0<em>期</em></div>
+        <div class="l">月度简报持续交付</div>
+        <div class="t">双周沟通会 + 专属 PM 机制全年未断</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 01 看势 ===== -->
+<section id="s1">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="h-no">01</div>
+      <div class="h-tx"><h2>看势 · <b>赛道与盛香亭的位置</b></h2>
+        <p>先看清外部，再谈内部动作</p></div>
+      <div class="h-ln"></div>
+    </div>
+
+    <div class="bricks reveal">
+      <div class="brick"><div class="v">45.6<span>万家</span></div>
+        <div class="k">全国火锅门店</div><div class="s">较 53.9 万家收缩，增量时代结束</div></div>
+      <div class="brick"><div class="v">54.7<span>元</span></div>
+        <div class="k">火锅人均消费</div><div class="s">正式进入"50 元时代"，质价比为王</div></div>
+      <div class="brick"><div class="v">5.4<span>万家</span></div>
+        <div class="k">全国小火锅门店</div><div class="s">红海赛道，洗牌加速、同质化严重</div></div>
+      <div class="brick"><div class="v">300<span>万+</span></div>
+        <div class="k">2025 年全国餐饮关店</div><div class="s">门店平均存活 15 个月</div></div>
+    </div>
+
+    <div class="card reveal" style="margin-top:16px">
+      <h3>盛香亭的三次转身</h3>
+      <div class="curve">
+        <div class="pt old"><div class="dot"></div><div class="yr">2016</div>
+          <div class="tx">长沙创立热卤品牌<br>把街头热卤搬进商场</div></div>
+        <div class="pt old"><div class="dot"></div><div class="yr">2018-2021</div>
+          <div class="tx">5 年开出 400+ 店<br>腾讯、绝味战投进入</div></div>
+        <div class="pt old"><div class="dot"></div><div class="yr">2022-2023</div>
+          <div class="tx">闭店率 31% 的拐点<br>「转转热卤」模式诞生</div></div>
+        <div class="pt"><div class="dot"></div><div class="yr">2026 上半年</div>
+          <div class="tx">5 月 112 家<br>深圳/长沙排队 2-3 小时</div></div>
+        <div class="pt"><div class="dot"></div><div class="yr">2026 下半年</div>
+          <div class="tx">9 月 151 家 → 10 月 200+ 家<br>湘赣粤鄂四省布局</div></div>
+      </div>
+      <p style="margin-top:16px">
+        转转热卤的成功不是"换菜单"，而是<b>换场景</b>：借回转自助 + 一人一锅的成熟形式，卖自己的热卤。
+        锅底 10 元、碟子 2/4/6 元（一线 3/5/7 元）、近百 SKU 每月上新末位淘汰、客单价从 33 元拉到 45 元，
+        95% 门店开在购物中心——<span class="hl">这是一个高度依赖"数据 + 标准化"才能跑通的模型</span>。
+      </p>
+      <p class="fn">数据来源：红餐大数据、FoodTalks、新食界等公开报道（2026年5月-10月）；门店数含加盟与在营口径差异，以项目月报口径为准。</p>
+    </div>
+
+    <div class="insights reveal" style="margin-top:16px">
+      <div class="ins">
+        <div class="no">INSIGHT 01</div>
+        <h4>模型即系统：<br>四个流量密码都长在数据上</h4>
+        <p>按碟计价要算清每碟毛利，每月上新要算清末位淘汰，明档回转要控温控洁，打烊即废弃要留痕可查。
+        这四件事没有一件能靠人盯人。</p>
+        <div class="q">→ 数字化不是外挂，是单店模型的组成部分</div>
+      </div>
+      <div class="ins">
+        <div class="no">INSIGHT 02</div>
+        <h4>一年翻倍，<br>已进入"规模不经济"高危区</h4>
+        <p>赛道洗牌、加盟商开始尽调真实营收、食安舆情被短视频放大。
+        规模越大，一次事故的杀伤半径越大，一致性成本越高。</p>
+        <div class="q">→ 数字化的价值从"提效"转向"控风险 + 保一致"</div>
+      </div>
+      <div class="ins">
+        <div class="no">INSIGHT 03</div>
+        <h4>流量没有变成资产：<br>这是最大的价值洼地</h4>
+        <p>排队 2 小时、小红书刷屏、"叠盘子"打卡——巨大的公域流量，
+        却大多止步于一次结账，没有沉淀成会员身份与复购关系。</p>
+        <div class="q">→ 27 年最高 ROI 的动作在"流量资产化"</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 回顾 ===== -->
+<section id="s2">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="h-no">02</div>
+      <div class="h-tx"><h2>回顾 · <b>2026 年我们交付了什么</b></h2>
+        <p>事实层：能力、规模与节奏</p></div>
+      <div class="h-ln"></div>
+    </div>
+
+    <div class="chart-box">
+      <div class="card reveal">
+        <h3>门店规模：转转扩张，热卤收缩</h3>
+        <div class="legend">
+          <span><i style="background:#C99B4A"></i>热卤</span>
+          <span><i style="background:#B01F24"></i>转转火锅</span>
+        </div>
+        <svg viewBox="0 0 620 290">
+          <g stroke="#EFE6E5" stroke-width="1">
+            <line x1="52" y1="240" x2="600" y2="240"/><line x1="52" y1="190" x2="600" y2="190"/>
+            <line x1="52" y1="140" x2="600" y2="140"/><line x1="52" y1="90" x2="600" y2="90"/>
+            <line x1="52" y1="40" x2="600" y2="40"/>
+          </g>
+          <g font-size="11" fill="#999" text-anchor="end">
+            <text x="44" y="244">0</text><text x="44" y="194">75</text><text x="44" y="144">150</text>
+            <text x="44" y="94">225</text><text x="44" y="44">300</text>
+          </g>
+          <g font-size="12" fill="#666" text-anchor="middle">
+            <text x="100" y="262">1月</text><text x="225" y="262">7月</text><text x="350" y="262">8月</text>
+            <text x="475" y="262">9月</text><text x="568" y="262">10月</text>
+          </g>
+          <g>
+            <rect x="78"  y="131" width="22" height="109" rx="3" fill="#C99B4A"><title>1月 热卤 163</title></rect>
+            <rect x="203" y="143" width="22" height="97"  rx="3" fill="#C99B4A"><title>7月 热卤 146</title></rect>
+            <rect x="328" y="149" width="22" height="91"  rx="3" fill="#C99B4A"><title>8月 热卤 136</title></rect>
+            <rect x="453" y="151" width="22" height="89"  rx="3" fill="#C99B4A"><title>9月 热卤 133</title></rect>
+            <rect x="546" y="152" width="22" height="88"  rx="3" fill="#C99B4A"><title>10月 热卤 132</title></rect>
+            <rect x="102" y="129" width="22" height="111" rx="3" fill="#B01F24"><title>1月 转转 167</title></rect>
+            <rect x="227" y="92"  width="22" height="148" rx="3" fill="#B01F24"><title>7月 转转 222</title></rect>
+            <rect x="352" y="79"  width="22" height="161" rx="3" fill="#B01F24"><title>8月 转转 241</title></rect>
+            <rect x="477" y="71"  width="22" height="169" rx="3" fill="#B01F24"><title>9月 转转 253</title></rect>
+            <rect x="570" y="66"  width="22" height="174" rx="3" fill="#B01F24"><title>10月 转转 261</title></rect>
+          </g>
+          <g font-size="11" font-weight="700" text-anchor="middle">
+            <text x="89"  y="124" fill="#C99B4A">163</text><text x="113" y="122" fill="#B01F24">167</text>
+            <text x="214" y="136" fill="#C99B4A">146</text><text x="238" y="85"  fill="#B01F24">222</text>
+            <text x="339" y="142" fill="#C99B4A">136</text><text x="363" y="72"  fill="#B01F24">241</text>
+            <text x="464" y="144" fill="#C99B4A">133</text><text x="488" y="64"  fill="#B01F24">253</text>
+            <text x="557" y="145" fill="#C99B4A">132</text><text x="581" y="59"  fill="#B01F24">261</text>
+          </g>
+          <line x1="52" y1="240" x2="600" y2="240" stroke="#D9CFCE" stroke-width="1.5"/>
+        </svg>
+        <p class="fn">数据来源：各月项目简报。热卤主动调整 -31 家，存量门店月增长 2.4%。</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>2026 交付主线</h3>
+        <table class="mtx">
+          <tr><th style="width:26%">主线</th><th>关键交付</th><th style="width:22%">状态</th></tr>
+          <tr><td><b>效期管理</b></td><td>1月测试 → 4月发布 → 9月优化版交付</td><td><span class="bd ok">已交付</span></td></tr>
+          <tr><td><b>KDS 智能出品 2.0</b></td><td>全年多轮开发测试与运营适配</td><td><span class="bd ing">持续优化</span></td></tr>
+          <tr><td><b>开放平台 / API</b></td><td>扫码点餐 API 开通联调、数据中台取数</td><td><span class="bd ok">已交付</span></td></tr>
+          <tr><td><b>移动银台 pro</b></td><td>快速检索账单、补开票（在途）</td><td><span class="bd ok">已交付</span></td></tr>
+          <tr><td><b>会员积分体系</b></td><td>到期提醒、学生认证、取整、互斥逻辑</td><td><span class="bd ing">部分在途</span></td></tr>
+          <tr><td><b>商超渠道</b></td><td>对接软件交付、券包/权益卡场景</td><td><span class="bd ing">推进中</span></td></tr>
+          <tr><td><b>多品牌 POS</b></td><td>「韩水水」、转转火锅单点数据对接</td><td><span class="bd ok">已交付</span></td></tr>
+          <tr><td><b>小程序 &amp; 外卖</b></td><td>学霸认证、菜品改版、估清补偿</td><td><span class="bd ok">已交付</span></td></tr>
+        </table>
+        <p class="fn">完整月度节点见附表；1-10 月月度简报逐期留档。</p>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>一年下来，能力的落点变了</h3>
+      <div class="layers">
+        <div class="layer">
+          <div class="lv">LAYER 1 · 工具</div>
+          <h4>把线下动作搬到线上</h4>
+          <p>叫号屏、积分商城、移动银台 pro、直通车 3.0——解决"有没有"的问题。
+          2026 年这一层已基本铺满。</p>
+        </div>
+        <div class="layer">
+          <div class="lv">LAYER 2 · 体系</div>
+          <h4>让流程可执行、可追溯</h4>
+          <p>效期管理、开放平台、商超对接、多品牌 POS——从单点功能走向跨系统协同。
+          这是 2026 的主战场，尚未收口。</p>
+        </div>
+        <div class="layer">
+          <div class="lv">LAYER 3 · 资产</div>
+          <h4>把经营变成可复用的数据资产</h4>
+          <p>单店盈利模型、会员资产、食安信用——<b>这一层几乎还是空白，也是 2027 该打的仗</b>。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 体检 ===== -->
+<section id="s3">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="h-no">03</div>
+      <div class="h-tx"><h2>体检 · <b>三个必须正视的缺口</b></h2>
+        <p>不回避问题，才谈得上规划</p></div>
+      <div class="h-ln"></div>
+    </div>
+
+    <div class="risk reveal">
+      <div class="rt">◆ 风险一 · 食安一致性</div>
+      <h4>旋转业态的"甜蜜点"，也是"命门"</h4>
+      <p>
+        10 月 28 日，深圳文和友店被顾客拍到菜品传送带出现异物，门店当日停业消杀。
+        这不是孤例——行业公开分析普遍指出，旋转小火锅面临<b>"菜品流转温控、防尘保洁"</b>两类共性难题，
+        且<b>一条负面短视频就足以重创门店口碑</b>。盛香亭的差异化恰恰建立在"明档化 + 回转自取 + 打烊即废弃"上，
+        这三条承诺目前<b>靠制度与人工执行，缺少可验证的过程数据</b>。
+      </p>
+      <div class="quote">
+        <b>判断：</b>效期管理系统已在 2026 年 4 月发布、9 月交付优化版，但<b>尚未全量落地</b>。
+        2027 年应把它从"一个功能"升级为<b>"食安信用体系"</b>——因为对盛香亭而言，食安不是合规成本，是品牌资产。
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>风险二 · 单店盈利模型看不清</h3>
+      <p>
+        转转模型有三个独特变量：<b>按碟计价的价格带</b>（2/4/6 元）、<b>近百 SKU 的每月上新与末位淘汰</b>、
+        <b>高翻台下的食材损耗</b>。目前这些数据分散在 POS、菜品、库存多套系统里，
+        缺少"碟型 × 毛利 × 周转 × 损耗"的统一看板，新品该不该留、哪类碟型在亏，仍偏经验判断。
+        对加盟商而言，<b>拿不出一张可信的单店盈利表，就难以支撑规模化招商</b>。
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <h3>风险三 · 流量没有沉淀为会员资产</h3>
+      <p>
+        2025 年度汇报中，智慧店长案例门店的会员消费占比为 <b>28.33%</b>。
+        考虑到盛香亭门店长期处于排队状态、社交平台自带传播，这个比例明显低于流量禀赋。
+        打卡客群（年轻、一人食、学生）与会员体系之间缺少转化钩子，
+        <b>跨品牌（热卤 / 转转 / 韩水水 / 商超）的会员身份也尚未打通</b>。
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <h3>在途事项（截至 10 月底，需在 Q1 收口）</h3>
+      <table class="mtx">
+        <tr><th style="width:36%">事项</th><th style="width:18%">状态</th><th style="width:12%">节点</th><th>关联战役</th></tr>
+        <tr><td><b>主营移动 pos 无法补开发票</b></td><td><span class="bd ing">进行中</span></td><td>11/20</td><td>基础体验</td></tr>
+        <tr><td><b>管理直通车复合算工作台迭代</b></td><td><span class="bd ing">进行中</span></td><td>10/29</td><td>单店模型</td></tr>
+        <tr><td><b>商超新版迭代</b></td><td><span class="bd ing">进行中</span></td><td>10/29</td><td>渠道融合</td></tr>
+        <tr><td><b>消费者展示改版与商家优化</b></td><td><span class="bd ing">进行中</span></td><td>11/03</td><td>会员转化</td></tr>
+        <tr><td><b>小程序菜品背景图改版</b></td><td><span class="bd ok">开发完成</span></td><td>待上线</td><td>品牌体验</td></tr>
+        <tr><td><b>积分消费互斥逻辑</b></td><td><span class="bd ing">开发中</span></td><td>11月</td><td>会员资产</td></tr>
+        <tr><td><b>效期管理全量落地</b></td><td><span class="bd warn">待推进</span></td><td>Q1</td><td>食安一致性</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 谋远 ===== -->
+<section id="s4">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="h-no">04</div>
+      <div class="h-tx"><h2>谋远 · <b>2027 数字化战略</b></h2>
+        <p>从"开得快"到"开得稳、算得清、留得住"</p></div>
+      <div class="h-ln"></div>
+    </div>
+
+    <div class="theme reveal">
+      <div class="tg">2027 STRATEGIC THEME</div>
+      <h3>三年内，把数字化从<em>"系统供应商"</em><br>做成盛香亭的<em>"经营基础设施"</em></h3>
+      <p>
+        2026 年之前，数字化的任务是"把店开起来"；2027 年开始，任务是"让每一家店开得稳、算得清、留得住人"。
+        我们建议把资源集中在三场必须打赢的战役上——<b>守底线（食安一致性）、提效率（单店盈利模型）、做复购（流量资产化）</b>，
+        并用一层"规模交付底座"承托门店翻倍带来的交付压力。
+      </p>
+    </div>
+
+    <div class="wars">
+      <div class="war reveal">
+        <div class="wh"><div class="lb">BATTLE 01 · 守底线</div><h4>食安与一致性工程</h4></div>
+        <div class="wb">
+          <ul>
+            <li><b>效期管理全量落地</b>：从"已发布"到"店店在用"，打通临期预警 → 下架 → 报废闭环</li>
+            <li><b>"打烊即废弃"电子台账</b>：拍照留痕 + 时间戳，让制度变成可验证数据</li>
+            <li><b>明档 AI 巡检</b>：接入智能巡检（帽子/口罩/异物/物品摆放等 13 类算法），异常预警直转整改单</li>
+            <li><b>食安信用报告</b>：按月向商场、加盟商输出可验证的食安执行数据，把风险变成信任背书</li>
+          </ul>
+          <div class="kpi-s">目标：巡检覆盖率 100% · 整改闭环率 ≥95% · 舆情响应 ≤2 小时</div>
+        </div>
+      </div>
+
+      <div class="war b reveal">
+        <div class="wh"><div class="lb">BATTLE 02 · 提效率</div><h4>单店盈利模型数字化</h4></div>
+        <div class="wb">
+          <ul>
+            <li><b>碟型盈利看板</b>：按 2/4/6 元价格带拆解"销量 × 毛利 × 周转 × 损耗"，揪出亏损碟型</li>
+            <li><b>新品存活率机制</b>：每月上新与末位淘汰数据化，用"新品 30/60/90 天存活率"替代经验拍板</li>
+            <li><b>成本与损耗在线</b>：食材成本率、能耗、人效、翻台率进入门店日看板</li>
+            <li><b>加盟商单店模型表</b>：一套可对外、可尽调的标准化盈利测算模板</li>
+          </ul>
+          <div class="kpi-s">目标：食材损耗率优化 1-2pct · 新品成功率可量化 · 单店人效 +10%</div>
+        </div>
+      </div>
+
+      <div class="war c reveal">
+        <div class="wh"><div class="lb">BATTLE 03 · 做复购</div><h4>流量资产化</h4></div>
+        <div class="wb">
+          <ul>
+            <li><b>排队流量入口化</b>：等位扫码即入会，把 2 小时等待转成会员身份</li>
+            <li><b>打卡文化产品化</b>：叠盘子成就体系 + UGC 激励，把社交传播接进会员成长</li>
+            <li><b>MA 画布 + ICC 企微</b>：按"到店频次 × 碟型偏好"分层触达，替代全场通用券</li>
+            <li><b>跨品牌会员统一</b>：热卤 / 转转 / 韩水水 / 商超一套身份、一套积分</li>
+          </ul>
+          <div class="kpi-s">目标：会员消费占比 28% → 35%+ · 复购频次 +15% · 私域规模翻倍</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="base reveal">
+      <h4>承托层 <span>FOUNDATION</span>　规模交付底座</h4>
+      <div class="row">
+        <div class="it"><b>开店数字化标准包</b>适配 60-80㎡ 主流店型，收银/点餐/外卖/会员一站式预配置，目标把新店上线周期从周级压到 3 天内。</div>
+        <div class="it"><b>多品牌多业态中台</b>菜单、价格、权限、券池统一管理，支撑热卤、转转、韩水水、商超店并行扩张不失控。</div>
+        <div class="it"><b>加盟商数字看板</b>营业额、品控、稽核、食安四张表，让总部看得见每一家店，让加盟商看得懂自己的店。</div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>三年路径：先打底，再复制，后变现</h3>
+      <div class="road">
+        <div class="rd"><div class="pt"></div><div class="yr">2027</div><div class="ttl">打底年</div>
+          <div class="ds">食安一致性 + 单店盈利模型 + 会员资产化三场战役落地；效期全量、碟型看板、排队入会三项跑通。</div>
+          <div class="tag">守住底线 · 算清单店</div></div>
+        <div class="rd"><div class="pt"></div><div class="yr">2028</div><div class="ttl">复制年</div>
+          <div class="ds">开店标准包规模化复制；加盟商看板全面铺开；下沉市场（社区店/县域）适配版本输出。</div>
+          <div class="tag">规模不失速 · 复制不走样</div></div>
+        <div class="rd"><div class="pt"></div><div class="yr">2029</div><div class="ttl">资产年</div>
+          <div class="ds">数据资产反哺供应链与选品；会员资产跨品牌变现；食安信用成为招商与商超谈判的筹码。</div>
+          <div class="tag">数据即壁垒</div></div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <h3>2027 Q1 落地清单（1-3 月）</h3>
+      <table class="mtx">
+        <tr><th style="width:9%">月份</th><th style="width:46%">重点动作</th><th style="width:20%">对应战役</th><th>输出物</th></tr>
+        <tr><td><b>1 月</b></td>
+          <td>年度规划定稿；效期管理全量落地启动（门店分批）；在途需求收口（补开票/直通车/商超新版）</td>
+          <td>守底线 + 基础体验</td><td>年度规划书 · 落地排期表</td></tr>
+        <tr><td><b>2 月</b></td>
+          <td>碟型盈利看板上线试运行；"打烊即废弃"电子台账试点；排队扫码入会方案上线</td>
+          <td>提效率 + 做复购</td><td>碟型看板 V1 · 试点门店报告</td></tr>
+        <tr><td><b>3 月</b></td>
+          <td>明档 AI 巡检试点；MA 画布会员分层首轮投放；商超渠道批量推广；Q1 复盘</td>
+          <td>守底线 + 做复购 + 渠道</td><td>巡检试点总结 · Q2 计划</td></tr>
+      </table>
+      <p style="margin-top:12px;font-size:13px">
+        <span class="hl">关键节点</span>　<b>11 月 3 日上午</b> 年度规划沟通会（陈海涛、刘智娥、张金利）——本材料为会议底稿，
+        三场战役的优先级与资源投入需在会上与业务方对齐后定稿。
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <h3>预期价值（测算口径，待与业务方校准）</h3>
+      <table class="mtx">
+        <tr><th style="width:18%">战役</th><th style="width:34%">价值逻辑</th><th style="width:24%">衡量指标</th><th>备注</th></tr>
+        <tr><td><b>食安一致性</b></td><td>规避单店停业 + 品牌舆情损失；提升商超续约与入驻谈判筹码</td><td>巡检覆盖率 / 整改闭环率 / 舆情次数</td><td>损失规避类，不定金额</td></tr>
+        <tr><td><b>单店盈利模型</b></td><td>食材损耗优化 1-2pct；低效 SKU 及时淘汰；加盟招商有据可依</td><td>损耗率 / 新品存活率 / 单店人效</td><td>行业参考值，需实测校准</td></tr>
+        <tr><td><b>流量资产化</b></td><td>会员消费占比 28.33% → 35%+，复购频次提升带来同店增长</td><td>会员占比 / 复购频次 / 私域规模</td><td>基数为 2025 汇报案例门店</td></tr>
+        <tr><td><b>交付底座</b></td><td>新店上线周期缩短 30%+，直接支撑开店节奏</td><td>上线周期 / 一次性交付合格率</td><td>以标准包试点门店为样本</td></tr>
+      </table>
+      <p class="fn">※ 以上为规划期测算口径，具体目标值建议在 11/3 沟通会与业务方共同确认后写入年度 KPI。</p>
+    </div>
+
+    <div class="card reveal">
+      <h3>服务承诺（延续 2026 机制）</h3>
+      <p>
+        ① <b>双周需求沟通会</b>：需求收集、排期与答疑的固定通道；
+        ② <b>月度项目简报</b>：进展、风险、下月计划透明同步；
+        ③ <b>专属 PM 全程跟进</b>：疑难问题、事故处理、紧急支持；
+        ④ <b>季度规划回顾</b>：把"年度规划完成度"从一年一次改为季度可查——2026 年这一项是 50%，2027 年要做到过程透明。
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="end">
+  <div class="wrap">
+    <h2>守得住底线　算得清单店　留得住顾客</h2>
+    <div class="ln"></div>
+    <p>助力餐饮企业发展 · 推动餐饮行业进步</p>
+    <p style="margin-top:14px">天财商龙科技有限公司　|　项目经理 陈海涛　|　2026 年 11 月</p>
+  </div>
+</div>
+
+<script>
+function count(el){
+  const t=+el.dataset.to, em=el.querySelector('em'), suf=em?em.outerHTML:'';
+  const d=1200, s=performance.now();
+  (function tick(n){
+    const p=Math.min((n-s)/d,1), v=Math.floor(t*(1-Math.pow(1-p,3)));
+    el.innerHTML=v+suf;
+    if(p<1) requestAnimationFrame(tick);
+  })(s);
+}
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      e.target.querySelectorAll('.num[data-to],.n[data-to]').forEach(n=>{
+        if(!n.dataset.done){n.dataset.done=1;count(n)}
+      });
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+window.addEventListener('scroll',()=>{
+  const y=scrollY+130; let cur='s1';
+  document.querySelectorAll('section').forEach(s=>{if(s.offsetTop<=y)cur=s.id});
+  document.querySelectorAll('.nav a').forEach(a=>{
+    const on=a.getAttribute('href')==='#'+cur;
+    a.style.background=on?'#FBEDED':''; a.style.color=on?'var(--red)':'';
+  });
+},{passive:true});
+</script>
+</body>
+</html>
