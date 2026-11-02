@@ -147,19 +147,19 @@ td b{color:var(--txt);font-weight:600}
 /* TIMELINE */
 .tl{position:relative;padding-left:30px}
 .tl::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--red),var(--gold),var(--line2))}
-.tl-item{position:relative;padding-bottom:30px}
+.tl-item{position:relative;padding-bottom:12px}
 .tl-item:last-child{padding-bottom:0}
 .tl-item::before{
   content:"";position:absolute;left:-27px;top:6px;width:12px;height:12px;border-radius:50%;
   background:var(--bg);border:2.5px solid var(--red);box-shadow:0 0 0 3px rgba(212,42,42,.15);
 }
 .tl-item.gold::before{border-color:var(--gold);box-shadow:0 0 0 3px rgba(217,164,65,.15)}
-.tl-item .y{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:5px}
-.tl-item h5{font-size:16px;font-weight:700;color:#fff;margin-bottom:6px}
-.tl-item p{font-size:13.5px;color:var(--txt2)}
+.tl-item .y{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:3px}
+.tl-item h5{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
+.tl-item p{font-size:12.8px;color:var(--txt2);line-height:1.5}
 .tl-item .val{
-  margin-top:9px;font-size:12.5px;color:var(--txt);
-  background:var(--card2);border-left:2.5px solid var(--red);padding:8px 13px;border-radius:0 7px 7px 0;
+  margin-top:6px;font-size:12.3px;color:var(--txt);line-height:1.5;
+  background:var(--card2);border-left:2.5px solid var(--red);padding:6px 13px;border-radius:0 7px 7px 0;
 }
 .tl-item .val b{color:var(--gold)}
 
@@ -466,12 +466,6 @@ table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
     <div class="hero-sub" style="font-size:15px;color:var(--txt3);margin-top:6px">
       深耕餐饮 28 年 · 10 万+ 商户 · 367 座城市 · 7×16 小时本地化响应
     </div>
-    <div class="hero-meta">
-      <div class="hero-chip"><b>63<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>2026 年需求与问题</span></div>
-      <div class="hero-chip"><b>35<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>已完成闭环</span></div>
-      <div class="hero-chip"><b>8<span style="font-size:13px;color:var(--txt2)"> 次</span></b><span>配合版本上线</span></div>
-      <div class="hero-chip"><b>64<span style="font-size:13px;color:var(--txt2)"> 项</span></b><span>商龙全年产品迭代</span></div>
-    </div>
   </div>
   <div class="hero-foot">
     <div class="wrap">
@@ -482,7 +476,7 @@ table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
 </header>
 
 <!-- ============ 01 看势 ============ -->
-<section id="s1">
+<section id="s1" data-mergehead="1">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="sec-num">01 / 看势</div>
@@ -625,42 +619,7 @@ table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
       </p>
     </div>
 
-    <div class="grid g2 rv">
-      <div class="panel">
-        <h3>合作全景</h3>
-        <div class="ph">「盛香亭集团」与商龙于 2023 年达成战略合作</div>
-        <p style="font-size:14px;color:var(--txt2);margin-bottom:18px">
-          先后完成「盛香亭热卤」「盛香亭转转火锅」两品牌的数字化升级，
-          覆盖 <b>餐饮中餐版、Windows 快餐版、移动 POS、龙管家、KDS、CRM8、外卖平台对接、团购平台对接、
-          平台会员对接、学生认证、商超对接、API 接口对接、电子发票</b> 等场景。
-        </p>
-        <ul class="ul">
-          <li><b>2023 / 6 / 26</b>　热卤项目签约，数字化合作正式启动</li>
-          <li><b>2023 / 9 / 6</b>　热卤品牌整体切换上线（餐饮、会员、外卖、团购）</li>
-          <li><b>2024 / 6 / 20</b>　转转火锅项目签约，第二品牌启动</li>
-          <li><b>2025 / 3 / 31</b>　转转火锅项目交付验收</li>
-          <li><b>2025 / 9 / 10</b>　分批切换上线转转火锅 61 家门店</li>
-          <li><b>2026</b> 进入运营深化期，全年跟进需求与问题 63 项、配合版本上线 8 次</li>
-        </ul>
-      </div>
-      <div class="panel">
-        <h3>验收里程碑的量化交付</h3>
-        <div class="ph">2025 年 3 月 31 日 · 转转火锅项目交付验收</div>
-        <div class="grid g2" style="gap:14px">
-          <div class="kpi" style="padding:20px"><div class="v c-red" style="font-size:34px">72</div><div class="l">P0 需求及问题</div></div>
-          <div class="kpi" style="padding:20px"><div class="v c-gold" style="font-size:34px">49</div><div class="l">P1 需求及问题</div></div>
-          <div class="kpi" style="padding:20px"><div class="v c-blue" style="font-size:34px">12</div><div class="l">P2 需求及问题</div></div>
-          <div class="kpi" style="padding:20px"><div class="v" style="font-size:34px;color:var(--txt2)">3</div><div class="l">P3 需求及问题</div></div>
-        </div>
-        <div style="text-align:center;margin-top:16px;padding:14px;background:var(--bg2);border-radius:10px;border:1px solid var(--line)">
-          <span style="font-size:13px;color:var(--txt3)">验收周期内累计闭环</span>
-          <span style="font-size:26px;font-weight:800;color:#fff;margin:0 8px">136</span>
-          <span style="font-size:13px;color:var(--txt3)">项需求与问题</span>
-        </div>
-      </div>
-    </div>
-
-    <h3 style="font-size:22px;font-weight:800;margin:44px 0 22px" class="rv">完整历程时间轴</h3>
+    <h3 style="font-size:19px;font-weight:800;margin:20px 0 0" class="rv">完整历程时间轴</h3>
     <div class="tl rv">
       <div class="tl-item">
         <div class="y">2023 年</div>
@@ -712,13 +671,50 @@ table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
       </div>
     </div>
 
-    <div class="callout rv" style="margin-top:30px">
+    <div class="rv">
+    <div class="grid g2 rv">
+      <div class="panel">
+        <h3>合作全景</h3>
+        <div class="ph">「盛香亭集团」与商龙于 2023 年达成战略合作</div>
+        <p style="font-size:14px;color:var(--txt2);margin-bottom:18px">
+          先后完成「盛香亭热卤」「盛香亭转转火锅」两品牌的数字化升级，
+          覆盖 <b>餐饮中餐版、Windows 快餐版、移动 POS、龙管家、KDS、CRM8、外卖平台对接、团购平台对接、
+          平台会员对接、学生认证、商超对接、API 接口对接、电子发票</b> 等场景。
+        </p>
+        <ul class="ul">
+          <li><b>2023 / 6 / 26</b>　热卤项目签约，数字化合作正式启动</li>
+          <li><b>2023 / 9 / 6</b>　热卤品牌整体切换上线（餐饮、会员、外卖、团购）</li>
+          <li><b>2024 / 6 / 20</b>　转转火锅项目签约，第二品牌启动</li>
+          <li><b>2025 / 3 / 31</b>　转转火锅项目交付验收</li>
+          <li><b>2025 / 9 / 10</b>　分批切换上线转转火锅 61 家门店</li>
+          <li><b>2026</b> 进入运营深化期，全年跟进需求与问题 63 项、配合版本上线 8 次</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>验收里程碑的量化交付</h3>
+        <div class="ph">2025 年 3 月 31 日 · 转转火锅项目交付验收</div>
+        <div class="grid g2" style="gap:14px">
+          <div class="kpi" style="padding:14px 16px"><div class="v c-red" style="font-size:30px">72</div><div class="l">P0 需求及问题</div></div>
+          <div class="kpi" style="padding:14px 16px"><div class="v c-gold" style="font-size:30px">49</div><div class="l">P1 需求及问题</div></div>
+          <div class="kpi" style="padding:14px 16px"><div class="v c-blue" style="font-size:30px">12</div><div class="l">P2 需求及问题</div></div>
+          <div class="kpi" style="padding:14px 16px"><div class="v" style="font-size:30px;color:var(--txt2)">3</div><div class="l">P3 需求及问题</div></div>
+        </div>
+        <div style="text-align:center;margin-top:16px;padding:14px;background:var(--bg2);border-radius:10px;border:1px solid var(--line)">
+          <span style="font-size:13px;color:var(--txt3)">验收周期内累计闭环</span>
+          <span style="font-size:26px;font-weight:800;color:#fff;margin:0 8px">136</span>
+          <span style="font-size:13px;color:var(--txt3)">项需求与问题</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout rv" style="margin-top:14px">
       <h4>致盛香亭伙伴：我们的合作已经走完了"建系统"阶段</h4>
       <p>
         过去三年半，双方完成了<b>两个品牌、全业务场景、数百家门店</b>的数字化建设，需求与问题逐条建档、闭环跟进。
         接下来的命题不再是"还有什么功能没上"，而是 ——
         <b>已经建好的系统，有没有真正转化成单店的利润、品牌的一致性和可复制的增长</b>。
       </p>
+    </div>
     </div>
   </div>
 </section>
@@ -1418,11 +1414,12 @@ if(hero){
   var kids = [].slice.call(wrap.children);
   var head = kids.filter(function(k){ return k.classList && k.classList.contains('sec-head'); })[0];
   var rest = kids.filter(function(k){ return k !== head; });
+  var items=[];
   if(head){
     head.style.marginBottom='0';
-    mkSlide(chapter, true).body.appendChild(head);
+    if(sec.getAttribute('data-mergehead')) items.push({node:head, h:measure(head), head:''});
+    else mkSlide(chapter, true).body.appendChild(head);
   }
-  var items=[];
   rest.forEach(function(b){ blockItems(b).forEach(function(x){ items.push(x); }); });
   flow(items, chapter);
 });
