@@ -425,6 +425,11 @@ table.tl-tight td{font-size:12.2px !important;padding:4px 10px !important;line-h
     table.tl-fill td{font-size:13px !important;padding:6px 12px !important;line-height:1.48 !important}
     table.tl-fill th{font-size:12.2px !important;padding:6px 12px !important}
     table.tl-fill td:nth-child(2){color:#C9D2E0}
+.grid.mini6{gap:12px}
+.grid.mini6 .card{padding:14px 16px}
+.grid.mini6 .card .ic{width:30px;height:30px;font-size:15px;margin-bottom:8px}
+.grid.mini6 .card h4{font-size:14.6px;margin-bottom:6px}
+.grid.mini6 .card p{font-size:12.6px;line-height:1.62}
     .grid.g4.roomy .kpi{padding:14px 12px 12px !important}
     .grid.g4.roomy .kpi .v{font-size:38px !important}
 table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
@@ -1047,76 +1052,40 @@ table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
     <div class="panel rv" style="margin-bottom:22px;border-color:rgba(63,185,80,.25)">
       <h3 style="display:flex;align-items:center;gap:10px">
         <span style="width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block"></span>
-        从这一个案，到一套机制 · 四条改进措施
+        从这一个案，到一套机制 · 六条改进措施
       </h3>
-      <div class="ph">个案会修复，机制才会长存。以下四条已纳入 2027 年服务承诺与 Q1 落地计划</div>
-      <div class="grid g2">
+      <div class="ph">个案会修复，机制才会长存。<b>前四条补的是产品机制，后两条立的是项目经理与贵司信息部的协同规矩</b> —— 六条均已纳入 2027 年服务承诺与 Q1 落地计划</div>
+      <div class="grid g3 mini6">
         <div class="card">
           <div class="ic">📐</div>
           <h4>一、规则变更影响评估清单</h4>
-          <p>凡涉及<b>积分、券核销、价格、折扣、储值</b>等经营规则的产品变更，上线前必须输出《存量客户影响评估报告》，明确默认值口径、兼容策略、受影响门店数量与告知方案，评审通过方可发布。</p>
+          <p>凡涉及<b class="c-gold">积分、券核销、价格、折扣、储值</b>的经营规则变更，上线前必须出具《存量客户影响评估报告》，说清默认值口径、兼容策略、受影响门店数与告知方案 —— <b class="c-green">评估不过，不予发布</b>。</p>
         </div>
         <div class="card">
           <div class="ic">🛡</div>
           <h4>二、默认值兼容性保护</h4>
-          <p>存量客户版本升级时，<b>默认沿用原有业务逻辑</b>，不以新默认值覆盖历史行为。确需变更的，走<b>客户确认 + 灰度公告 + 分批验证</b>流程，杜绝"悄悄改变"。</p>
+          <p>存量客户升级<b class="c-green">默认沿用原有业务逻辑</b>，不让新默认值覆盖历史经营行为。确需变更，一律走<b class="c-gold">客户确认 → 灰度公告 → 分批验证</b>，杜绝"悄悄改变"。</p>
         </div>
         <div class="card">
           <div class="ic">🔔</div>
           <h4>三、权益类数据月度核对与告警</h4>
-          <p>对积分发放、券核销、储值变动等<b>权益/资金类数据建立月度例行核对</b>，并设置异常波动阈值告警（环比突变自动触发）。不让问题靠累积近一年才被发现。</p>
+          <p>对积分发放、券核销、储值变动建立<b class="c-green">月度例行核对</b>，环比突变自动触发告警。<b>不让问题靠累积近一年才被发现。</b></p>
         </div>
         <div class="card">
           <div class="ic">🧪</div>
           <h4>四、上线前专项评审与测试验证</h4>
-          <p>权益类规则变更纳入<b>专项测试用例库</b>，覆盖「多券种 × 多门店 × 多版本」组合场景；发布前双人评审 + 发版后 72 小时重点监测。</p>
+          <p>权益类变更纳入<b class="c-gold">专项测试用例库</b>，覆盖「多券种 × 多门店 × 多版本」组合；<b class="c-green">发布前双人评审，发版后 72 小时重点监测</b>。</p>
         </div>
-      </div>
-    </div>
-
-    <div class="panel rv" style="margin-bottom:22px">
-      <h3>2025 年故障复盘及改善：承诺是否兑现</h3>
-      <div class="ph">对照上一年度汇报中承诺的改善措施，逐条回看实际效果 —— 这是我们对待故障的一贯方式</div>
-      <table>
-        <thead><tr><th style="width:110px">时间</th><th style="width:120px">故障类型</th><th>根因</th><th style="width:290px">改善措施与验证</th><th style="width:70px">等级</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><b>2025/3/8</b></td>
-            <td>线上业务故障</td>
-            <td>扫码点餐请求接近历史最高峰时，<b>未提前触发弹性扩容</b>，造成两个服务节点异常、请求响应变慢</td>
-            <td>故障后立即对菜品服务完成扩容；复盘线上部署环境，从网关入口到菜品服务完成<b>服务拆分</b>，减少核心业务线互相依赖，完善业务线隔离</td>
-            <td><span class="tag t-red">P0</span></td>
-          </tr>
-          <tr>
-            <td><b>2025/6/26</b></td>
-            <td>外卖业务故障</td>
-            <td>京东外卖业务存在<b>服务循环调用</b>，大量请求涌入时该服务压力过大，导致外卖入口拥堵堆积，影响其他平台接单</td>
-            <td>解决循环调用问题并优化接单流程；开展真实场景压测。<b>11 月 7 日京东秒送活动系统全程无异常</b>，圆满完成支撑任务</td>
-            <td><span class="tag t-gold">P2</span></td>
-          </tr>
-          <tr>
-            <td><b>2025/8/29</b></td>
-            <td>扫码点餐异常</td>
-            <td>七夕晚高峰<b>流量增长速度超出服务扩容速度</b>，引起查询菜品接口超时、点餐页面加载缓慢</td>
-            <td>完成核心业务服务扩容并做足冗余；调整底层核心参数与配置，完善<b>限流熔断</b>；专项压测实测可稳定支撑<b>七夕峰值三倍流量</b>。国庆中秋双节系统全程平稳</td>
-            <td><span class="tag t-gold">P2</span></td>
-          </tr>
-          <tr>
-            <td><b>周期性</b></td>
-            <td>报表查询异常</td>
-            <td>月初 / 月末周期性查询超时，数据仓库部署在自有 IDC，<b>服务器与带宽资源存在瓶颈</b></td>
-            <td>2024 年 6 月完成<b>数仓上云</b>，资源与带宽大幅扩充，各产品线针对云上环境调整优化，云端环境对未来扩容提供更好支撑</td>
-            <td><span class="tag">—</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="callout" style="border-color:rgba(63,185,80,.25);background:linear-gradient(135deg,rgba(63,185,80,.07),rgba(63,185,80,.02))">
-        <h4 style="color:var(--green)">我们的态度</h4>
-        <p>
-          故障不会因为写在复盘表里就不再发生，但<b>每一次故障都必须换来一次系统性的加固</b>。
-          过去一年我们完成了服务拆分、弹性扩容、限流熔断、数仓上云四项底层改造，
-          并在京东秒送、七夕、国庆中秋等多个真实峰值场景中完成验证。<b>2027 年，我们会把这套机制做得更前置。</b>
-        </p>
+        <div class="card" style="border-color:rgba(63,185,80,.28)">
+          <div class="ic">🗓</div>
+          <h4>五、项目经理上线节奏管控</h4>
+          <p>需求按<b class="c-gold">P0 / 紧急 / 常规</b>分级进入双周发版窗口，<b class="c-green">营业高峰与营销大促节点一律不发版</b>；每次上线提前交付变更清单与回滚预案，范围可控、节奏可预期。</p>
+        </div>
+        <div class="card" style="border-color:rgba(63,185,80,.28)">
+          <div class="ic">🤝</div>
+          <h4>六、与贵司信息部的协同机制</h4>
+          <p><b class="c-gold">月度对接会 + 联合验收</b>：需求状态每周更新、双方共看同一张表；<b class="c-green">重大变更先与信息部对齐口径再排期</b>，验收双方共同确认，不单方面宣布上线。</p>
+        </div>
       </div>
     </div>
 
@@ -1139,7 +1108,7 @@ table.tl-tight th{font-size:11.6px !important;padding:5px 10px !important}
       <div class="card" style="border-color:rgba(212,42,42,.22)">
         <div class="ic">⚠</div>
         <h4>待改进四：规则类变更的影响评估不足</h4>
-        <p>本年度美团点评团购券积分虚增事件，根因是<b>默认值变更未做存量客户兼容性评估</b>，且缺少权益类数据的主动监测。四条机制化改进见上。</p>
+        <p>本年度美团点评团购券积分虚增事件，根因是<b>默认值变更未做存量客户兼容性评估</b>，且缺少权益类数据的主动监测。<b>六条机制化改进见上，含两条与贵司信息部的协同约定。</b></p>
       </div>
     </div>
   </div>
